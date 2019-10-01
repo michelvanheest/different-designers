@@ -1,7 +1,7 @@
 # different-designers
 The official GitHub Repo of different-designers, probably with the final website, online reports and prototypes
 
-You can find the website on → [different-designers.nl](https://www.different-designers.nl/)
+You can find the website on → ~[different-designers.nl](https://www.different-designers.nl/)~ [michelvanheest.github.io/different-designers/](https://michelvanheest.github.io/different-designers/)
 
 ---
 
