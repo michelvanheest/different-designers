@@ -3,6 +3,8 @@ The official GitHub Repo of different-designers, probably with the final website
 
 You can find the website on → [http://differentdesigners.nl](http://www.differentdesigners.nl/)
 
+> 🔴 ALWAYS DEVELOP ON A NEW BRANCH; ALWAYS PULL REQUEST, NEVER MERGE YOUR OWN PULL REQUEST 🔴
+
 ---
 
 # To do
