@@ -6,7 +6,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     outline: 0;
     font-size: 100%;
     font-weight: normal !important;
-    font-family: MarkBook, sans-serif;
+    font-family: CircularBook, sans-serif;
     text-transform: none;
     text-decoration: none;
     vertical-align: baseline;
@@ -37,6 +37,7 @@ body {
 
 /* ============FONTS============ */
 @font-face {font-family: 'CircularBold';
+    /* src: url('../assets/fonts/CircularStd-Bold.otf') format('opentype'); */
     src: url('../assets/fonts/CircularStd-Bold.eot') format('embedded-opentype');
     src: url('../assets/fonts/CircularStd-Bold.ttf') format('truetype');
     src: url('../assets/fonts/CircularStd-Bold.woff') format('woff');
@@ -44,13 +45,15 @@ body {
 }
 
 @font-face {font-family: 'CircularMedium';
+    /* src: url('../assets/fonts/CircularStd-Medium.otf') format('opentype'); */
     src: url('../assets/fonts/CircularStd-Medium.eot') format('embedded-opentype');
     src: url('../assets/fonts/CircularStd-Medium.ttf') format('truetype');
     src: url('../assets/fonts/CircularStd-Medium.woff') format('woff');
     src: url('../assets/fonts/CircularStd-Medium.woff2') format('woff2');
 }
 
-@font-face {font-family: 'CircularRegular';
+@font-face {font-family: 'CircularBook';
+    /* src: url('../assets/fonts/CircularStd-Book.otf') format('opentype'); */
     src: url('../assets/fonts/CircularStd-Book.eot') format('embedded-opentype');
     src: url('../assets/fonts/CircularStd-Book.ttf') format('truetype');
     src: url('../assets/fonts/CircularStd-Book.woff') format('woff');
@@ -69,7 +72,7 @@ body {
 } */
 
 span {
-    font-family: 'CircularStd-Medium', sans-serif;
+    font-family: CircularMedium, sans-serif;
     font-size: 24px;
     color: var(--color-gray);
     background-color: transparent;
@@ -79,7 +82,7 @@ span {
 }
 
 a {
-    font-family: 'CircularStd-Book', sans-serif;
+    font-family: CircularBook, sans-serif;
     font-size: 16px;
     color: var(--color-gray);
     text-decoration: none;
