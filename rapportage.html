@@ -1,21 +1,31 @@
 ---
 title: Rapportage
 ---
-<section>
+<section id="rapportage-header">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <h1>Rapportage</h1>
+                <p class="p-big">Hier staat een subtitel waarin kort uitgelegd wordt dat alle rapportage in de vorm van verslagen en presentaties hier terug te vinden zijn.</p>
             </div>
         </div>
     </div>
 </section>
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p>{{ post.excerpt }}</p>
-    </li>
-  {% endfor %}
-</ul>
+<section id="rapportage-postlist">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <ul>
+                {% for post in site.posts %}
+                    <li>
+                    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                    <p>{{ post.excerpt }}</p>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
