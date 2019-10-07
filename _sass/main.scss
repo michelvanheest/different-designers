@@ -1,3 +1,68 @@
 .current {
   color: green;
 }
+
+/* ============BODY CUSTOM RESET============ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, menu {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font-weight: normal !important;
+    font-family: CircularBook, sans-serif;
+    text-transform: none;
+    text-decoration: none;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    line-height: 1.2;
+    kerning: none !important;
+
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeSpeed;
+}
+
+body {
+    overflow: hidden !important;
+}
+
+
+/* ============DEFAULT============ */
+$color-black: #0C183D;
+$color-darkGray: #6E758A;
+$color-lightGray: #AEB2BD;
+$color-lightesGray: #F3F4F6;
+$color-purple: #FFFFFF;
+$color-purple: #8641F2;
+$color-lightPurple: #F5F0FE;
+
+
+/* ============FONTS============ */
+@font-face {font-family: 'CircularBold';
+    /* src: url('../assets/fonts/CircularStd-Bold.otf') format('opentype'); */
+    src: url('../assets/fonts/CircularStd-Bold.eot') format('embedded-opentype');
+    src: url('../assets/fonts/CircularStd-Bold.ttf') format('truetype');
+    src: url('../assets/fonts/CircularStd-Bold.woff') format('woff');
+    src: url('../assets/fonts/CircularStd-Bold.woff2') format('woff2');
+}
+
+@font-face {font-family: 'CircularMedium';
+    /* src: url('../assets/fonts/CircularStd-Medium.otf') format('opentype'); */
+    src: url('../assets/fonts/CircularStd-Medium.eot') format('embedded-opentype');
+    src: url('../assets/fonts/CircularStd-Medium.ttf') format('truetype');
+    src: url('../assets/fonts/CircularStd-Medium.woff') format('woff');
+    src: url('../assets/fonts/CircularStd-Medium.woff2') format('woff2');
+}
+
+@font-face {font-family: 'CircularBook';
+    /* src: url('../assets/fonts/CircularStd-Book.otf') format('opentype'); */
+    src: url('../assets/fonts/CircularStd-Book.eot') format('embedded-opentype');
+    src: url('../assets/fonts/CircularStd-Book.ttf') format('truetype');
+    src: url('../assets/fonts/CircularStd-Book.woff') format('woff');
+    src: url('../assets/fonts/CircularStd-Book.woff2') format('woff2');
+}
+
+* {
+    text-align: center;
+}
