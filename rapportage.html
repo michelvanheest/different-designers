@@ -1,0 +1,14 @@
+---
+title: Rapportage
+---
+<h1>Rapportage</h1>
+<h2>Hier staat een subtitel waarin kort uitgelegd wordt dat alle rapportage in de vorm van verslagen en presentaties hier terug te vinden zijn.</h2>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p>{{ post.excerpt }}</p>
+    </li>
+  {% endfor %}
+</ul>
