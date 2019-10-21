@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<script type="text/javascript">
+		// This automatically sets the right viewport scale on mobile devices
+		(function() {
+ 		var scale = 1 / window.devicePixelRatio
+ 		var viewport = "width=device-width, height=device-height, initial-scale=" + scale + ", maximum-scale=" + scale + ", user-scalable=no"
+ 		var iOS = /iPad|iPhone|iPod/.test(navigator.platform)
+ 		if (iOS) { viewport += ", shrink-to-fit=no" }
+ 		document.write("<meta name=\"viewport\" content=\"" + viewport + "\">")
+		})()
+		</script>
+
+		<link rel="apple-touch-icon" href="framer/images/icon-120.png">
+		<link rel="apple-touch-icon" href="framer/images/icon-76.png" sizes="76x76">
+		<link rel="apple-touch-icon" href="framer/images/icon-120.png" sizes="120x120">
+		<link rel="apple-touch-icon" href="framer/images/icon-152.png" sizes="152x152">
+		<link rel="apple-touch-icon" href="framer/images/icon-180.png" sizes="180x180">
+		<link rel="apple-touch-icon" href="framer/images/icon-192.png" sizes="192x192">
+
+		<link rel="stylesheet" type="text/css" href="framer/style.css?nocache=ef2dcd2f4c6b88c81045cb6da71c9ac1">
+
+		<script src="framer/coffee-script.js"></script>
+		<script src="framer/framer.js?nocache=e0d6785fc3c9be979bc7b16f2e331555"></script>
+		<script >;Framer.Defaults.DeviceComponent ={'deviceScale': -1, 'deviceType':'fullscreen', 'contentScale': 1};Framer.Device = new Framer.DeviceComponent();Framer.Device.setupContext();if (Framer.Device.prepareForSnapshot) { Framer.Device.prepareForSnapshot() }print = function(){}//?nocache=05f2f172db00fc93e8e966610c1455ab"></script>
+		<script src="framer/framer.modules.js?nocache=df63aa3cf235c77f32c39534007ea73d"></script>
+		<script>document.addEventListener("DOMContentLoaded", function() {window.__framerClientCodeId = 1;window.__framerNew = function (n,loc,th,i){if (i == null) { return i };i.__framerInstanceInfo = _.defaults({name:n,location:loc,hash:th},i.__framerInstanceInfo);_.defaults(i.__framerInstanceInfo,{name:"Untitled"});return i;};window.__framerAnimation = function (th,a){if (a.isNoop === true) {return a;};var l = a.layer;if (l == null) { return a; };if (l.__framerAnimationInfo == null) {l.__framerAnimationInfo = {};};l.__framerAnimationInfo[th] = {originalState:a._originalState, destinationProperties: a.properties, destinationOptions: a.options};return a;};(function() {
+  var SVGLayer, button, layer;
+
+  SVGLayer = require("SVGLayer").SVGLayer;
+
+  button = window.__framerNew("button", "2:9-2:17", "#af975d78",new Layer);
+
+  layer = window.__framerNew("layer", "4:12-27:0", "#b759c03d",new SVGLayer({
+    strokeWidth: 20,
+    stroke: "black",
+    width: 324,
+    dashOffset: 0,
+    height: 324,
+    linecap: "square",
+    fill: "#28affa",
+    path: '<path d="M162,324 C251.470129,324 324,251.470129 324,162 C324,72.5298705 251.470129,0 162,0 C72.5298705,0 0,72.5298705 0,162 C0,251.470129 72.5298705,324 162,324 Z"></path>'
+  }));
+
+  button.onClick(function() {
+    return window.__framerAnimation("#b5f42243",layer.animate({
+      properties: {
+        dashOffset: 1
+      }
+    }));
+  });
+
+}).call(this);
+})</script>
+
+	</head>
+	<body>
+	</body>
+</html>
