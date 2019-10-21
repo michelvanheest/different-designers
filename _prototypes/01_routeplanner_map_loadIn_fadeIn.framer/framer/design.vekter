@@ -94,7 +94,6 @@
             "locked" : false,
             "name" : "top_bar",
             "opacity" : 1,
-            "originalFilename" : "top_bar.png",
             "parentid" : "ARstd0_O5",
             "radius" : 0,
             "radiusBottomLeft" : 0,
@@ -181,7 +180,6 @@
             "locked" : false,
             "name" : "map_with_road",
             "opacity" : 0,
-            "originalFilename" : "map_with_road.png",
             "parentid" : "ARstd0_O5",
             "radius" : 0,
             "radiusBottomLeft" : 0,
@@ -268,7 +266,6 @@
             "locked" : false,
             "name" : "map_without_road",
             "opacity" : 1,
-            "originalFilename" : "map_without_road.png",
             "parentid" : "ARstd0_O5",
             "radius" : 0,
             "radiusBottomLeft" : 0,
@@ -302,7 +299,6 @@
             "brightnessEnabled" : 0,
             "centerAnchorX" : 0.57291666666666663,
             "centerAnchorY" : 0.67000000000000004,
-            "clip" : false,
             "colorable" : false,
             "constraintsLocked" : false,
             "contrast" : 100,
@@ -310,6 +306,7 @@
             "exportOptions" : [
 
             ],
+            "fillColor" : "rgba(0,0,0,1)",
             "fillGradient" : {
               "__class" : "LinearGradient",
               "alpha" : 1,
@@ -480,7 +477,6 @@
                 "brightnessEnabled" : 0,
                 "centerAnchorX" : 0.5,
                 "centerAnchorY" : 0.5,
-                "clip" : false,
                 "colorable" : false,
                 "constraintsLocked" : false,
                 "contrast" : 100,
@@ -488,6 +484,7 @@
                 "exportOptions" : [
 
                 ],
+                "fillColor" : "rgba(0,0,0,1)",
                 "fillGradient" : {
                   "__class" : "LinearGradient",
                   "alpha" : 1,
@@ -642,9 +639,7 @@
                 "top" : 5,
                 "visible" : true,
                 "width" : 15,
-                "widthFactor" : null,
-                "x" : 76,
-                "y" : 429
+                "widthFactor" : null
               }
             ],
             "clip" : false,
@@ -744,7 +739,6 @@
                 "brightnessEnabled" : 0,
                 "centerAnchorX" : 0.5,
                 "centerAnchorY" : 0.5,
-                "clip" : false,
                 "colorable" : false,
                 "constraintsLocked" : false,
                 "contrast" : 100,
@@ -752,6 +746,7 @@
                 "exportOptions" : [
 
                 ],
+                "fillColor" : "rgba(0,0,0,1)",
                 "fillGradient" : {
                   "__class" : "LinearGradient",
                   "alpha" : 1,
@@ -906,9 +901,7 @@
                 "top" : 5,
                 "visible" : true,
                 "width" : 15,
-                "widthFactor" : null,
-                "x" : 76,
-                "y" : 429
+                "widthFactor" : null
               }
             ],
             "clip" : false,
@@ -1001,7 +994,7 @@
             ],
             "brightness" : 100,
             "brightnessEnabled" : 0,
-            "centerAnchorX" : 0.5,
+            "centerAnchorX" : 0.50034722222222228,
             "centerAnchorY" : 0.94611111111111112,
             "children" : [
               {
@@ -1015,126 +1008,7 @@
                 "bottom" : null,
                 "brightness" : 100,
                 "brightnessEnabled" : 0,
-                "centerAnchorX" : 0.5,
-                "centerAnchorY" : 0.5,
-                "constraintsLocked" : false,
-                "contrast" : 100,
-                "contrastEnabled" : 0,
-                "editable" : false,
-                "exportOptions" : [
-
-                ],
-                "grayscale" : 0,
-                "grayScaleEnabled" : 0,
-                "height" : 19,
-                "heightFactor" : null,
-                "hueRotate" : 0,
-                "hueRotateEnabled" : 0,
-                "id" : "WvbnI50qP",
-                "invert" : 0,
-                "invertEnabled" : 0,
-                "left" : null,
-                "locked" : false,
-                "name" : null,
-                "opacity" : 1,
-                "parentid" : "AS_Y_eTdm",
-                "right" : null,
-                "rotation" : 0,
-                "saturate" : 100,
-                "saturateEnabled" : 0,
-                "sepia" : 0,
-                "sepiaEnabled" : 0,
-                "shadows" : [
-
-                ],
-                "styledText" : {
-                  "__class" : "StyledTextDraft",
-                  "blocks" : [
-                    {
-                      "data" : {
-                        "emptyStyle" : [
-                          "COLOR:hsl(0, 0%, 100%)",
-                          "LETTERSPACING:0",
-                          "LINEHEIGHT:1.2",
-                          "SIZE:16",
-                          "FONT:TheSansC4s-Regular",
-                          "ALIGN:center"
-                        ]
-                      },
-                      "depth" : 0,
-                      "entityRanges" : [
-
-                      ],
-                      "inlineStyleRanges" : [
-                        {
-                          "length" : 7,
-                          "offset" : 0,
-                          "style" : "COLOR:hsl(0, 0%, 100%)"
-                        },
-                        {
-                          "length" : 7,
-                          "offset" : 0,
-                          "style" : "LETTERSPACING:0"
-                        },
-                        {
-                          "length" : 7,
-                          "offset" : 0,
-                          "style" : "LINEHEIGHT:1.2"
-                        },
-                        {
-                          "length" : 7,
-                          "offset" : 0,
-                          "style" : "SIZE:16"
-                        },
-                        {
-                          "length" : 7,
-                          "offset" : 0,
-                          "style" : "FONT:TheSansC4s-Regular"
-                        },
-                        {
-                          "length" : 7,
-                          "offset" : 0,
-                          "style" : "ALIGN:center"
-                        }
-                      ],
-                      "key" : "cji2u",
-                      "text" : "Trigger",
-                      "type" : "unstyled"
-                    }
-                  ],
-                  "cached" : {
-                    "html" : "<span data-offset-key=\"cji2u-0-0\" style=\"tab-size:4;font-weight:400;font-family:&quot;TheSansC4s-Regular&quot;, &quot;TheSans C4s&quot;, sans-serif;-webkit-text-fill-color:hsl(0, 0%, 100%);font-size:16px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">Trigger<\/span><\/span>",
-                    "os" : "10_14",
-                    "size" : {
-                      "height" : 19,
-                      "width" : 50
-                    },
-                    "width" : 0
-                  },
-                  "entityMap" : {
-
-                  }
-                },
-                "targetName" : null,
-                "top" : null,
-                "visible" : true,
-                "width" : 50,
-                "widthFactor" : null,
-                "x" : 47,
-                "y" : 35
-              },
-              {
-                "__class" : "TextNode",
-                "autoSize" : true,
-                "blendingEnabled" : 0,
-                "blendingMode" : "normal",
-                "blur" : 12,
-                "blurEnabled" : 0,
-                "blurType" : "layer",
-                "bottom" : null,
-                "brightness" : 100,
-                "brightnessEnabled" : 0,
-                "centerAnchorX" : 0.49450549450549453,
+                "centerAnchorX" : 0.49621212121212122,
                 "centerAnchorY" : 0.5,
                 "constraintsLocked" : false,
                 "contrast" : 100,
@@ -1186,47 +1060,47 @@
                       ],
                       "inlineStyleRanges" : [
                         {
-                          "length" : 7,
+                          "length" : 12,
                           "offset" : 0,
                           "style" : "COLOR:hsl(0, 0%, 100%)"
                         },
                         {
-                          "length" : 7,
+                          "length" : 12,
                           "offset" : 0,
                           "style" : "LETTERSPACING:0"
                         },
                         {
-                          "length" : 7,
+                          "length" : 12,
                           "offset" : 0,
                           "style" : "LINEHEIGHT:1.2"
                         },
                         {
-                          "length" : 7,
+                          "length" : 12,
                           "offset" : 0,
                           "style" : "SIZE:16"
                         },
                         {
-                          "length" : 7,
+                          "length" : 12,
                           "offset" : 0,
                           "style" : "FONT:TheSansC4s-Regular"
                         },
                         {
-                          "length" : 7,
+                          "length" : 12,
                           "offset" : 0,
                           "style" : "ALIGN:center"
                         }
                       ],
                       "key" : "cji2u",
-                      "text" : "Trigger",
+                      "text" : "Trigger show",
                       "type" : "unstyled"
                     }
                   ],
                   "cached" : {
-                    "html" : "<span data-offset-key=\"cji2u-0-0\" style=\"tab-size:4;font-weight:400;font-family:&quot;TheSansC4s-Regular&quot;, &quot;TheSans C4s&quot;, sans-serif;-webkit-text-fill-color:hsl(0, 0%, 100%);font-size:16px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">Trigger<\/span><\/span>",
+                    "html" : "<span data-offset-key=\"cji2u-0-0\" style=\"tab-size:4;font-weight:400;font-family:&quot;TheSansC4s-Regular&quot;, &quot;TheSans C4s&quot;, sans-serif;-webkit-text-fill-color:hsl(0, 0%, 100%);font-size:16px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">Trigger show<\/span><\/span>",
                     "os" : "10_14",
                     "size" : {
                       "height" : 19,
-                      "width" : 50
+                      "width" : 91
                     },
                     "width" : 0
                   },
@@ -1237,10 +1111,8 @@
                 "targetName" : null,
                 "top" : null,
                 "visible" : true,
-                "width" : 50,
-                "widthFactor" : null,
-                "x" : 47,
-                "y" : 35
+                "width" : 91,
+                "widthFactor" : null
               }
             ],
             "clip" : true,
@@ -1298,7 +1170,7 @@
             "targetName" : "button_trigger",
             "top" : null,
             "visible" : true,
-            "width" : 90,
+            "width" : 131,
             "widthFactor" : null
           }
         ],
