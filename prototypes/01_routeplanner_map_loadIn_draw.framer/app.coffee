@@ -38,7 +38,7 @@ roadMain = new SVGLayer
 	strokeWidth: 4
 	dashOffset: 0
 # 	dashOffset: 1
-	x: 443
+	x: 444
 	y: 355
 	stroke: "#003C85"
 	opacity: 0.8
@@ -56,5 +56,5 @@ roadMain.states.animationOptions =
 button_trigger.onTap ->
 	roadMain.states.next()
 	Utils.delay 1.6, ->
-		markerB.states.next()
-# 		markerB.stateCycle("visible")
+# 		markerB.states.next()
+		markerB.stateCycle("visible", "invisible")
