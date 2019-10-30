@@ -19,7 +19,7 @@ gradient_pressed = new Gradient
 
 loading_gradient_left = new Gradient
 	start: "#FFFFFF"
-	end: "#FCFCFC"
+	end: "#F7F7F7"
 	angle: 270
 	
 loading_gradient_right = new Gradient
@@ -38,6 +38,8 @@ markerB.y = 50
 markerB.scale = 0.8
 road_alternative.opacity = 0
 route_extra_info_1_content.opacity = 0
+route_extra_info_2_content.opacity = 0
+route_extra_info_3_content.opacity = 0
 
 ## 🔴Create main_frame
 flow = new FlowComponent
@@ -123,16 +125,65 @@ road_alternative.states =
 			curve: defaultBezier
 
 # 🔵Content preloaders
+##01
 content_loader_route_extra_info_1 = new Layer
 	width: 317
 	height: 100
 	x: 18
-	y: 35
+	y: 55
 	z: 999
 	parent: route_extra_info_1
 	gradient: loading_gradient_right
 
 content_loader_route_extra_info_1.states =
+	1:
+		gradient: loading_gradient_left
+		width: 0
+		x: 18
+		options:
+			time: 0
+	2: 
+		gradient: loading_gradient_right
+		width: 317
+		x: 18
+		options:
+			time: 2
+
+##02
+content_loader_route_extra_info_2 = new Layer
+	width: 317
+	height: 100
+	x: 18
+	y: 55
+	z: 999
+	parent: route_extra_info_2
+	gradient: loading_gradient_right
+	
+content_loader_route_extra_info_2.states =
+	1:
+		gradient: loading_gradient_left
+		width: 0
+		x: 18
+		options:
+			time: 0
+	2: 
+		gradient: loading_gradient_right
+		width: 317
+		x: 18
+		options:
+			time: 2
+
+##03
+content_loader_route_extra_info_3 = new Layer
+	width: 317
+	height: 100
+	x: 18
+	y: 55
+	z: 999
+	parent: route_extra_info_3
+	gradient: loading_gradient_right
+	
+content_loader_route_extra_info_3.states =
 	1:
 		gradient: loading_gradient_left
 		width: 0
@@ -178,6 +229,12 @@ plan_button.onTap ->
 				content_loader_route_extra_info_1.animate "1"
 				content_loader_route_extra_info_1.onAnimationEnd ->
 					content_loader_route_extra_info_1.stateCycle("1", "2")
+				content_loader_route_extra_info_2.animate "1"
+				content_loader_route_extra_info_2.onAnimationEnd ->
+					content_loader_route_extra_info_2.stateCycle("1", "2")
+				content_loader_route_extra_info_3.animate "1"
+				content_loader_route_extra_info_3.onAnimationEnd ->
+					content_loader_route_extra_info_3.stateCycle("1", "2")
 				Utils.delay 1.6, ->
 					# animate markers on map
 					markerB.stateCycle("visible")
@@ -187,8 +244,20 @@ plan_button.onTap ->
 						Utils.delay 1, ->
 							# show content
 							content_loader_route_extra_info_1.opacity = 0
+							content_loader_route_extra_info_2.opacity = 0
+							content_loader_route_extra_info_3.opacity = 0
 							Utils.delay 0.2, ->
 								route_extra_info_1_content.animate
+									opacity: 1
+									options: 
+										time: 0.8
+										curve: defaultBezier
+								route_extra_info_2_content.animate
+									opacity: 1
+									options: 
+										time: 0.8
+										curve: defaultBezier
+								route_extra_info_3_content.animate
 									opacity: 1
 									options: 
 										time: 0.8
