@@ -7329,9 +7329,7 @@
                             "top" : 38,
                             "visible" : true,
                             "width" : 114,
-                            "widthFactor" : null,
-                            "x" : 21,
-                            "y" : 24
+                            "widthFactor" : null
                           },
                           {
                             "__class" : "TextNode",
@@ -7442,9 +7440,7 @@
                             "top" : null,
                             "visible" : true,
                             "width" : 71,
-                            "widthFactor" : null,
-                            "x" : 21,
-                            "y" : 24
+                            "widthFactor" : null
                           },
                           {
                             "__class" : "TextNode",
@@ -7555,9 +7551,7 @@
                             "top" : null,
                             "visible" : true,
                             "width" : 55,
-                            "widthFactor" : null,
-                            "x" : 21,
-                            "y" : 24
+                            "widthFactor" : null
                           },
                           {
                             "__class" : "TextNode",
@@ -7674,9 +7668,7 @@
                             "top" : null,
                             "visible" : true,
                             "width" : 43,
-                            "widthFactor" : null,
-                            "x" : 21,
-                            "y" : 24
+                            "widthFactor" : null
                           },
                           {
                             "__class" : "TextNode",
@@ -7793,9 +7785,7 @@
                             "top" : null,
                             "visible" : true,
                             "width" : 60,
-                            "widthFactor" : null,
-                            "x" : 21,
-                            "y" : 24
+                            "widthFactor" : null
                           }
                         ],
                         "clip" : false,
@@ -7965,9 +7955,7 @@
                         "top" : 18,
                         "visible" : true,
                         "width" : 75,
-                        "widthFactor" : null,
-                        "x" : 21,
-                        "y" : 24
+                        "widthFactor" : null
                       }
                     ],
                     "clip" : false,
@@ -8163,9 +8151,7 @@
                         "top" : 18,
                         "visible" : true,
                         "width" : 107,
-                        "widthFactor" : null,
-                        "x" : 21,
-                        "y" : 24
+                        "widthFactor" : null
                       },
                       {
                         "__class" : "FrameNode",
@@ -8285,6 +8271,15 @@
                                   "type" : "unstyled"
                                 }
                               ],
+                              "cached" : {
+                                "html" : "<span data-offset-key=\"bgl4s-0-0\" style=\"tab-size:4;font-weight:400;font-family:&quot;TheSansC4s-Regular&quot;, &quot;TheSans C4s&quot;, sans-serif;-webkit-text-fill-color:#063E83;font-size:16px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">Brandstofkosten<\/span><\/span>",
+                                "os" : "10_14",
+                                "size" : {
+                                  "height" : 19,
+                                  "width" : 116
+                                },
+                                "width" : 0
+                              },
                               "entityMap" : {
 
                               }
@@ -8293,9 +8288,7 @@
                             "top" : 0,
                             "visible" : true,
                             "width" : 116,
-                            "widthFactor" : null,
-                            "x" : 21,
-                            "y" : 24
+                            "widthFactor" : null
                           },
                           {
                             "__class" : "TextNode",
@@ -8406,9 +8399,7 @@
                             "top" : null,
                             "visible" : true,
                             "width" : 101,
-                            "widthFactor" : null,
-                            "x" : 21,
-                            "y" : 24
+                            "widthFactor" : null
                           },
                           {
                             "__class" : "TextNode",
@@ -8525,9 +8516,7 @@
                             "top" : null,
                             "visible" : true,
                             "width" : 42,
-                            "widthFactor" : null,
-                            "x" : 21,
-                            "y" : 24
+                            "widthFactor" : null
                           }
                         ],
                         "clip" : false,
@@ -8782,9 +8771,7 @@
                         "top" : 18,
                         "visible" : true,
                         "width" : 187,
-                        "widthFactor" : null,
-                        "x" : 21,
-                        "y" : 24
+                        "widthFactor" : null
                       },
                       {
                         "__class" : "FrameNode",
@@ -8921,9 +8908,7 @@
                             "top" : null,
                             "visible" : true,
                             "width" : 44,
-                            "widthFactor" : null,
-                            "x" : 21,
-                            "y" : 24
+                            "widthFactor" : null
                           }
                         ],
                         "clip" : false,
@@ -9194,7 +9179,6 @@
                             "brightnessEnabled" : 0,
                             "centerAnchorX" : 0.5,
                             "centerAnchorY" : 0.50498338870431891,
-                            "clip" : false,
                             "colorable" : false,
                             "constraintsLocked" : false,
                             "contrast" : 100,
@@ -9202,6 +9186,7 @@
                             "exportOptions" : [
 
                             ],
+                            "fillColor" : "rgba(0,0,0,1)",
                             "fillGradient" : {
                               "__class" : "LinearGradient",
                               "alpha" : 1,

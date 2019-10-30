@@ -215,12 +215,12 @@ plan_button.onTap ->
 			bg_img_default.animate
 				opacity: 0
 				options: 
-					time: 0.8
+					time: 0.2
 					curve: defaultBezier
 			routeplanner_planning.animate
 				opacity: 1
 				options: 
-					time: 0.8
+					time: 0.4
 					curve: defaultBezier
 			Utils.delay 1.24, ->
 				# animate road_main on map
