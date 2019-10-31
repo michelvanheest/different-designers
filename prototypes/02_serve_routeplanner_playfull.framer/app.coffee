@@ -4,6 +4,7 @@
 # 🔵Defaults
 
 ## 🔴Variables
+defaultScroll = "Bezier(0.05, 0.58, 0.52, 0.95)"
 defaultBezier = "Bezier(0.46, 0.92, 0.46, 0.92)"
 defaultSpring = "spring(250, 20, 5)"
 
@@ -19,7 +20,9 @@ gradient_pressed = new Gradient
 
 loading_gradient_left = new Gradient
 	start: "#FFFFFF"
-	end: "#FCFCFC"
+# 	end: "#EDEDED"
+	end: "#F2F2F2"
+# 	end: "#F9F9F9"
 	angle: 270
 	
 loading_gradient_right = new Gradient
@@ -31,6 +34,7 @@ bg_img_default.opacity = 1
 bg_img_footer.opacity = 1
 bg_img_footer.y = 1403
 routeplanner_planning.opacity = 0
+bg_img_planning.opacity = 0
 plan_button.y = 680
 markerA.opacity = 1
 markerB.opacity = 0
@@ -38,6 +42,9 @@ markerB.y = 50
 markerB.scale = 0.8
 road_alternative.opacity = 0
 route_extra_info_1_content.opacity = 0
+route_extra_info_2_content.opacity = 0
+route_extra_info_3_content.opacity = 0
+route_directions.opacity = 0
 
 ## 🔴Create main_frame
 flow = new FlowComponent
@@ -123,15 +130,16 @@ road_alternative.states =
 			curve: defaultBezier
 
 # 🔵Content preloaders
+##01
 content_loader_route_extra_info_1 = new Layer
 	width: 317
 	height: 100
 	x: 18
-	y: 35
+	y: 55
 	z: 999
+	borderRadius: 8
 	parent: route_extra_info_1
 	gradient: loading_gradient_right
-
 content_loader_route_extra_info_1.states =
 	1:
 		gradient: loading_gradient_left
@@ -146,16 +154,215 @@ content_loader_route_extra_info_1.states =
 		options:
 			time: 2
 
+##02
+content_loader_route_extra_info_2 = new Layer
+	width: 317
+	height: 100
+	x: 18
+	y: 55
+	z: 999
+	borderRadius: 8
+	parent: route_extra_info_2
+	gradient: loading_gradient_right
+content_loader_route_extra_info_2.states =
+	1:
+		gradient: loading_gradient_left
+		width: 0
+		x: 18
+		options:
+			time: 0
+	2: 
+		gradient: loading_gradient_right
+		width: 317
+		x: 18
+		options:
+			time: 2
+
+##03
+content_loader_route_extra_info_3 = new Layer
+	width: 317
+	height: 100
+	x: 18
+	y: 55
+	z: 999
+	borderRadius: 8
+	parent: route_extra_info_3
+	gradient: loading_gradient_right
+content_loader_route_extra_info_3.states =
+	1:
+		gradient: loading_gradient_left
+		width: 0
+		x: 18
+		options:
+			time: 0
+	2: 
+		gradient: loading_gradient_right
+		width: 317
+		x: 18
+		options:
+			time: 2
+
+##01
+route_directions_info_1 = new Layer
+	width: 514
+	height: 80
+	x: 16
+	y: 119
+	z: 999
+	borderRadius: 8
+	parent: route_info
+	gradient: loading_gradient_right
+route_directions_info_1.states =
+	1:
+		gradient: loading_gradient_left
+		width: 0
+		x: 16
+		options:
+			time: 0
+	2: 
+		gradient: loading_gradient_right
+		width: 514
+		x: 16
+		options:
+			time: 2
+
+##02
+route_directions_info_2 = new Layer
+	width: 514
+	height: 103
+	x: 16
+	y: 229
+	z: 999
+	borderRadius: 8
+	parent: route_info
+	gradient: loading_gradient_right
+route_directions_info_2.states =
+	1:
+		gradient: loading_gradient_left
+		width: 0
+		x: 16
+		options:
+			time: 0
+	2: 
+		gradient: loading_gradient_right
+		width: 514
+		x: 16
+		options:
+			time: 2
+
+##03
+route_directions_info_3 = new Layer
+	width: 514
+	height: 103
+	x: 16
+	y: 363
+	z: 999
+	borderRadius: 8
+	parent: route_info
+	gradient: loading_gradient_right
+route_directions_info_3.states =
+	1:
+		gradient: loading_gradient_left
+		width: 0
+		x: 16
+		options:
+			time: 0
+	2: 
+		gradient: loading_gradient_right
+		width: 514
+		x: 16
+		options:
+			time: 2
+
+##04
+route_directions_info_4 = new Layer
+	width: 514
+	height: 103
+	x: 16
+	y: 497
+	z: 999
+	borderRadius: 8
+	parent: route_info
+	gradient: loading_gradient_right
+route_directions_info_4.states =
+	1:
+		gradient: loading_gradient_left
+		width: 0
+		x: 16
+		options:
+			time: 0
+	2: 
+		gradient: loading_gradient_right
+		width: 514
+		x: 16
+		options:
+			time: 2
+
+##05
+route_directions_info_5 = new Layer
+	width: 514
+	height: 103
+	x: 16
+	y: 631
+	z: 999
+	borderRadius: 8
+	parent: route_info
+	gradient: loading_gradient_right
+route_directions_info_5.states =
+	1:
+		gradient: loading_gradient_left
+		width: 0
+		x: 16
+		options:
+			time: 0
+	2: 
+		gradient: loading_gradient_right
+		width: 514
+		x: 16
+		options:
+			time: 2
+
+##06
+route_directions_info_6 = new Layer
+	width: 514
+	height: 103
+	x: 16
+	y: 765
+	z: 999
+	borderRadius: 8
+	parent: route_info
+	gradient: loading_gradient_right
+route_directions_info_6.states =
+	1:
+		gradient: loading_gradient_left
+		width: 0
+		x: 16
+		options:
+			time: 0
+	2: 
+		gradient: loading_gradient_right
+		width: 514
+		x: 16
+		options:
+			time: 2
+
 # 🔵Trigger
 plan_button.onTap ->
 	# scroll to route content
 	Utils.delay 0.2, ->
+# 		scroll.scrollToPoint(
+# 			y: 780
+# 			true
+# 			options:
+# 				time: 0.4
+# 				curve: defaultBezier
+# 		)
 		scroll.scrollToPoint(
 			y: 780
 			true
 			options:
-				time: 0.4
-				curve: defaultBezier
+				time: 0.6
+				curve: defaultScroll
 		)
 		# move footer down
 		bg_img_footer.y = 2057
@@ -164,12 +371,12 @@ plan_button.onTap ->
 			bg_img_default.animate
 				opacity: 0
 				options: 
-					time: 0.8
+					time: 0.2
 					curve: defaultBezier
 			routeplanner_planning.animate
 				opacity: 1
 				options: 
-					time: 0.8
+					time: 0.4
 					curve: defaultBezier
 			Utils.delay 1.24, ->
 				# animate road_main on map
@@ -178,17 +385,64 @@ plan_button.onTap ->
 				content_loader_route_extra_info_1.animate "1"
 				content_loader_route_extra_info_1.onAnimationEnd ->
 					content_loader_route_extra_info_1.stateCycle("1", "2")
+				content_loader_route_extra_info_2.animate "1"
+				content_loader_route_extra_info_2.onAnimationEnd ->
+					content_loader_route_extra_info_2.stateCycle("1", "2")
+				content_loader_route_extra_info_3.animate "1"
+				content_loader_route_extra_info_3.onAnimationEnd ->
+					content_loader_route_extra_info_3.stateCycle("1", "2")
+				route_directions_info_1.animate "1"
+				route_directions_info_1.onAnimationEnd ->
+					route_directions_info_1.stateCycle("1", "2")
+				route_directions_info_2.animate "1"
+				route_directions_info_2.onAnimationEnd ->
+					route_directions_info_2.stateCycle("1", "2")
+				route_directions_info_3.animate "1"
+				route_directions_info_3.onAnimationEnd ->
+					route_directions_info_3.stateCycle("1", "2")
+				route_directions_info_4.animate "1"
+				route_directions_info_4.onAnimationEnd ->
+					route_directions_info_4.stateCycle("1", "2")
+				route_directions_info_5.animate "1"
+				route_directions_info_5.onAnimationEnd ->
+					route_directions_info_5.stateCycle("1", "2")
+				route_directions_info_6.animate "1"
+				route_directions_info_6.onAnimationEnd ->
+					route_directions_info_6.stateCycle("1", "2")
 				Utils.delay 1.6, ->
 					# animate markers on map
 					markerB.stateCycle("visible")
 					Utils.delay 0.4, ->
 						# animate road_alternative on map
 						road_alternative.stateCycle("visible")
-						Utils.delay 1, ->
+						Utils.delay 2, ->
 							# show content
 							content_loader_route_extra_info_1.opacity = 0
-							Utils.delay 0.2, ->
+							content_loader_route_extra_info_2.opacity = 0
+							content_loader_route_extra_info_3.opacity = 0
+							route_directions_info_1.opacity = 0
+							route_directions_info_2.opacity = 0
+							route_directions_info_3.opacity = 0
+							route_directions_info_4.opacity = 0
+							route_directions_info_5.opacity = 0
+							route_directions_info_6.opacity = 0
+							Utils.delay 0.16, ->
 								route_extra_info_1_content.animate
+									opacity: 1
+									options: 
+										time: 0.8
+										curve: defaultBezier
+								route_extra_info_2_content.animate
+									opacity: 1
+									options: 
+										time: 0.8
+										curve: defaultBezier
+								route_extra_info_3_content.animate
+									opacity: 1
+									options: 
+										time: 0.8
+										curve: defaultBezier
+								route_directions.animate
 									opacity: 1
 									options: 
 										time: 0.8
