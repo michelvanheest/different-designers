@@ -1,0 +1,61 @@
+{
+  "root" : {
+    "__class" : "CanvasNode",
+    "children" : [
+      {
+        "__class" : "RectangleShapeNode",
+        "aspectRatioLocked" : false,
+        "boxShadows" : [
+
+        ],
+        "exportOptions" : [
+
+        ],
+        "fillColor" : "#F7F7F7",
+        "fillEnabled" : true,
+        "fillGradient" : {
+          "__class" : "LinearGradient",
+          "alpha" : 1,
+          "angle" : 270,
+          "end" : "hsl(0, 0%, 100%)",
+          "start" : "hsl(0, 0%, 97%)"
+        },
+        "fillImage" : null,
+        "fillImagePixelHeight" : null,
+        "fillImagePixelWidth" : null,
+        "fillImageResize" : "fill",
+        "fillType" : "color",
+        "height" : 200,
+        "id" : "OQmIEchxU",
+        "lineCap" : "butt",
+        "lineJoin" : "miter",
+        "locked" : false,
+        "name" : null,
+        "opacity" : 1,
+        "parentid" : "Bmn_8FKgR",
+        "radius" : 0,
+        "radiusBottomLeft" : 0,
+        "radiusBottomRight" : 0,
+        "radiusPerCorner" : false,
+        "radiusTopLeft" : 0,
+        "radiusTopRight" : 0,
+        "rotation" : 0,
+        "strokeAlignment" : "center",
+        "strokeColor" : "hsla(0, 0%, 83%, 0.24)",
+        "strokeDashArray" : "0",
+        "strokeDashOffset" : 0,
+        "strokeEnabled" : -1,
+        "strokeMiterLimit" : 4,
+        "strokeWidth" : 1,
+        "targetName" : null,
+        "visible" : true,
+        "width" : 400,
+        "x" : 0,
+        "y" : 248
+      }
+    ],
+    "id" : "Bmn_8FKgR",
+    "parentid" : null
+  },
+  "version" : 21
+}
