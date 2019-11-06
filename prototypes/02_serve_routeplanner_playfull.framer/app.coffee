@@ -380,7 +380,8 @@ plan_button.onTap ->
 					curve: defaultBezier
 			Utils.delay 1.24, ->
 				# animate road_main on map
-				road_main.states.next()
+# 				road_main.states.next()
+				road_main.stateCycle("second")
 				# start animating content_loaders
 				content_loader_route_extra_info_1.animate "1"
 				content_loader_route_extra_info_1.onAnimationEnd ->
