@@ -9845,7 +9845,6 @@
                         "locked" : false,
                         "name" : "map_bottom_part",
                         "opacity" : 1,
-                        "originalFilename" : "map_bottom_part.png",
                         "parentid" : "pL7_Lt20d",
                         "radius" : 0,
                         "radiusBottomLeft" : 0,
@@ -10017,7 +10016,6 @@
                         "locked" : false,
                         "name" : "route_directions",
                         "opacity" : 1,
-                        "originalFilename" : "route_directions.png",
                         "parentid" : "CWemgwRGa",
                         "radius" : 0,
                         "radiusBottomLeft" : 0,
@@ -10665,7 +10663,6 @@
                         "locked" : false,
                         "name" : "route_top",
                         "opacity" : 1,
-                        "originalFilename" : "route_top.png",
                         "parentid" : "CWemgwRGa",
                         "radius" : 0,
                         "radiusBottomLeft" : 0,
@@ -10970,7 +10967,9 @@
           "blocks" : [
             {
               "data" : {
+                "emptyStyle" : [
 
+                ]
               },
               "depth" : 0,
               "entityRanges" : [
