@@ -416,7 +416,7 @@ plan_button.onTap ->
 					Utils.delay 0.4, ->
 						# animate road_alternative on map
 						road_alternative.stateCycle("visible")
-						Utils.delay 1.8, ->
+						Utils.delay 0.8, ->
 							# show content
 							content_loader_route_extra_info_1.opacity = 0
 							content_loader_route_extra_info_2.opacity = 0
