@@ -379,9 +379,6 @@ plan_button.onTap ->
 					time: 0.4
 					curve: defaultBezier
 			Utils.delay 1.24, ->
-				# animate road_main on map
-# 				road_main.states.next()
-				road_main.stateCycle("second")
 				# start animating content_loaders
 				content_loader_route_extra_info_1.animate "1"
 				content_loader_route_extra_info_1.onAnimationEnd ->
@@ -410,41 +407,47 @@ plan_button.onTap ->
 				route_directions_info_6.animate "1"
 				route_directions_info_6.onAnimationEnd ->
 					route_directions_info_6.stateCycle("1", "2")
-				Utils.delay 1.6, ->
-					# animate markers on map
-					markerB.stateCycle("visible")
-					Utils.delay 0.4, ->
-						# animate road_alternative on map
-						road_alternative.stateCycle("visible")
-						Utils.delay 0.8, ->
-							# show content
-							content_loader_route_extra_info_1.opacity = 0
-							content_loader_route_extra_info_2.opacity = 0
-							content_loader_route_extra_info_3.opacity = 0
-							route_directions_info_1.opacity = 0
-							route_directions_info_2.opacity = 0
-							route_directions_info_3.opacity = 0
-							route_directions_info_4.opacity = 0
-							route_directions_info_5.opacity = 0
-							route_directions_info_6.opacity = 0
-							Utils.delay 0.16, ->
-								route_extra_info_1_content.animate
-									opacity: 1
-									options: 
-										time: 0.8
-										curve: defaultBezier
-								route_extra_info_2_content.animate
-									opacity: 1
-									options: 
-										time: 0.8
-										curve: defaultBezier
-								route_extra_info_3_content.animate
-									opacity: 1
-									options: 
-										time: 0.8
-										curve: defaultBezier
-								route_directions.animate
-									opacity: 1
-									options: 
-										time: 0.8
-										curve: defaultBezier
+				
+					Utils.delay 2.4, ->
+						# show content
+						content_loader_route_extra_info_1.opacity = 0
+						content_loader_route_extra_info_2.opacity = 0
+						content_loader_route_extra_info_3.opacity = 0
+						route_directions_info_1.opacity = 0
+						route_directions_info_2.opacity = 0
+						route_directions_info_3.opacity = 0
+						route_directions_info_4.opacity = 0
+						route_directions_info_5.opacity = 0
+						route_directions_info_6.opacity = 0
+						Utils.delay 0.16, ->
+							route_extra_info_1_content.animate
+								opacity: 1
+								options: 
+									time: 0.8
+									curve: defaultBezier
+							route_extra_info_2_content.animate
+								opacity: 1
+								options: 
+									time: 0.8
+									curve: defaultBezier
+							route_extra_info_3_content.animate
+								opacity: 1
+								options: 
+									time: 0.8
+									curve: defaultBezier
+							route_directions.animate
+								opacity: 1
+								options: 
+									time: 0.8
+									curve: defaultBezier
+				
+							Utils.delay 0.16, -> 
+								# animate road_main on map
+								road_main.stateCycle("second")
+								Utils.delay 1.6, ->
+									# animate markers on map
+									markerB.stateCycle("visible")
+									Utils.delay 0.4, ->
+										# animate road_alternative on map
+										road_alternative.stateCycle("visible")
+
