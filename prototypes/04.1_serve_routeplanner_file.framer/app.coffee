@@ -140,6 +140,46 @@ road_alternative_2.states =
 		animationOptions:
 			curve: defaultBezier
 
+# 🔵Shake animation
+shake = (view, times=4) ->
+	i = 0
+	
+	right = new Animation
+		layer: view
+		properties: 
+			x: view.x + 2
+		curve: "bezier-curve"
+		time: 0.08
+		
+	left = new Animation
+		layer: view
+		properties: 
+			x: view.x - 2
+		curve: "bezier-curve"
+		time: 0.08
+
+	right.on "end", ->
+		if i < times
+			left.start()
+			i++
+		else
+			view.animate
+				properties:
+					x: view.x-1
+				time: 0.1
+				
+	left.on "end", ->
+		if i < times
+			right.start()
+			i++
+		else
+			view.animate
+				properties:
+					x: view.x+1
+				time: 0.1
+   
+	right.start()
+
 # 🔵Content preloaders
 ##01
 content_loader_route_extra_info_1 = new Layer
@@ -452,17 +492,56 @@ plan_button.onTap ->
 								time: 0.8
 								curve: defaultBezier
 
+# 🔵Switch road + view traffic
 road_alternative_1.onClick ->
 	road_main.opacity = 0.4
 	road_alternative_1.opacity = 1
 	road_alternative_2.opacity = 0.4
+	route_extra_info_1_content.animate
+		opacity: 0
+		options:
+			time: 0.2
+	route_extra_info_1_content_alternative_1.animate
+		opacity: 1
+		options:
+			time: 0.2
+	route_extra_info_1_content_alternative_2.animate
+		opacity: 0
+		options:
+			time: 0.2
+	shake vertraging_1
 
 road_alternative_2.onClick ->
 	road_main.opacity = 0.4
 	road_alternative_1.opacity = 0.4
 	road_alternative_2.opacity = 1
+	route_extra_info_1_content.animate
+		opacity: 0
+		options:
+			time: 0.2
+	route_extra_info_1_content_alternative_1.animate
+		opacity: 0
+		options:
+			time: 0.2
+	route_extra_info_1_content_alternative_2.animate
+		opacity: 1
+		options:
+			time: 0.2
+		shake vertraging_2
 	
 road_main.onClick ->
 	road_main.opacity = 1
 	road_alternative_1.opacity = 0.4
 	road_alternative_2.opacity = 0.4
+	route_extra_info_1_content.animate
+		opacity: 1
+		options:
+			time: 0.2
+	route_extra_info_1_content_alternative_1.animate
+		opacity: 0
+		options:
+			time: 0.2
+	route_extra_info_1_content_alternative_2.animate
+		opacity: 0
+		options:
+			time: 0.2

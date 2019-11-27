@@ -7415,6 +7415,117 @@
                             "visible" : true,
                             "width" : 60,
                             "widthFactor" : null
+                          },
+                          {
+                            "__class" : "TextNode",
+                            "autoSize" : true,
+                            "blendingEnabled" : 0,
+                            "blendingMode" : "normal",
+                            "blur" : 12,
+                            "blurEnabled" : 0,
+                            "blurType" : "layer",
+                            "bottom" : null,
+                            "brightness" : 100,
+                            "brightnessEnabled" : 0,
+                            "centerAnchorX" : 0.11829652996845426,
+                            "centerAnchorY" : 0.11475409836065574,
+                            "constraintsLocked" : false,
+                            "contrast" : 100,
+                            "contrastEnabled" : 0,
+                            "editable" : false,
+                            "exportOptions" : [
+
+                            ],
+                            "grayscale" : 0,
+                            "grayScaleEnabled" : 0,
+                            "height" : 28,
+                            "heightFactor" : null,
+                            "hueRotate" : 0,
+                            "hueRotateEnabled" : 0,
+                            "id" : "MVQmc_nLv",
+                            "invert" : 0,
+                            "invertEnabled" : 0,
+                            "left" : 0,
+                            "locked" : false,
+                            "name" : null,
+                            "opacity" : 1,
+                            "parentid" : "iMIb54e4j",
+                            "right" : null,
+                            "rotation" : 0,
+                            "saturate" : 100,
+                            "saturateEnabled" : 0,
+                            "sepia" : 0,
+                            "sepiaEnabled" : 0,
+                            "shadows" : [
+
+                            ],
+                            "styledText" : {
+                              "__class" : "StyledTextDraft",
+                              "blocks" : [
+                                {
+                                  "data" : {
+                                    "emptyStyle" : [
+                                      "LETTERSPACING:0",
+                                      "LINEHEIGHT:1.2",
+                                      "COLOR:#063E83",
+                                      "FONT:TheSansC4s-SemiLightItalic",
+                                      "SIZE:24"
+                                    ]
+                                  },
+                                  "depth" : 0,
+                                  "entityRanges" : [
+
+                                  ],
+                                  "inlineStyleRanges" : [
+                                    {
+                                      "length" : 6,
+                                      "offset" : 0,
+                                      "style" : "LETTERSPACING:0"
+                                    },
+                                    {
+                                      "length" : 6,
+                                      "offset" : 0,
+                                      "style" : "LINEHEIGHT:1.2"
+                                    },
+                                    {
+                                      "length" : 6,
+                                      "offset" : 0,
+                                      "style" : "COLOR:#063E83"
+                                    },
+                                    {
+                                      "length" : 6,
+                                      "offset" : 0,
+                                      "style" : "FONT:TheSansC4s-SemiLightItalic"
+                                    },
+                                    {
+                                      "length" : 6,
+                                      "offset" : 0,
+                                      "style" : "SIZE:24"
+                                    }
+                                  ],
+                                  "key" : "bgl4s",
+                                  "text" : "43 min",
+                                  "type" : "unstyled"
+                                }
+                              ],
+                              "cached" : {
+                                "html" : "<span data-offset-key=\"bgl4s-0-0\" style=\"tab-size:4;font-weight:300;font-family:&quot;TheSansC4s-SemiLightItalic&quot;, &quot;TheSans C4s&quot;, sans-serif;-webkit-text-fill-color:#063E83;font-size:24px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">43 min<\/span><\/span>",
+                                "os" : "10_14",
+                                "size" : {
+                                  "height" : 28,
+                                  "width" : 71
+                                },
+                                "width" : 0
+                              },
+                              "entityMap" : {
+
+                              }
+                            },
+                            "targetName" : null,
+                            "top" : 0,
+                            "visible" : true,
+                            "width" : 71,
+                            "widthFactor" : null
                           }
                         ],
                         "clip" : false,
@@ -7476,114 +7587,1529 @@
                         "widthFactor" : null
                       },
                       {
-                        "__class" : "TextNode",
-                        "autoSize" : true,
+                        "__class" : "FrameNode",
+                        "aspectRatioLocked" : false,
                         "blendingEnabled" : 0,
                         "blendingMode" : "normal",
                         "blur" : 12,
                         "blurEnabled" : 0,
                         "blurType" : "layer",
-                        "bottom" : null,
+                        "borderBottom" : 1,
+                        "borderColor" : "#222",
+                        "borderEnabled" : 0,
+                        "borderLeft" : 1,
+                        "borderPerSide" : false,
+                        "borderRight" : 1,
+                        "borderStyle" : "solid",
+                        "borderTop" : 1,
+                        "borderWidth" : 1,
+                        "bottom" : 31,
+                        "boxShadows" : [
+
+                        ],
                         "brightness" : 100,
                         "brightnessEnabled" : 0,
-                        "centerAnchorX" : 0.14747191011235955,
-                        "centerAnchorY" : 0.1871345029239766,
+                        "centerAnchorX" : 0.4957865168539326,
+                        "centerAnchorY" : 0.46198830409356723,
+                        "children" : [
+                          {
+                            "__class" : "TextNode",
+                            "autoSize" : true,
+                            "blendingEnabled" : 0,
+                            "blendingMode" : "normal",
+                            "blur" : 12,
+                            "blurEnabled" : 0,
+                            "blurType" : "layer",
+                            "bottom" : null,
+                            "brightness" : 100,
+                            "brightnessEnabled" : 0,
+                            "centerAnchorX" : 0.17981072555205047,
+                            "centerAnchorY" : 0.38934426229508196,
+                            "constraintsLocked" : false,
+                            "contrast" : 100,
+                            "contrastEnabled" : 0,
+                            "editable" : false,
+                            "exportOptions" : [
+
+                            ],
+                            "grayscale" : 0,
+                            "grayScaleEnabled" : 0,
+                            "height" : 19,
+                            "heightFactor" : null,
+                            "hueRotate" : 0,
+                            "hueRotateEnabled" : 0,
+                            "id" : "lvI6KH3A_",
+                            "invert" : 0,
+                            "invertEnabled" : 0,
+                            "left" : 0,
+                            "locked" : false,
+                            "name" : "vertraging_1",
+                            "opacity" : 1,
+                            "parentid" : "yZrcBRfzA",
+                            "right" : null,
+                            "rotation" : 0,
+                            "saturate" : 100,
+                            "saturateEnabled" : 0,
+                            "sepia" : 0,
+                            "sepiaEnabled" : 0,
+                            "shadows" : [
+
+                            ],
+                            "styledText" : {
+                              "__class" : "StyledTextDraft",
+                              "blocks" : [
+                                {
+                                  "data" : {
+                                    "emptyStyle" : [
+                                      "LETTERSPACING:0",
+                                      "LINEHEIGHT:1.2",
+                                      "FONT:TheSansC4s-SemiLightItalic",
+                                      "SIZE:16",
+                                      "COLOR:#E66900"
+                                    ]
+                                  },
+                                  "depth" : 0,
+                                  "entityRanges" : [
+
+                                  ],
+                                  "inlineStyleRanges" : [
+                                    {
+                                      "length" : 21,
+                                      "offset" : 0,
+                                      "style" : "LETTERSPACING:0"
+                                    },
+                                    {
+                                      "length" : 21,
+                                      "offset" : 0,
+                                      "style" : "LINEHEIGHT:1.2"
+                                    },
+                                    {
+                                      "length" : 21,
+                                      "offset" : 0,
+                                      "style" : "FONT:TheSansC4s-SemiLightItalic"
+                                    },
+                                    {
+                                      "length" : 21,
+                                      "offset" : 0,
+                                      "style" : "SIZE:16"
+                                    },
+                                    {
+                                      "length" : 21,
+                                      "offset" : 0,
+                                      "style" : "COLOR:#E66900"
+                                    }
+                                  ],
+                                  "key" : "bgl4s",
+                                  "text" : "Incl. 1 min vertaging",
+                                  "type" : "unstyled"
+                                }
+                              ],
+                              "cached" : {
+                                "html" : "<span data-offset-key=\"bgl4s-0-0\" style=\"tab-size:4;font-weight:300;font-family:&quot;TheSansC4s-SemiLightItalic&quot;, &quot;TheSans C4s&quot;, sans-serif;-webkit-text-fill-color:#E66900;font-size:16px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">Incl. 1 min vertaging<\/span><\/span>",
+                                "os" : "10_14",
+                                "size" : {
+                                  "height" : 19,
+                                  "width" : 137
+                                },
+                                "width" : 0
+                              },
+                              "entityMap" : {
+
+                              }
+                            },
+                            "targetName" : "vertraging_1",
+                            "top" : 38,
+                            "visible" : true,
+                            "width" : 137,
+                            "widthFactor" : null
+                          },
+                          {
+                            "__class" : "TextNode",
+                            "autoSize" : true,
+                            "blendingEnabled" : 0,
+                            "blendingMode" : "normal",
+                            "blur" : 12,
+                            "blurEnabled" : 0,
+                            "blurType" : "layer",
+                            "bottom" : 31,
+                            "brightness" : 100,
+                            "brightnessEnabled" : 0,
+                            "centerAnchorX" : 0.11829652996845426,
+                            "centerAnchorY" : 0.68032786885245899,
+                            "constraintsLocked" : false,
+                            "contrast" : 100,
+                            "contrastEnabled" : 0,
+                            "editable" : false,
+                            "exportOptions" : [
+
+                            ],
+                            "grayscale" : 0,
+                            "grayScaleEnabled" : 0,
+                            "height" : 16,
+                            "heightFactor" : null,
+                            "hueRotate" : 0,
+                            "hueRotateEnabled" : 0,
+                            "id" : "x0nvv3bie",
+                            "invert" : 0,
+                            "invertEnabled" : 0,
+                            "left" : 2,
+                            "locked" : false,
+                            "name" : null,
+                            "opacity" : 1,
+                            "parentid" : "yZrcBRfzA",
+                            "right" : null,
+                            "rotation" : 0,
+                            "saturate" : 100,
+                            "saturateEnabled" : 0,
+                            "sepia" : 0,
+                            "sepiaEnabled" : 0,
+                            "shadows" : [
+
+                            ],
+                            "styledText" : {
+                              "__class" : "StyledTextDraft",
+                              "blocks" : [
+                                {
+                                  "data" : {
+                                    "emptyStyle" : [
+                                      "LETTERSPACING:0",
+                                      "LINEHEIGHT:1.2",
+                                      "COLOR:#5D97BD",
+                                      "FONT:Verdana",
+                                      "SIZE:14"
+                                    ]
+                                  },
+                                  "depth" : 0,
+                                  "entityRanges" : [
+
+                                  ],
+                                  "inlineStyleRanges" : [
+                                    {
+                                      "length" : 8,
+                                      "offset" : 0,
+                                      "style" : "LETTERSPACING:0"
+                                    },
+                                    {
+                                      "length" : 8,
+                                      "offset" : 0,
+                                      "style" : "LINEHEIGHT:1.2"
+                                    },
+                                    {
+                                      "length" : 8,
+                                      "offset" : 0,
+                                      "style" : "COLOR:#5D97BD"
+                                    },
+                                    {
+                                      "length" : 8,
+                                      "offset" : 0,
+                                      "style" : "FONT:Verdana"
+                                    },
+                                    {
+                                      "length" : 8,
+                                      "offset" : 0,
+                                      "style" : "SIZE:14"
+                                    }
+                                  ],
+                                  "key" : "bgl4s",
+                                  "text" : "Aankomst",
+                                  "type" : "unstyled"
+                                }
+                              ],
+                              "cached" : {
+                                "html" : "<span data-offset-key=\"bgl4s-0-0\" style=\"tab-size:4;font-weight:400;font-family:&quot;Verdana&quot;, sans-serif;-webkit-text-fill-color:#5D97BD;font-size:14px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">Aankomst<\/span><\/span>",
+                                "os" : "10_14",
+                                "size" : {
+                                  "height" : 16,
+                                  "width" : 71
+                                },
+                                "width" : 0
+                              },
+                              "entityMap" : {
+
+                              }
+                            },
+                            "targetName" : null,
+                            "top" : null,
+                            "visible" : true,
+                            "width" : 71,
+                            "widthFactor" : null
+                          },
+                          {
+                            "__class" : "TextNode",
+                            "autoSize" : true,
+                            "blendingEnabled" : 0,
+                            "blendingMode" : "normal",
+                            "blur" : 12,
+                            "blurEnabled" : 0,
+                            "blurType" : "layer",
+                            "bottom" : 1,
+                            "brightness" : 100,
+                            "brightnessEnabled" : 0,
+                            "centerAnchorX" : 0.093059936908517354,
+                            "centerAnchorY" : 0.92622950819672134,
+                            "constraintsLocked" : false,
+                            "contrast" : 100,
+                            "contrastEnabled" : 0,
+                            "editable" : false,
+                            "exportOptions" : [
+
+                            ],
+                            "grayscale" : 0,
+                            "grayScaleEnabled" : 0,
+                            "height" : 16,
+                            "heightFactor" : null,
+                            "hueRotate" : 0,
+                            "hueRotateEnabled" : 0,
+                            "id" : "tZlrzvyNw",
+                            "invert" : 0,
+                            "invertEnabled" : 0,
+                            "left" : 2,
+                            "locked" : false,
+                            "name" : null,
+                            "opacity" : 1,
+                            "parentid" : "yZrcBRfzA",
+                            "right" : null,
+                            "rotation" : 0,
+                            "saturate" : 100,
+                            "saturateEnabled" : 0,
+                            "sepia" : 0,
+                            "sepiaEnabled" : 0,
+                            "shadows" : [
+
+                            ],
+                            "styledText" : {
+                              "__class" : "StyledTextDraft",
+                              "blocks" : [
+                                {
+                                  "data" : {
+                                    "emptyStyle" : [
+                                      "LETTERSPACING:0",
+                                      "LINEHEIGHT:1.2",
+                                      "COLOR:#5D97BD",
+                                      "FONT:Verdana",
+                                      "SIZE:14"
+                                    ]
+                                  },
+                                  "depth" : 0,
+                                  "entityRanges" : [
+
+                                  ],
+                                  "inlineStyleRanges" : [
+                                    {
+                                      "length" : 7,
+                                      "offset" : 0,
+                                      "style" : "LETTERSPACING:0"
+                                    },
+                                    {
+                                      "length" : 7,
+                                      "offset" : 0,
+                                      "style" : "LINEHEIGHT:1.2"
+                                    },
+                                    {
+                                      "length" : 7,
+                                      "offset" : 0,
+                                      "style" : "COLOR:#5D97BD"
+                                    },
+                                    {
+                                      "length" : 7,
+                                      "offset" : 0,
+                                      "style" : "FONT:Verdana"
+                                    },
+                                    {
+                                      "length" : 7,
+                                      "offset" : 0,
+                                      "style" : "SIZE:14"
+                                    }
+                                  ],
+                                  "key" : "bgl4s",
+                                  "text" : "Afstand",
+                                  "type" : "unstyled"
+                                }
+                              ],
+                              "cached" : {
+                                "html" : "<span data-offset-key=\"bgl4s-0-0\" style=\"tab-size:4;font-weight:400;font-family:&quot;Verdana&quot;, sans-serif;-webkit-text-fill-color:#5D97BD;font-size:14px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">Afstand<\/span><\/span>",
+                                "os" : "10_14",
+                                "size" : {
+                                  "height" : 16,
+                                  "width" : 55
+                                },
+                                "width" : 0
+                              },
+                              "entityMap" : {
+
+                              }
+                            },
+                            "targetName" : null,
+                            "top" : null,
+                            "visible" : true,
+                            "width" : 55,
+                            "widthFactor" : null
+                          },
+                          {
+                            "__class" : "TextNode",
+                            "autoSize" : true,
+                            "blendingEnabled" : 0,
+                            "blendingMode" : "normal",
+                            "blur" : 12,
+                            "blurEnabled" : 0,
+                            "blurType" : "layer",
+                            "bottom" : 30,
+                            "brightness" : 100,
+                            "brightnessEnabled" : 0,
+                            "centerAnchorX" : 0.93217665615141954,
+                            "centerAnchorY" : 0.68852459016393441,
+                            "constraintsLocked" : false,
+                            "contrast" : 100,
+                            "contrastEnabled" : 0,
+                            "editable" : false,
+                            "exportOptions" : [
+
+                            ],
+                            "grayscale" : 0,
+                            "grayScaleEnabled" : 0,
+                            "height" : 16,
+                            "heightFactor" : null,
+                            "hueRotate" : 0,
+                            "hueRotateEnabled" : 0,
+                            "id" : "ue_t3GJnu",
+                            "invert" : 0,
+                            "invertEnabled" : 0,
+                            "left" : null,
+                            "locked" : false,
+                            "name" : null,
+                            "opacity" : 1,
+                            "parentid" : "yZrcBRfzA",
+                            "right" : 0,
+                            "rotation" : 0,
+                            "saturate" : 100,
+                            "saturateEnabled" : 0,
+                            "sepia" : 0,
+                            "sepiaEnabled" : 0,
+                            "shadows" : [
+
+                            ],
+                            "styledText" : {
+                              "__class" : "StyledTextDraft",
+                              "blocks" : [
+                                {
+                                  "data" : {
+                                    "emptyStyle" : [
+                                      "LETTERSPACING:0",
+                                      "LINEHEIGHT:1.2",
+                                      "FONT:Verdana",
+                                      "SIZE:14",
+                                      "ALIGN:right",
+                                      "COLOR:#2B5884"
+                                    ]
+                                  },
+                                  "depth" : 0,
+                                  "entityRanges" : [
+
+                                  ],
+                                  "inlineStyleRanges" : [
+                                    {
+                                      "length" : 5,
+                                      "offset" : 0,
+                                      "style" : "LETTERSPACING:0"
+                                    },
+                                    {
+                                      "length" : 5,
+                                      "offset" : 0,
+                                      "style" : "LINEHEIGHT:1.2"
+                                    },
+                                    {
+                                      "length" : 5,
+                                      "offset" : 0,
+                                      "style" : "FONT:Verdana"
+                                    },
+                                    {
+                                      "length" : 5,
+                                      "offset" : 0,
+                                      "style" : "SIZE:14"
+                                    },
+                                    {
+                                      "length" : 5,
+                                      "offset" : 0,
+                                      "style" : "ALIGN:right"
+                                    },
+                                    {
+                                      "length" : 5,
+                                      "offset" : 0,
+                                      "style" : "COLOR:#2B5884"
+                                    }
+                                  ],
+                                  "key" : "bgl4s",
+                                  "text" : "16:20",
+                                  "type" : "unstyled"
+                                }
+                              ],
+                              "cached" : {
+                                "html" : "<span data-offset-key=\"bgl4s-0-0\" style=\"tab-size:4;font-weight:400;font-family:&quot;Verdana&quot;, sans-serif;-webkit-text-fill-color:#2B5884;font-size:14px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">16:20<\/span><\/span>",
+                                "os" : "10_14",
+                                "size" : {
+                                  "height" : 16,
+                                  "width" : 43
+                                },
+                                "width" : 0
+                              },
+                              "entityMap" : {
+
+                              }
+                            },
+                            "targetName" : null,
+                            "top" : null,
+                            "visible" : true,
+                            "width" : 43,
+                            "widthFactor" : null
+                          },
+                          {
+                            "__class" : "TextNode",
+                            "autoSize" : true,
+                            "blendingEnabled" : 0,
+                            "blendingMode" : "normal",
+                            "blur" : 12,
+                            "blurEnabled" : 0,
+                            "blurType" : "layer",
+                            "bottom" : 0,
+                            "brightness" : 100,
+                            "brightnessEnabled" : 0,
+                            "centerAnchorX" : 0.90536277602523663,
+                            "centerAnchorY" : 0.93442622950819676,
+                            "constraintsLocked" : false,
+                            "contrast" : 100,
+                            "contrastEnabled" : 0,
+                            "editable" : false,
+                            "exportOptions" : [
+
+                            ],
+                            "grayscale" : 0,
+                            "grayScaleEnabled" : 0,
+                            "height" : 16,
+                            "heightFactor" : null,
+                            "hueRotate" : 0,
+                            "hueRotateEnabled" : 0,
+                            "id" : "pHjTiqKvA",
+                            "invert" : 0,
+                            "invertEnabled" : 0,
+                            "left" : null,
+                            "locked" : false,
+                            "name" : null,
+                            "opacity" : 1,
+                            "parentid" : "yZrcBRfzA",
+                            "right" : 0,
+                            "rotation" : 0,
+                            "saturate" : 100,
+                            "saturateEnabled" : 0,
+                            "sepia" : 0,
+                            "sepiaEnabled" : 0,
+                            "shadows" : [
+
+                            ],
+                            "styledText" : {
+                              "__class" : "StyledTextDraft",
+                              "blocks" : [
+                                {
+                                  "data" : {
+                                    "emptyStyle" : [
+                                      "LETTERSPACING:0",
+                                      "LINEHEIGHT:1.2",
+                                      "FONT:Verdana",
+                                      "SIZE:14",
+                                      "ALIGN:right",
+                                      "COLOR:#2B5884"
+                                    ]
+                                  },
+                                  "depth" : 0,
+                                  "entityRanges" : [
+
+                                  ],
+                                  "inlineStyleRanges" : [
+                                    {
+                                      "length" : 7,
+                                      "offset" : 0,
+                                      "style" : "LETTERSPACING:0"
+                                    },
+                                    {
+                                      "length" : 7,
+                                      "offset" : 0,
+                                      "style" : "LINEHEIGHT:1.2"
+                                    },
+                                    {
+                                      "length" : 7,
+                                      "offset" : 0,
+                                      "style" : "FONT:Verdana"
+                                    },
+                                    {
+                                      "length" : 7,
+                                      "offset" : 0,
+                                      "style" : "SIZE:14"
+                                    },
+                                    {
+                                      "length" : 7,
+                                      "offset" : 0,
+                                      "style" : "ALIGN:right"
+                                    },
+                                    {
+                                      "length" : 7,
+                                      "offset" : 0,
+                                      "style" : "COLOR:#2B5884"
+                                    }
+                                  ],
+                                  "key" : "bgl4s",
+                                  "text" : "68,4 km",
+                                  "type" : "unstyled"
+                                }
+                              ],
+                              "cached" : {
+                                "html" : "<span data-offset-key=\"bgl4s-0-0\" style=\"tab-size:4;font-weight:400;font-family:&quot;Verdana&quot;, sans-serif;-webkit-text-fill-color:#2B5884;font-size:14px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">68,4 km<\/span><\/span>",
+                                "os" : "10_14",
+                                "size" : {
+                                  "height" : 16,
+                                  "width" : 60
+                                },
+                                "width" : 0
+                              },
+                              "entityMap" : {
+
+                              }
+                            },
+                            "targetName" : null,
+                            "top" : null,
+                            "visible" : true,
+                            "width" : 60,
+                            "widthFactor" : null
+                          },
+                          {
+                            "__class" : "TextNode",
+                            "autoSize" : true,
+                            "blendingEnabled" : 0,
+                            "blendingMode" : "normal",
+                            "blur" : 12,
+                            "blurEnabled" : 0,
+                            "blurType" : "layer",
+                            "bottom" : null,
+                            "brightness" : 100,
+                            "brightnessEnabled" : 0,
+                            "centerAnchorX" : 0.11829652996845426,
+                            "centerAnchorY" : 0.11475409836065574,
+                            "constraintsLocked" : false,
+                            "contrast" : 100,
+                            "contrastEnabled" : 0,
+                            "editable" : false,
+                            "exportOptions" : [
+
+                            ],
+                            "grayscale" : 0,
+                            "grayScaleEnabled" : 0,
+                            "height" : 28,
+                            "heightFactor" : null,
+                            "hueRotate" : 0,
+                            "hueRotateEnabled" : 0,
+                            "id" : "qLA69MCiO",
+                            "invert" : 0,
+                            "invertEnabled" : 0,
+                            "left" : 0,
+                            "locked" : false,
+                            "name" : "51 min",
+                            "opacity" : 1,
+                            "parentid" : "yZrcBRfzA",
+                            "right" : null,
+                            "rotation" : 0,
+                            "saturate" : 100,
+                            "saturateEnabled" : 0,
+                            "sepia" : 0,
+                            "sepiaEnabled" : 0,
+                            "shadows" : [
+
+                            ],
+                            "styledText" : {
+                              "__class" : "StyledTextDraft",
+                              "blocks" : [
+                                {
+                                  "data" : {
+                                    "emptyStyle" : [
+                                      "LETTERSPACING:0",
+                                      "LINEHEIGHT:1.2",
+                                      "COLOR:#063E83",
+                                      "FONT:TheSansC4s-SemiLightItalic",
+                                      "SIZE:24"
+                                    ]
+                                  },
+                                  "depth" : 0,
+                                  "entityRanges" : [
+
+                                  ],
+                                  "inlineStyleRanges" : [
+                                    {
+                                      "length" : 6,
+                                      "offset" : 0,
+                                      "style" : "LETTERSPACING:0"
+                                    },
+                                    {
+                                      "length" : 6,
+                                      "offset" : 0,
+                                      "style" : "LINEHEIGHT:1.2"
+                                    },
+                                    {
+                                      "length" : 6,
+                                      "offset" : 0,
+                                      "style" : "COLOR:#063E83"
+                                    },
+                                    {
+                                      "length" : 6,
+                                      "offset" : 0,
+                                      "style" : "FONT:TheSansC4s-SemiLightItalic"
+                                    },
+                                    {
+                                      "length" : 6,
+                                      "offset" : 0,
+                                      "style" : "SIZE:24"
+                                    }
+                                  ],
+                                  "key" : "bgl4s",
+                                  "text" : "51 min",
+                                  "type" : "unstyled"
+                                }
+                              ],
+                              "cached" : {
+                                "html" : "<span data-offset-key=\"bgl4s-0-0\" style=\"tab-size:4;font-weight:300;font-family:&quot;TheSansC4s-SemiLightItalic&quot;, &quot;TheSans C4s&quot;, sans-serif;-webkit-text-fill-color:#063E83;font-size:24px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">51 min<\/span><\/span>",
+                                "os" : "10_14",
+                                "size" : {
+                                  "height" : 28,
+                                  "width" : 66
+                                },
+                                "width" : 0
+                              },
+                              "entityMap" : {
+
+                              }
+                            },
+                            "targetName" : null,
+                            "top" : 0,
+                            "visible" : true,
+                            "width" : 66,
+                            "widthFactor" : null
+                          }
+                        ],
+                        "clip" : false,
                         "constraintsLocked" : false,
                         "contrast" : 100,
                         "contrastEnabled" : 0,
-                        "editable" : false,
+                        "deviceType" : null,
+                        "exportIncludesBackground" : true,
                         "exportOptions" : [
 
                         ],
+                        "fillColor" : "rgba(255,255,255,1)",
+                        "fillEnabled" : false,
+                        "fillGradient" : {
+                          "__class" : "LinearGradient",
+                          "alpha" : 1,
+                          "angle" : 0,
+                          "end" : "rgba(0,0,0,0)",
+                          "start" : "black"
+                        },
+                        "fillImage" : null,
+                        "fillImagePixelHeight" : null,
+                        "fillImagePixelWidth" : null,
+                        "fillImageResize" : "fill",
+                        "fillType" : "color",
                         "grayscale" : 0,
                         "grayScaleEnabled" : 0,
-                        "height" : 28,
+                        "height" : 122,
                         "heightFactor" : null,
                         "hueRotate" : 0,
                         "hueRotateEnabled" : 0,
-                        "id" : "MVQmc_nLv",
+                        "id" : "yZrcBRfzA",
+                        "intrinsicHeight" : null,
+                        "intrinsicWidth" : null,
                         "invert" : 0,
                         "invertEnabled" : 0,
                         "left" : 18,
                         "locked" : false,
-                        "name" : null,
-                        "opacity" : 1,
+                        "name" : "route_extra_info_1_content_alternative_1",
+                        "opacity" : 0,
                         "parentid" : "BRtgq1ZV9",
-                        "right" : null,
+                        "radius" : 0,
+                        "radiusBottomLeft" : 0,
+                        "radiusBottomRight" : 0,
+                        "radiusIsRelative" : false,
+                        "radiusPerCorner" : false,
+                        "radiusTopLeft" : 0,
+                        "radiusTopRight" : 0,
+                        "right" : 21,
                         "rotation" : 0,
                         "saturate" : 100,
                         "saturateEnabled" : 0,
                         "sepia" : 0,
                         "sepiaEnabled" : 0,
-                        "shadows" : [
-
-                        ],
-                        "styledText" : {
-                          "__class" : "StyledTextDraft",
-                          "blocks" : [
-                            {
-                              "data" : {
-                                "emptyStyle" : [
-                                  "LETTERSPACING:0",
-                                  "LINEHEIGHT:1.2",
-                                  "COLOR:#063E83",
-                                  "FONT:TheSansC4s-SemiLightItalic",
-                                  "SIZE:24"
-                                ]
-                              },
-                              "depth" : 0,
-                              "entityRanges" : [
-
-                              ],
-                              "inlineStyleRanges" : [
-                                {
-                                  "length" : 8,
-                                  "offset" : 0,
-                                  "style" : "LETTERSPACING:0"
-                                },
-                                {
-                                  "length" : 8,
-                                  "offset" : 0,
-                                  "style" : "LINEHEIGHT:1.2"
-                                },
-                                {
-                                  "length" : 8,
-                                  "offset" : 0,
-                                  "style" : "COLOR:#063E83"
-                                },
-                                {
-                                  "length" : 8,
-                                  "offset" : 0,
-                                  "style" : "FONT:TheSansC4s-SemiLightItalic"
-                                },
-                                {
-                                  "length" : 8,
-                                  "offset" : 0,
-                                  "style" : "SIZE:24"
-                                }
-                              ],
-                              "key" : "bgl4s",
-                              "text" : "Reistijd",
-                              "type" : "unstyled"
-                            }
-                          ],
-                          "cached" : {
-                            "html" : "<span data-offset-key=\"bgl4s-0-0\" style=\"tab-size:4;font-weight:300;font-family:&quot;TheSansC4s-SemiLightItalic&quot;, &quot;TheSans C4s&quot;, sans-serif;-webkit-text-fill-color:#063E83;font-size:24px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">Reistijd<\/span><\/span>",
-                            "os" : "10_14",
-                            "size" : {
-                              "height" : 28,
-                              "width" : 75
-                            },
-                            "width" : 0
-                          },
-                          "entityMap" : {
-
-                          }
-                        },
-                        "targetName" : null,
+                        "targetName" : "route_extra_info_1_content_alternative_1",
                         "top" : 18,
                         "visible" : true,
-                        "width" : 75,
+                        "width" : 317,
+                        "widthFactor" : null
+                      },
+                      {
+                        "__class" : "FrameNode",
+                        "aspectRatioLocked" : false,
+                        "blendingEnabled" : 0,
+                        "blendingMode" : "normal",
+                        "blur" : 12,
+                        "blurEnabled" : 0,
+                        "blurType" : "layer",
+                        "borderBottom" : 1,
+                        "borderColor" : "#222",
+                        "borderEnabled" : 0,
+                        "borderLeft" : 1,
+                        "borderPerSide" : false,
+                        "borderRight" : 1,
+                        "borderStyle" : "solid",
+                        "borderTop" : 1,
+                        "borderWidth" : 1,
+                        "bottom" : 31,
+                        "boxShadows" : [
+
+                        ],
+                        "brightness" : 100,
+                        "brightnessEnabled" : 0,
+                        "centerAnchorX" : 0.4957865168539326,
+                        "centerAnchorY" : 0.46198830409356723,
+                        "children" : [
+                          {
+                            "__class" : "TextNode",
+                            "autoSize" : true,
+                            "blendingEnabled" : 0,
+                            "blendingMode" : "normal",
+                            "blur" : 12,
+                            "blurEnabled" : 0,
+                            "blurType" : "layer",
+                            "bottom" : null,
+                            "brightness" : 100,
+                            "brightnessEnabled" : 0,
+                            "centerAnchorX" : 0.17981072555205047,
+                            "centerAnchorY" : 0.38934426229508196,
+                            "constraintsLocked" : false,
+                            "contrast" : 100,
+                            "contrastEnabled" : 0,
+                            "editable" : false,
+                            "exportOptions" : [
+
+                            ],
+                            "grayscale" : 0,
+                            "grayScaleEnabled" : 0,
+                            "height" : 19,
+                            "heightFactor" : null,
+                            "hueRotate" : 0,
+                            "hueRotateEnabled" : 0,
+                            "id" : "WC14VEMun",
+                            "invert" : 0,
+                            "invertEnabled" : 0,
+                            "left" : 0,
+                            "locked" : false,
+                            "name" : "vertraging_2",
+                            "opacity" : 1,
+                            "parentid" : "oLkKi68Pe",
+                            "right" : null,
+                            "rotation" : 0,
+                            "saturate" : 100,
+                            "saturateEnabled" : 0,
+                            "sepia" : 0,
+                            "sepiaEnabled" : 0,
+                            "shadows" : [
+
+                            ],
+                            "styledText" : {
+                              "__class" : "StyledTextDraft",
+                              "blocks" : [
+                                {
+                                  "data" : {
+                                    "emptyStyle" : [
+                                      "LETTERSPACING:0",
+                                      "LINEHEIGHT:1.2",
+                                      "FONT:TheSansC4s-SemiLightItalic",
+                                      "SIZE:16",
+                                      "COLOR:#E66900"
+                                    ]
+                                  },
+                                  "depth" : 0,
+                                  "entityRanges" : [
+
+                                  ],
+                                  "inlineStyleRanges" : [
+                                    {
+                                      "length" : 21,
+                                      "offset" : 0,
+                                      "style" : "LETTERSPACING:0"
+                                    },
+                                    {
+                                      "length" : 21,
+                                      "offset" : 0,
+                                      "style" : "LINEHEIGHT:1.2"
+                                    },
+                                    {
+                                      "length" : 21,
+                                      "offset" : 0,
+                                      "style" : "FONT:TheSansC4s-SemiLightItalic"
+                                    },
+                                    {
+                                      "length" : 21,
+                                      "offset" : 0,
+                                      "style" : "SIZE:16"
+                                    },
+                                    {
+                                      "length" : 21,
+                                      "offset" : 0,
+                                      "style" : "COLOR:#E66900"
+                                    }
+                                  ],
+                                  "key" : "bgl4s",
+                                  "text" : "Incl. 3 min vertaging",
+                                  "type" : "unstyled"
+                                }
+                              ],
+                              "cached" : {
+                                "html" : "<span data-offset-key=\"bgl4s-0-0\" style=\"tab-size:4;font-weight:300;font-family:&quot;TheSansC4s-SemiLightItalic&quot;, &quot;TheSans C4s&quot;, sans-serif;-webkit-text-fill-color:#E66900;font-size:16px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">Incl. 3 min vertaging<\/span><\/span>",
+                                "os" : "10_14",
+                                "size" : {
+                                  "height" : 19,
+                                  "width" : 139
+                                },
+                                "width" : 0
+                              },
+                              "entityMap" : {
+
+                              }
+                            },
+                            "targetName" : "vertraging_2",
+                            "top" : 38,
+                            "visible" : true,
+                            "width" : 139,
+                            "widthFactor" : null
+                          },
+                          {
+                            "__class" : "TextNode",
+                            "autoSize" : true,
+                            "blendingEnabled" : 0,
+                            "blendingMode" : "normal",
+                            "blur" : 12,
+                            "blurEnabled" : 0,
+                            "blurType" : "layer",
+                            "bottom" : 31,
+                            "brightness" : 100,
+                            "brightnessEnabled" : 0,
+                            "centerAnchorX" : 0.11829652996845426,
+                            "centerAnchorY" : 0.68032786885245899,
+                            "constraintsLocked" : false,
+                            "contrast" : 100,
+                            "contrastEnabled" : 0,
+                            "editable" : false,
+                            "exportOptions" : [
+
+                            ],
+                            "grayscale" : 0,
+                            "grayScaleEnabled" : 0,
+                            "height" : 16,
+                            "heightFactor" : null,
+                            "hueRotate" : 0,
+                            "hueRotateEnabled" : 0,
+                            "id" : "qs2UUJZqC",
+                            "invert" : 0,
+                            "invertEnabled" : 0,
+                            "left" : 2,
+                            "locked" : false,
+                            "name" : null,
+                            "opacity" : 1,
+                            "parentid" : "oLkKi68Pe",
+                            "right" : null,
+                            "rotation" : 0,
+                            "saturate" : 100,
+                            "saturateEnabled" : 0,
+                            "sepia" : 0,
+                            "sepiaEnabled" : 0,
+                            "shadows" : [
+
+                            ],
+                            "styledText" : {
+                              "__class" : "StyledTextDraft",
+                              "blocks" : [
+                                {
+                                  "data" : {
+                                    "emptyStyle" : [
+                                      "LETTERSPACING:0",
+                                      "LINEHEIGHT:1.2",
+                                      "COLOR:#5D97BD",
+                                      "FONT:Verdana",
+                                      "SIZE:14"
+                                    ]
+                                  },
+                                  "depth" : 0,
+                                  "entityRanges" : [
+
+                                  ],
+                                  "inlineStyleRanges" : [
+                                    {
+                                      "length" : 8,
+                                      "offset" : 0,
+                                      "style" : "LETTERSPACING:0"
+                                    },
+                                    {
+                                      "length" : 8,
+                                      "offset" : 0,
+                                      "style" : "LINEHEIGHT:1.2"
+                                    },
+                                    {
+                                      "length" : 8,
+                                      "offset" : 0,
+                                      "style" : "COLOR:#5D97BD"
+                                    },
+                                    {
+                                      "length" : 8,
+                                      "offset" : 0,
+                                      "style" : "FONT:Verdana"
+                                    },
+                                    {
+                                      "length" : 8,
+                                      "offset" : 0,
+                                      "style" : "SIZE:14"
+                                    }
+                                  ],
+                                  "key" : "bgl4s",
+                                  "text" : "Aankomst",
+                                  "type" : "unstyled"
+                                }
+                              ],
+                              "cached" : {
+                                "html" : "<span data-offset-key=\"bgl4s-0-0\" style=\"tab-size:4;font-weight:400;font-family:&quot;Verdana&quot;, sans-serif;-webkit-text-fill-color:#5D97BD;font-size:14px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">Aankomst<\/span><\/span>",
+                                "os" : "10_14",
+                                "size" : {
+                                  "height" : 16,
+                                  "width" : 71
+                                },
+                                "width" : 0
+                              },
+                              "entityMap" : {
+
+                              }
+                            },
+                            "targetName" : null,
+                            "top" : null,
+                            "visible" : true,
+                            "width" : 71,
+                            "widthFactor" : null
+                          },
+                          {
+                            "__class" : "TextNode",
+                            "autoSize" : true,
+                            "blendingEnabled" : 0,
+                            "blendingMode" : "normal",
+                            "blur" : 12,
+                            "blurEnabled" : 0,
+                            "blurType" : "layer",
+                            "bottom" : 1,
+                            "brightness" : 100,
+                            "brightnessEnabled" : 0,
+                            "centerAnchorX" : 0.093059936908517354,
+                            "centerAnchorY" : 0.92622950819672134,
+                            "constraintsLocked" : false,
+                            "contrast" : 100,
+                            "contrastEnabled" : 0,
+                            "editable" : false,
+                            "exportOptions" : [
+
+                            ],
+                            "grayscale" : 0,
+                            "grayScaleEnabled" : 0,
+                            "height" : 16,
+                            "heightFactor" : null,
+                            "hueRotate" : 0,
+                            "hueRotateEnabled" : 0,
+                            "id" : "D0K1wmGJT",
+                            "invert" : 0,
+                            "invertEnabled" : 0,
+                            "left" : 2,
+                            "locked" : false,
+                            "name" : null,
+                            "opacity" : 1,
+                            "parentid" : "oLkKi68Pe",
+                            "right" : null,
+                            "rotation" : 0,
+                            "saturate" : 100,
+                            "saturateEnabled" : 0,
+                            "sepia" : 0,
+                            "sepiaEnabled" : 0,
+                            "shadows" : [
+
+                            ],
+                            "styledText" : {
+                              "__class" : "StyledTextDraft",
+                              "blocks" : [
+                                {
+                                  "data" : {
+                                    "emptyStyle" : [
+                                      "LETTERSPACING:0",
+                                      "LINEHEIGHT:1.2",
+                                      "COLOR:#5D97BD",
+                                      "FONT:Verdana",
+                                      "SIZE:14"
+                                    ]
+                                  },
+                                  "depth" : 0,
+                                  "entityRanges" : [
+
+                                  ],
+                                  "inlineStyleRanges" : [
+                                    {
+                                      "length" : 7,
+                                      "offset" : 0,
+                                      "style" : "LETTERSPACING:0"
+                                    },
+                                    {
+                                      "length" : 7,
+                                      "offset" : 0,
+                                      "style" : "LINEHEIGHT:1.2"
+                                    },
+                                    {
+                                      "length" : 7,
+                                      "offset" : 0,
+                                      "style" : "COLOR:#5D97BD"
+                                    },
+                                    {
+                                      "length" : 7,
+                                      "offset" : 0,
+                                      "style" : "FONT:Verdana"
+                                    },
+                                    {
+                                      "length" : 7,
+                                      "offset" : 0,
+                                      "style" : "SIZE:14"
+                                    }
+                                  ],
+                                  "key" : "bgl4s",
+                                  "text" : "Afstand",
+                                  "type" : "unstyled"
+                                }
+                              ],
+                              "cached" : {
+                                "html" : "<span data-offset-key=\"bgl4s-0-0\" style=\"tab-size:4;font-weight:400;font-family:&quot;Verdana&quot;, sans-serif;-webkit-text-fill-color:#5D97BD;font-size:14px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">Afstand<\/span><\/span>",
+                                "os" : "10_14",
+                                "size" : {
+                                  "height" : 16,
+                                  "width" : 55
+                                },
+                                "width" : 0
+                              },
+                              "entityMap" : {
+
+                              }
+                            },
+                            "targetName" : null,
+                            "top" : null,
+                            "visible" : true,
+                            "width" : 55,
+                            "widthFactor" : null
+                          },
+                          {
+                            "__class" : "TextNode",
+                            "autoSize" : true,
+                            "blendingEnabled" : 0,
+                            "blendingMode" : "normal",
+                            "blur" : 12,
+                            "blurEnabled" : 0,
+                            "blurType" : "layer",
+                            "bottom" : 30,
+                            "brightness" : 100,
+                            "brightnessEnabled" : 0,
+                            "centerAnchorX" : 0.93217665615141954,
+                            "centerAnchorY" : 0.68852459016393441,
+                            "constraintsLocked" : false,
+                            "contrast" : 100,
+                            "contrastEnabled" : 0,
+                            "editable" : false,
+                            "exportOptions" : [
+
+                            ],
+                            "grayscale" : 0,
+                            "grayScaleEnabled" : 0,
+                            "height" : 16,
+                            "heightFactor" : null,
+                            "hueRotate" : 0,
+                            "hueRotateEnabled" : 0,
+                            "id" : "IrRCilEwV",
+                            "invert" : 0,
+                            "invertEnabled" : 0,
+                            "left" : null,
+                            "locked" : false,
+                            "name" : null,
+                            "opacity" : 1,
+                            "parentid" : "oLkKi68Pe",
+                            "right" : 0,
+                            "rotation" : 0,
+                            "saturate" : 100,
+                            "saturateEnabled" : 0,
+                            "sepia" : 0,
+                            "sepiaEnabled" : 0,
+                            "shadows" : [
+
+                            ],
+                            "styledText" : {
+                              "__class" : "StyledTextDraft",
+                              "blocks" : [
+                                {
+                                  "data" : {
+                                    "emptyStyle" : [
+                                      "LETTERSPACING:0",
+                                      "LINEHEIGHT:1.2",
+                                      "FONT:Verdana",
+                                      "SIZE:14",
+                                      "ALIGN:right",
+                                      "COLOR:#2B5884"
+                                    ]
+                                  },
+                                  "depth" : 0,
+                                  "entityRanges" : [
+
+                                  ],
+                                  "inlineStyleRanges" : [
+                                    {
+                                      "length" : 5,
+                                      "offset" : 0,
+                                      "style" : "LETTERSPACING:0"
+                                    },
+                                    {
+                                      "length" : 5,
+                                      "offset" : 0,
+                                      "style" : "LINEHEIGHT:1.2"
+                                    },
+                                    {
+                                      "length" : 5,
+                                      "offset" : 0,
+                                      "style" : "FONT:Verdana"
+                                    },
+                                    {
+                                      "length" : 5,
+                                      "offset" : 0,
+                                      "style" : "SIZE:14"
+                                    },
+                                    {
+                                      "length" : 5,
+                                      "offset" : 0,
+                                      "style" : "ALIGN:right"
+                                    },
+                                    {
+                                      "length" : 5,
+                                      "offset" : 0,
+                                      "style" : "COLOR:#2B5884"
+                                    }
+                                  ],
+                                  "key" : "bgl4s",
+                                  "text" : "16:22",
+                                  "type" : "unstyled"
+                                }
+                              ],
+                              "cached" : {
+                                "html" : "<span data-offset-key=\"bgl4s-0-0\" style=\"tab-size:4;font-weight:400;font-family:&quot;Verdana&quot;, sans-serif;-webkit-text-fill-color:#2B5884;font-size:14px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">16:22<\/span><\/span>",
+                                "os" : "10_14",
+                                "size" : {
+                                  "height" : 16,
+                                  "width" : 43
+                                },
+                                "width" : 0
+                              },
+                              "entityMap" : {
+
+                              }
+                            },
+                            "targetName" : null,
+                            "top" : null,
+                            "visible" : true,
+                            "width" : 43,
+                            "widthFactor" : null
+                          },
+                          {
+                            "__class" : "TextNode",
+                            "autoSize" : true,
+                            "blendingEnabled" : 0,
+                            "blendingMode" : "normal",
+                            "blur" : 12,
+                            "blurEnabled" : 0,
+                            "blurType" : "layer",
+                            "bottom" : 0,
+                            "brightness" : 100,
+                            "brightnessEnabled" : 0,
+                            "centerAnchorX" : 0.90536277602523663,
+                            "centerAnchorY" : 0.93442622950819676,
+                            "constraintsLocked" : false,
+                            "contrast" : 100,
+                            "contrastEnabled" : 0,
+                            "editable" : false,
+                            "exportOptions" : [
+
+                            ],
+                            "grayscale" : 0,
+                            "grayScaleEnabled" : 0,
+                            "height" : 16,
+                            "heightFactor" : null,
+                            "hueRotate" : 0,
+                            "hueRotateEnabled" : 0,
+                            "id" : "NoChoNA1Y",
+                            "invert" : 0,
+                            "invertEnabled" : 0,
+                            "left" : null,
+                            "locked" : false,
+                            "name" : null,
+                            "opacity" : 1,
+                            "parentid" : "oLkKi68Pe",
+                            "right" : 0,
+                            "rotation" : 0,
+                            "saturate" : 100,
+                            "saturateEnabled" : 0,
+                            "sepia" : 0,
+                            "sepiaEnabled" : 0,
+                            "shadows" : [
+
+                            ],
+                            "styledText" : {
+                              "__class" : "StyledTextDraft",
+                              "blocks" : [
+                                {
+                                  "data" : {
+                                    "emptyStyle" : [
+                                      "LETTERSPACING:0",
+                                      "LINEHEIGHT:1.2",
+                                      "FONT:Verdana",
+                                      "SIZE:14",
+                                      "ALIGN:right",
+                                      "COLOR:#2B5884"
+                                    ]
+                                  },
+                                  "depth" : 0,
+                                  "entityRanges" : [
+
+                                  ],
+                                  "inlineStyleRanges" : [
+                                    {
+                                      "length" : 7,
+                                      "offset" : 0,
+                                      "style" : "LETTERSPACING:0"
+                                    },
+                                    {
+                                      "length" : 7,
+                                      "offset" : 0,
+                                      "style" : "LINEHEIGHT:1.2"
+                                    },
+                                    {
+                                      "length" : 7,
+                                      "offset" : 0,
+                                      "style" : "FONT:Verdana"
+                                    },
+                                    {
+                                      "length" : 7,
+                                      "offset" : 0,
+                                      "style" : "SIZE:14"
+                                    },
+                                    {
+                                      "length" : 7,
+                                      "offset" : 0,
+                                      "style" : "ALIGN:right"
+                                    },
+                                    {
+                                      "length" : 7,
+                                      "offset" : 0,
+                                      "style" : "COLOR:#2B5884"
+                                    }
+                                  ],
+                                  "key" : "bgl4s",
+                                  "text" : "66,4 km",
+                                  "type" : "unstyled"
+                                }
+                              ],
+                              "cached" : {
+                                "html" : "<span data-offset-key=\"bgl4s-0-0\" style=\"tab-size:4;font-weight:400;font-family:&quot;Verdana&quot;, sans-serif;-webkit-text-fill-color:#2B5884;font-size:14px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">66,4 km<\/span><\/span>",
+                                "os" : "10_14",
+                                "size" : {
+                                  "height" : 16,
+                                  "width" : 60
+                                },
+                                "width" : 0
+                              },
+                              "entityMap" : {
+
+                              }
+                            },
+                            "targetName" : null,
+                            "top" : null,
+                            "visible" : true,
+                            "width" : 60,
+                            "widthFactor" : null
+                          },
+                          {
+                            "__class" : "TextNode",
+                            "autoSize" : true,
+                            "blendingEnabled" : 0,
+                            "blendingMode" : "normal",
+                            "blur" : 12,
+                            "blurEnabled" : 0,
+                            "blurType" : "layer",
+                            "bottom" : null,
+                            "brightness" : 100,
+                            "brightnessEnabled" : 0,
+                            "centerAnchorX" : 0.11829652996845426,
+                            "centerAnchorY" : 0.11475409836065574,
+                            "constraintsLocked" : false,
+                            "contrast" : 100,
+                            "contrastEnabled" : 0,
+                            "editable" : false,
+                            "exportOptions" : [
+
+                            ],
+                            "grayscale" : 0,
+                            "grayScaleEnabled" : 0,
+                            "height" : 28,
+                            "heightFactor" : null,
+                            "hueRotate" : 0,
+                            "hueRotateEnabled" : 0,
+                            "id" : "V_W4ETYjF",
+                            "invert" : 0,
+                            "invertEnabled" : 0,
+                            "left" : 0,
+                            "locked" : false,
+                            "name" : "51 min",
+                            "opacity" : 1,
+                            "parentid" : "oLkKi68Pe",
+                            "right" : null,
+                            "rotation" : 0,
+                            "saturate" : 100,
+                            "saturateEnabled" : 0,
+                            "sepia" : 0,
+                            "sepiaEnabled" : 0,
+                            "shadows" : [
+
+                            ],
+                            "styledText" : {
+                              "__class" : "StyledTextDraft",
+                              "blocks" : [
+                                {
+                                  "data" : {
+                                    "emptyStyle" : [
+                                      "LETTERSPACING:0",
+                                      "LINEHEIGHT:1.2",
+                                      "COLOR:#063E83",
+                                      "FONT:TheSansC4s-SemiLightItalic",
+                                      "SIZE:24"
+                                    ]
+                                  },
+                                  "depth" : 0,
+                                  "entityRanges" : [
+
+                                  ],
+                                  "inlineStyleRanges" : [
+                                    {
+                                      "length" : 6,
+                                      "offset" : 0,
+                                      "style" : "LETTERSPACING:0"
+                                    },
+                                    {
+                                      "length" : 6,
+                                      "offset" : 0,
+                                      "style" : "LINEHEIGHT:1.2"
+                                    },
+                                    {
+                                      "length" : 6,
+                                      "offset" : 0,
+                                      "style" : "COLOR:#063E83"
+                                    },
+                                    {
+                                      "length" : 6,
+                                      "offset" : 0,
+                                      "style" : "FONT:TheSansC4s-SemiLightItalic"
+                                    },
+                                    {
+                                      "length" : 6,
+                                      "offset" : 0,
+                                      "style" : "SIZE:24"
+                                    }
+                                  ],
+                                  "key" : "bgl4s",
+                                  "text" : "52 min",
+                                  "type" : "unstyled"
+                                }
+                              ],
+                              "cached" : {
+                                "html" : "<span data-offset-key=\"bgl4s-0-0\" style=\"tab-size:4;font-weight:300;font-family:&quot;TheSansC4s-SemiLightItalic&quot;, &quot;TheSans C4s&quot;, sans-serif;-webkit-text-fill-color:#063E83;font-size:24px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">52 min<\/span><\/span>",
+                                "os" : "10_14",
+                                "size" : {
+                                  "height" : 28,
+                                  "width" : 70
+                                },
+                                "width" : 0
+                              },
+                              "entityMap" : {
+
+                              }
+                            },
+                            "targetName" : null,
+                            "top" : 0,
+                            "visible" : true,
+                            "width" : 70,
+                            "widthFactor" : null
+                          }
+                        ],
+                        "clip" : false,
+                        "constraintsLocked" : false,
+                        "contrast" : 100,
+                        "contrastEnabled" : 0,
+                        "deviceType" : null,
+                        "exportIncludesBackground" : true,
+                        "exportOptions" : [
+
+                        ],
+                        "fillColor" : "rgba(255,255,255,1)",
+                        "fillEnabled" : false,
+                        "fillGradient" : {
+                          "__class" : "LinearGradient",
+                          "alpha" : 1,
+                          "angle" : 0,
+                          "end" : "rgba(0,0,0,0)",
+                          "start" : "black"
+                        },
+                        "fillImage" : null,
+                        "fillImagePixelHeight" : null,
+                        "fillImagePixelWidth" : null,
+                        "fillImageResize" : "fill",
+                        "fillType" : "color",
+                        "grayscale" : 0,
+                        "grayScaleEnabled" : 0,
+                        "height" : 122,
+                        "heightFactor" : null,
+                        "hueRotate" : 0,
+                        "hueRotateEnabled" : 0,
+                        "id" : "oLkKi68Pe",
+                        "intrinsicHeight" : null,
+                        "intrinsicWidth" : null,
+                        "invert" : 0,
+                        "invertEnabled" : 0,
+                        "left" : 18,
+                        "locked" : false,
+                        "name" : "route_extra_info_1_content_alternative_2",
+                        "opacity" : 0,
+                        "parentid" : "BRtgq1ZV9",
+                        "radius" : 0,
+                        "radiusBottomLeft" : 0,
+                        "radiusBottomRight" : 0,
+                        "radiusIsRelative" : false,
+                        "radiusPerCorner" : false,
+                        "radiusTopLeft" : 0,
+                        "radiusTopRight" : 0,
+                        "right" : 21,
+                        "rotation" : 0,
+                        "saturate" : 100,
+                        "saturateEnabled" : 0,
+                        "sepia" : 0,
+                        "sepiaEnabled" : 0,
+                        "targetName" : "route_extra_info_1_content_alternative_2",
+                        "top" : 18,
+                        "visible" : true,
+                        "width" : 317,
                         "widthFactor" : null
                       }
                     ],
