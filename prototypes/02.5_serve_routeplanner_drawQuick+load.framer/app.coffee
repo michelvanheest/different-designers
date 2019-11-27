@@ -348,103 +348,97 @@ route_directions_info_6.states =
 
 # 🔵Trigger
 plan_button.onTap ->
+	# change default bg image with route content
+# 	Utils.delay 0.4, ->
+	bg_img_default.animate
+		opacity: 0
+		options: 
+			time: 0.2
+			curve: defaultBezier
+	routeplanner_planning.animate
+		opacity: 1
+		options: 
+			time: 0.4
+			curve: defaultBezier
 	# scroll to route content
-	Utils.delay 0.2, ->
-# 		scroll.scrollToPoint(
-# 			y: 780
-# 			true
-# 			options:
-# 				time: 0.4
-# 				curve: defaultBezier
-# 		)
-		scroll.scrollToPoint(
-			y: 780
-			true
-			options:
-				time: 0.6
-				curve: defaultScroll
-		)
-		# move footer down
-		bg_img_footer.y = 2057
-		# change default bg image with route content
-		Utils.delay 0.4, ->
-			bg_img_default.animate
-				opacity: 0
-				options: 
-					time: 0.2
-					curve: defaultBezier
-			routeplanner_planning.animate
-				opacity: 1
-				options: 
-					time: 0.4
-					curve: defaultBezier
-			Utils.delay 1.24, ->
-				# animate road_main on map
+# 	Utils.delay 0.2, ->
+	scroll.scrollToPoint(
+		y: 780
+		true
+		options:
+			time: 0.6
+			curve: defaultScroll
+	)
+	# move footer down
+	bg_img_footer.y = 2057
+	
+	Utils.delay 1.24, ->
+		# animate road_main on map
 # 				road_main.states.next()
-				road_main.stateCycle("second")
-				# start animating content_loaders
-				content_loader_route_extra_info_1.animate "1"
-				content_loader_route_extra_info_1.onAnimationEnd ->
-					content_loader_route_extra_info_1.stateCycle("1", "2")
-				content_loader_route_extra_info_2.animate "1"
-				content_loader_route_extra_info_2.onAnimationEnd ->
-					content_loader_route_extra_info_2.stateCycle("1", "2")
-				content_loader_route_extra_info_3.animate "1"
-				content_loader_route_extra_info_3.onAnimationEnd ->
-					content_loader_route_extra_info_3.stateCycle("1", "2")
-				route_directions_info_1.animate "1"
-				route_directions_info_1.onAnimationEnd ->
-					route_directions_info_1.stateCycle("1", "2")
-				route_directions_info_2.animate "1"
-				route_directions_info_2.onAnimationEnd ->
-					route_directions_info_2.stateCycle("1", "2")
-				route_directions_info_3.animate "1"
-				route_directions_info_3.onAnimationEnd ->
-					route_directions_info_3.stateCycle("1", "2")
-				route_directions_info_4.animate "1"
-				route_directions_info_4.onAnimationEnd ->
-					route_directions_info_4.stateCycle("1", "2")
-				route_directions_info_5.animate "1"
-				route_directions_info_5.onAnimationEnd ->
-					route_directions_info_5.stateCycle("1", "2")
-				route_directions_info_6.animate "1"
-				route_directions_info_6.onAnimationEnd ->
-					route_directions_info_6.stateCycle("1", "2")
-				Utils.delay 1.2, ->
-					# animate markers on map
-					markerB.stateCycle("visible")
-					Utils.delay 0.4, ->
-						# animate road_alternative on map
-						road_alternative.stateCycle("visible")
-						Utils.delay 0.8, ->
-							# show content
-							content_loader_route_extra_info_1.opacity = 0
-							content_loader_route_extra_info_2.opacity = 0
-							content_loader_route_extra_info_3.opacity = 0
-							route_directions_info_1.opacity = 0
-							route_directions_info_2.opacity = 0
-							route_directions_info_3.opacity = 0
-							route_directions_info_4.opacity = 0
-							route_directions_info_5.opacity = 0
-							route_directions_info_6.opacity = 0
-							Utils.delay 0.16, ->
-								route_extra_info_1_content.animate
-									opacity: 1
-									options: 
-										time: 0.8
-										curve: defaultBezier
-								route_extra_info_2_content.animate
-									opacity: 1
-									options: 
-										time: 0.8
-										curve: defaultBezier
-								route_extra_info_3_content.animate
-									opacity: 1
-									options: 
-										time: 0.8
-										curve: defaultBezier
-								route_directions.animate
-									opacity: 1
-									options: 
-										time: 0.8
-										curve: defaultBezier
+		road_main.stateCycle("second")
+		# start animating content_loaders
+		content_loader_route_extra_info_1.animate "1"
+		content_loader_route_extra_info_1.onAnimationEnd ->
+			content_loader_route_extra_info_1.stateCycle("1", "2")
+		content_loader_route_extra_info_2.animate "1"
+		content_loader_route_extra_info_2.onAnimationEnd ->
+			content_loader_route_extra_info_2.stateCycle("1", "2")
+		content_loader_route_extra_info_3.animate "1"
+		content_loader_route_extra_info_3.onAnimationEnd ->
+			content_loader_route_extra_info_3.stateCycle("1", "2")
+		route_directions_info_1.animate "1"
+		route_directions_info_1.onAnimationEnd ->
+			route_directions_info_1.stateCycle("1", "2")
+		route_directions_info_2.animate "1"
+		route_directions_info_2.onAnimationEnd ->
+			route_directions_info_2.stateCycle("1", "2")
+		route_directions_info_3.animate "1"
+		route_directions_info_3.onAnimationEnd ->
+			route_directions_info_3.stateCycle("1", "2")
+		route_directions_info_4.animate "1"
+		route_directions_info_4.onAnimationEnd ->
+			route_directions_info_4.stateCycle("1", "2")
+		route_directions_info_5.animate "1"
+		route_directions_info_5.onAnimationEnd ->
+			route_directions_info_5.stateCycle("1", "2")
+		route_directions_info_6.animate "1"
+		route_directions_info_6.onAnimationEnd ->
+			route_directions_info_6.stateCycle("1", "2")
+		Utils.delay 1.2, ->
+			# animate markers on map
+			markerB.stateCycle("visible")
+			Utils.delay 0.4, ->
+				# animate road_alternative on map
+				road_alternative.stateCycle("visible")
+				Utils.delay 0.8, ->
+					# show content
+					content_loader_route_extra_info_1.opacity = 0
+					content_loader_route_extra_info_2.opacity = 0
+					content_loader_route_extra_info_3.opacity = 0
+					route_directions_info_1.opacity = 0
+					route_directions_info_2.opacity = 0
+					route_directions_info_3.opacity = 0
+					route_directions_info_4.opacity = 0
+					route_directions_info_5.opacity = 0
+					route_directions_info_6.opacity = 0
+					Utils.delay 0.16, ->
+						route_extra_info_1_content.animate
+							opacity: 1
+							options: 
+								time: 0.8
+								curve: defaultBezier
+						route_extra_info_2_content.animate
+							opacity: 1
+							options: 
+								time: 0.8
+								curve: defaultBezier
+						route_extra_info_3_content.animate
+							opacity: 1
+							options: 
+								time: 0.8
+								curve: defaultBezier
+						route_directions.animate
+							opacity: 1
+							options: 
+								time: 0.8
+								curve: defaultBezier
