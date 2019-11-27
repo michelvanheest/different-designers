@@ -6,6 +6,7 @@
 ## 🔴Variables
 defaultScroll = "Bezier(0.05, 0.58, 0.52, 0.95)"
 defaultBezier = "Bezier(0.46, 0.92, 0.46, 0.92)"
+defaultDraw = "Bezier(0.68, 0.95, 0.60, 0.95)"
 defaultSpring = "spring(250, 20, 5)"
 
 gradient_button = new Gradient
@@ -119,7 +120,8 @@ road_main.states.add
 		dashOffset: -1
 
 road_main.states.animationOptions =
-		curve: defaultBezier
+# 		curve: defaultBezier
+		curve: defaultDraw
 		time: 1.2
 		
 # 🔴States road_alternative
@@ -349,7 +351,6 @@ route_directions_info_6.states =
 # 🔵Trigger
 plan_button.onTap ->
 	# change default bg image with route content
-# 	Utils.delay 0.4, ->
 	bg_img_default.animate
 		opacity: 0
 		options: 
@@ -361,7 +362,6 @@ plan_button.onTap ->
 			time: 0.4
 			curve: defaultBezier
 	# scroll to route content
-# 	Utils.delay 0.2, ->
 	scroll.scrollToPoint(
 		y: 780
 		true
@@ -374,7 +374,6 @@ plan_button.onTap ->
 	
 	Utils.delay 1.24, ->
 		# animate road_main on map
-# 				road_main.states.next()
 		road_main.stateCycle("second")
 		# start animating content_loaders
 		content_loader_route_extra_info_1.animate "1"
