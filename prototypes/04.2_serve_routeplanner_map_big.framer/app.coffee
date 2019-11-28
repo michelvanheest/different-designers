@@ -6,6 +6,8 @@ Framer.Device.deviceType = "fullscreen"
 document.body.style.cursor = "auto"
 
 ## 🔴Variables
+route_showed = false
+
 defaultScroll = "Bezier(0.05, 0.58, 0.52, 0.95)"
 defaultBezier = "Bezier(0.46, 0.92, 0.46, 0.92)"
 defaultDraw = "Bezier(0.68, 0.95, 0.60, 0.95)"
@@ -496,6 +498,8 @@ plan_button.onTap ->
 								curve: defaultBezier
 						Utils.delay 0.16, ->
 							shake vertraging_1
+						
+						route_showed = true
 
 # 🔵Switch road + view traffic
 road_alternative_1.onClick ->
@@ -589,17 +593,6 @@ button_sluit_kaart.onMouseOut ->
 	button_sluit_kaart_text.color = "#003C85"
 
 ## 🔴Open map
-# button_open_kaart.onClick ->
-# 	map_without_road.z = 999
-# 	
-# 	map_without_road.animate
-# 		scale: 2
-# 		x: -460
-# 		y: -120
-# 		borderRadius: 0
-# 		options:
-# 			time: 0.32
-# 			curve: defaultBezier
 button_open_kaart.onClick ->
 	map_without_road.opacity = 0
 	map_big.opacity = 1
@@ -618,26 +611,97 @@ button_open_kaart.onClick ->
 			time: 0.32
 			curve: defaultBezier
 	
+	map_big_overlay.z = 1000
 	bg_map_top.parent = safariContent
 	bg_map_top.opacity = 1
 	bg_map_top.z = 1000
+	
+	Utils.delay 0.56, ->
+		map_big_overlay.animate
+			opacity: 1
+			options:
+				time: 0.16
+				curve: defaultBezier
 
+## 🔴Close map
 button_sluit_kaart.onClick ->
+	map_big_overlay.opacity = 0
 	map_big.animate
 		width: 550
 		height: 297
 		x: -2
 		y: 0
+		borderRadius: 12
 		options:
 			time: 0.32
 			curve: defaultBezier
 	
-	Utils.delay 0.24, ->
+	Utils.delay 0.56, ->
 		map_big.opacity = 0
 		map_without_road.opacity = 1
 	
 	bg_map_top.opacity = 0
-				
-# 	flow.showNext(main_frame2, animate: false)
-# 	routeplanner.parent=null
-# 	map_big.parent=scroll.content
+
+# 🔵Navigation hub
+## 🔴Animate button open map
+hub_tanken.onMouseOver ->
+	hub_tanken_arrow.animate
+		x: 164
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultBezier
+	hub_tanken_text.color = "#0097DC"
+hub_tanken.onMouseOut ->
+	hub_tanken_arrow.animate
+		x: 161
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultBezier
+	hub_tanken_text.color = "#003C85"
+
+## 🔴Scroll down + open map
+hub_tanken.onClick ->
+
+	if route_showed is true
+	
+		scroll.scrollToPoint(
+			y: 780
+			true
+			options:
+				time: 0.6
+				curve: defaultScroll
+		)
+		
+		Utils.delay 1.2, ->
+		
+			map_without_road.opacity = 0
+			map_big.opacity = 1
+			map_big.z = 999
+			
+			map_big.animate
+		# 		scale: 2.63
+				width: 1440
+				height: 775
+		# 		x: -290
+		# 		y: -10
+				x: -731
+				y: -250
+				borderRadius: 0
+				options:
+					time: 0.32
+					curve: defaultBezier
+			
+			map_big_overlay.z = 1000
+			bg_map_top.parent = safariContent
+			bg_map_top.opacity = 1
+			bg_map_top.z = 1000
+			
+			Utils.delay 0.56, ->
+				map_big_overlay.animate
+					opacity: 1
+					options:
+						time: 0.16
+						curve: defaultBezier
+		
