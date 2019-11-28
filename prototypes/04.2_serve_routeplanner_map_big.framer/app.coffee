@@ -703,7 +703,7 @@ hub_tanken.onClick ->
 				curve: defaultScroll
 		)
 		
-		Utils.delay 1.2, ->
+		Utils.delay 1.6, ->
 			scroll.mouseWheelEnabled = false
 			map_without_road.opacity = 0
 			map_big.opacity = 1
