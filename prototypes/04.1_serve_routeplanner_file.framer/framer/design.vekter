@@ -6880,7 +6880,7 @@
                             "invertEnabled" : 0,
                             "left" : 0,
                             "locked" : false,
-                            "name" : null,
+                            "name" : "vertraging_1",
                             "opacity" : 1,
                             "parentid" : "iMIb54e4j",
                             "right" : null,
@@ -6901,8 +6901,8 @@
                                       "LETTERSPACING:0",
                                       "LINEHEIGHT:1.2",
                                       "FONT:TheSansC4s-SemiLightItalic",
-                                      "COLOR:#64B045",
-                                      "SIZE:16"
+                                      "SIZE:16",
+                                      "COLOR:#E66900"
                                     ]
                                   },
                                   "depth" : 0,
@@ -6911,42 +6911,42 @@
                                   ],
                                   "inlineStyleRanges" : [
                                     {
-                                      "length" : 16,
+                                      "length" : 22,
                                       "offset" : 0,
                                       "style" : "LETTERSPACING:0"
                                     },
                                     {
-                                      "length" : 16,
+                                      "length" : 22,
                                       "offset" : 0,
                                       "style" : "LINEHEIGHT:1.2"
                                     },
                                     {
-                                      "length" : 16,
+                                      "length" : 22,
                                       "offset" : 0,
                                       "style" : "FONT:TheSansC4s-SemiLightItalic"
                                     },
                                     {
-                                      "length" : 16,
-                                      "offset" : 0,
-                                      "style" : "COLOR:#64B045"
-                                    },
-                                    {
-                                      "length" : 16,
+                                      "length" : 22,
                                       "offset" : 0,
                                       "style" : "SIZE:16"
+                                    },
+                                    {
+                                      "length" : 22,
+                                      "offset" : 0,
+                                      "style" : "COLOR:#E66900"
                                     }
                                   ],
                                   "key" : "bgl4s",
-                                  "text" : "Geen vertraging.",
+                                  "text" : "Incl. 1 min vertraging",
                                   "type" : "unstyled"
                                 }
                               ],
                               "cached" : {
-                                "html" : "<span data-offset-key=\"bgl4s-0-0\" style=\"tab-size:4;font-weight:300;font-family:&quot;TheSansC4s-SemiLightItalic&quot;, &quot;TheSans C4s&quot;, sans-serif;-webkit-text-fill-color:#64B045;font-size:16px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">Geen vertraging.<\/span><\/span>",
+                                "html" : "<span data-offset-key=\"bgl4s-0-0\" style=\"tab-size:4;font-weight:300;font-family:&quot;TheSansC4s-SemiLightItalic&quot;, &quot;TheSans C4s&quot;, sans-serif;-webkit-text-fill-color:#E66900;font-size:16px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">Incl. 1 min vertraging<\/span><\/span>",
                                 "os" : "10_14",
                                 "size" : {
                                   "height" : 19,
-                                  "width" : 114
+                                  "width" : 142
                                 },
                                 "width" : 0
                               },
@@ -6954,10 +6954,10 @@
 
                               }
                             },
-                            "targetName" : null,
+                            "targetName" : "vertraging_1",
                             "top" : 38,
                             "visible" : true,
-                            "width" : 114,
+                            "width" : 142,
                             "widthFactor" : null
                           },
                           {
@@ -7643,7 +7643,7 @@
                             "invertEnabled" : 0,
                             "left" : 0,
                             "locked" : false,
-                            "name" : "vertraging_1",
+                            "name" : "Geen vertaging",
                             "opacity" : 1,
                             "parentid" : "yZrcBRfzA",
                             "right" : null,
@@ -7665,7 +7665,7 @@
                                       "LINEHEIGHT:1.2",
                                       "FONT:TheSansC4s-SemiLightItalic",
                                       "SIZE:16",
-                                      "COLOR:#E66900"
+                                      "COLOR:#64B045"
                                     ]
                                   },
                                   "depth" : 0,
@@ -7674,42 +7674,42 @@
                                   ],
                                   "inlineStyleRanges" : [
                                     {
-                                      "length" : 21,
+                                      "length" : 15,
                                       "offset" : 0,
                                       "style" : "LETTERSPACING:0"
                                     },
                                     {
-                                      "length" : 21,
+                                      "length" : 15,
                                       "offset" : 0,
                                       "style" : "LINEHEIGHT:1.2"
                                     },
                                     {
-                                      "length" : 21,
+                                      "length" : 15,
                                       "offset" : 0,
                                       "style" : "FONT:TheSansC4s-SemiLightItalic"
                                     },
                                     {
-                                      "length" : 21,
+                                      "length" : 15,
                                       "offset" : 0,
                                       "style" : "SIZE:16"
                                     },
                                     {
-                                      "length" : 21,
+                                      "length" : 15,
                                       "offset" : 0,
-                                      "style" : "COLOR:#E66900"
+                                      "style" : "COLOR:#64B045"
                                     }
                                   ],
                                   "key" : "bgl4s",
-                                  "text" : "Incl. 1 min vertaging",
+                                  "text" : "Geen vertraging",
                                   "type" : "unstyled"
                                 }
                               ],
                               "cached" : {
-                                "html" : "<span data-offset-key=\"bgl4s-0-0\" style=\"tab-size:4;font-weight:300;font-family:&quot;TheSansC4s-SemiLightItalic&quot;, &quot;TheSans C4s&quot;, sans-serif;-webkit-text-fill-color:#E66900;font-size:16px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">Incl. 1 min vertaging<\/span><\/span>",
+                                "html" : "<span data-offset-key=\"bgl4s-0-0\" style=\"tab-size:4;font-weight:300;font-family:&quot;TheSansC4s-SemiLightItalic&quot;, &quot;TheSans C4s&quot;, sans-serif;-webkit-text-fill-color:#64B045;font-size:16px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">Geen vertraging<\/span><\/span>",
                                 "os" : "10_14",
                                 "size" : {
                                   "height" : 19,
-                                  "width" : 137
+                                  "width" : 111
                                 },
                                 "width" : 0
                               },
@@ -7717,10 +7717,10 @@
 
                               }
                             },
-                            "targetName" : "vertraging_1",
+                            "targetName" : "Geen_vertaging",
                             "top" : 38,
                             "visible" : true,
-                            "width" : 137,
+                            "width" : 111,
                             "widthFactor" : null
                           },
                           {
@@ -8467,15 +8467,6 @@
                                   "type" : "unstyled"
                                 }
                               ],
-                              "cached" : {
-                                "html" : "<span data-offset-key=\"bgl4s-0-0\" style=\"tab-size:4;font-weight:300;font-family:&quot;TheSansC4s-SemiLightItalic&quot;, &quot;TheSans C4s&quot;, sans-serif;-webkit-text-fill-color:#E66900;font-size:16px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">Incl. 3 min vertaging<\/span><\/span>",
-                                "os" : "10_14",
-                                "size" : {
-                                  "height" : 19,
-                                  "width" : 139
-                                },
-                                "width" : 0
-                              },
                               "entityMap" : {
 
                               }

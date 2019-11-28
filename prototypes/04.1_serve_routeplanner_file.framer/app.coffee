@@ -491,6 +491,8 @@ plan_button.onTap ->
 							options: 
 								time: 0.8
 								curve: defaultBezier
+						Utils.delay 0.16, ->
+							shake vertraging_1
 
 # 🔵Switch road + view traffic
 road_alternative_1.onClick ->
@@ -509,7 +511,6 @@ road_alternative_1.onClick ->
 		opacity: 0
 		options:
 			time: 0.2
-	shake vertraging_1
 
 road_alternative_2.onClick ->
 	road_main.opacity = 0.4
@@ -545,3 +546,4 @@ road_main.onClick ->
 		opacity: 0
 		options:
 			time: 0.2
+	shake vertraging_1
