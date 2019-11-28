@@ -594,6 +594,7 @@ button_sluit_kaart.onMouseOut ->
 
 ## 🔴Open map
 button_open_kaart.onClick ->
+	scroll.mouseWheelEnabled = false
 	map_without_road.opacity = 0
 	map_big.opacity = 1
 	map_big.z = 999
@@ -625,6 +626,7 @@ button_open_kaart.onClick ->
 
 ## 🔴Close map
 button_sluit_kaart.onClick ->
+	scroll.mouseWheelEnabled = true
 	map_big_overlay.opacity = 0
 	map_big.animate
 		width: 550
@@ -675,7 +677,7 @@ hub_tanken.onClick ->
 		)
 		
 		Utils.delay 1.2, ->
-		
+			scroll.mouseWheelEnabled = false
 			map_without_road.opacity = 0
 			map_big.opacity = 1
 			map_big.z = 999
