@@ -38,6 +38,8 @@ bg_img_default.opacity = 1
 bg_img_footer.opacity = 1
 bg_img_footer.y = 1403
 routeplanner_planning.opacity = 0
+map_big.opacity = 0
+# map_big_clear.opacity = 0
 bg_img_planning.opacity = 0
 plan_button.y = 680
 markerA.opacity = 1
@@ -548,3 +550,94 @@ road_main.onClick ->
 		options:
 			time: 0.2
 	shake vertraging_1
+
+# 🔵Open map
+## 🔴Animate button open map
+button_open_kaart.onMouseOver ->
+	button_open_kaart_icon.animate
+		x: 93.5
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultBezier
+	button_open_kaart_text.color = "#0097DC"
+button_open_kaart.onMouseOut ->
+	button_open_kaart_icon.animate
+		x: 90.5
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultBezier
+	button_open_kaart_text.color = "#003C85"
+	
+## 🔴Animate button close map
+button_sluit_kaart.onMouseOver ->
+	button_sluit_kaart_icon.animate
+		x: 93.5
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultBezier
+	button_sluit_kaart_text.color = "#0097DC"
+button_sluit_kaart.onMouseOut ->
+	button_sluit_kaart_icon.animate
+		x: 90.5
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultBezier
+	button_sluit_kaart_text.color = "#003C85"
+
+## 🔴Open map
+# button_open_kaart.onClick ->
+# 	map_without_road.z = 999
+# 	
+# 	map_without_road.animate
+# 		scale: 2
+# 		x: -460
+# 		y: -120
+# 		borderRadius: 0
+# 		options:
+# 			time: 0.32
+# 			curve: defaultBezier
+button_open_kaart.onClick ->
+	map_without_road.opacity = 0
+	map_big.opacity = 1
+	map_big.z = 999
+	
+	map_big.animate
+# 		scale: 2.63
+		width: 1440
+		height: 775
+# 		x: -290
+# 		y: -10
+		x: -731
+		y: -250
+		borderRadius: 0
+		options:
+			time: 0.32
+			curve: defaultBezier
+	
+	bg_map_top.parent = safariContent
+	bg_map_top.opacity = 1
+	bg_map_top.z = 1000
+
+button_sluit_kaart.onClick ->
+	map_big.animate
+		width: 550
+		height: 297
+		x: -2
+		y: 0
+		options:
+			time: 0.32
+			curve: defaultBezier
+	
+	Utils.delay 0.24, ->
+		map_big.opacity = 0
+		map_without_road.opacity = 1
+	
+	bg_map_top.opacity = 0
+				
+# 	flow.showNext(main_frame2, animate: false)
+# 	routeplanner.parent=null
+# 	map_big.parent=scroll.content
