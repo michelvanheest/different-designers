@@ -593,20 +593,49 @@ button_sluit_kaart.onMouseOut ->
 	button_sluit_kaart_text.color = "#003C85"
 
 ## 🔴Open map
+# button_open_kaart.onClick ->
+# 	scroll.mouseWheelEnabled = false
+# 	map_without_road.opacity = 0
+# 	map_big.opacity = 1
+# 	map_big.z = 999
+# 	
+# 	map_big.animate
+# 		width: 1440
+# 		height: 775
+# 		x: -731
+# 		y: -250
+# 		borderRadius: 0
+# 		options:
+# 			time: 0.32
+# 			curve: defaultBezier
+# 	
+# 	map_big_overlay.z = 1000
+# 	bg_map_top.parent = safariContent
+# 	bg_map_top.opacity = 1
+# 	bg_map_top.z = 1000
+# 	
+# 	Utils.delay 0.56, ->
+# 		map_big_overlay.animate
+# 			opacity: 1
+# 			options:
+# 				time: 0.16
+# 				curve: defaultBezier
+
 button_open_kaart.onClick ->
 	scroll.mouseWheelEnabled = false
 	map_without_road.opacity = 0
 	map_big.opacity = 1
 	map_big.z = 999
+	map_big.parent = safariContent
+	map_big_overlay.parent = safariContent
 	
 	map_big.animate
-# 		scale: 2.63
 		width: 1440
 		height: 775
-# 		x: -290
-# 		y: -10
-		x: -731
-		y: -250
+# 		x: -731
+		x: 0
+		y: 60
+# 		y: -250
 		borderRadius: 0
 		options:
 			time: 0.32
@@ -617,17 +646,17 @@ button_open_kaart.onClick ->
 	bg_map_top.opacity = 1
 	bg_map_top.z = 1000
 	
-	Utils.delay 0.56, ->
-		map_big_overlay.animate
-			opacity: 1
-			options:
-				time: 0.16
-				curve: defaultBezier
+# 	Utils.delay 0.56, ->
+# 		map_big_overlay.animate
+# 			opacity: 1
+# 			options:
+# 				time: 0.16
+# 				curve: defaultBezier
 
 ## 🔴Close map
 button_sluit_kaart.onClick ->
 	scroll.mouseWheelEnabled = true
-	map_big_overlay.opacity = 0
+# 	map_big_overlay.opacity = 0
 	map_big.animate
 		width: 550
 		height: 297
@@ -681,15 +710,16 @@ hub_tanken.onClick ->
 			map_without_road.opacity = 0
 			map_big.opacity = 1
 			map_big.z = 999
+			map_big.parent = safariContent
+			map_big_overlay.parent = safariContent
 			
 			map_big.animate
-		# 		scale: 2.63
 				width: 1440
 				height: 775
-		# 		x: -290
-		# 		y: -10
-				x: -731
-				y: -250
+		# 		x: -731
+				x: 0
+				y: 60
+		# 		y: -250
 				borderRadius: 0
 				options:
 					time: 0.32
@@ -706,4 +736,7 @@ hub_tanken.onClick ->
 					options:
 						time: 0.16
 						curve: defaultBezier
+
+
+	
 		
