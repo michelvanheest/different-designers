@@ -627,21 +627,19 @@ button_open_kaart.onClick ->
 	map_big.opacity = 1
 	map_big.z = 999
 	map_big.parent = safariContent
-	map_big_overlay.parent = safariContent
+# 	map_big_overlay.parent = safariContent
 	
 	map_big.animate
 		width: 1440
 		height: 775
-# 		x: -731
 		x: 0
 		y: 60
-# 		y: -250
 		borderRadius: 0
 		options:
 			time: 0.32
 			curve: defaultBezier
 	
-	map_big_overlay.z = 1000
+# 	map_big_overlay.z = 1000
 	bg_map_top.parent = safariContent
 	bg_map_top.opacity = 1
 	bg_map_top.z = 1000
@@ -655,23 +653,23 @@ button_open_kaart.onClick ->
 
 ## 🔴Close map
 button_sluit_kaart.onClick ->
-	scroll.mouseWheelEnabled = true
-# 	map_big_overlay.opacity = 0
-	map_big.animate
-		width: 550
-		height: 297
-		x: -2
-		y: 0
-		borderRadius: 12
-		options:
-			time: 0.32
-			curve: defaultBezier
-	
-	Utils.delay 0.56, ->
-		map_big.opacity = 0
-		map_without_road.opacity = 1
-	
-	bg_map_top.opacity = 0
+	flow.showNext(danku)
+# 	scroll.mouseWheelEnabled = true
+# 	map_big.animate
+# 		width: 550
+# 		height: 297
+# 		x: -2
+# 		y: 0
+# 		borderRadius: 12
+# 		options:
+# 			time: 0.32
+# 			curve: defaultBezier
+# 	
+# 	Utils.delay 0.56, ->
+# 		map_big.opacity = 0
+# 		map_without_road.opacity = 1
+# 	
+# 	bg_map_top.opacity = 0
 
 # 🔵Navigation hub
 ## 🔴Animate button open map
