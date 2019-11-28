@@ -33,6 +33,7 @@ loading_gradient_right = new Gradient
 	end: "#FFFFFF"
 	angle: 270
 
+bg_map_top.opacity = 0
 bg_img_default.opacity = 1
 bg_img_footer.opacity = 1
 bg_img_footer.y = 1403
@@ -181,7 +182,7 @@ shake = (view, times=4) ->
 	right.start()
 
 # 🔵Content preloaders
-##01
+##🔴01
 content_loader_route_extra_info_1 = new Layer
 	width: 317
 	height: 100
@@ -205,7 +206,7 @@ content_loader_route_extra_info_1.states =
 		options:
 			time: 2
 
-##02
+##🔴02
 content_loader_route_extra_info_2 = new Layer
 	width: 317
 	height: 100
@@ -229,7 +230,7 @@ content_loader_route_extra_info_2.states =
 		options:
 			time: 2
 
-##03
+##🔴03
 content_loader_route_extra_info_3 = new Layer
 	width: 317
 	height: 100
@@ -253,7 +254,7 @@ content_loader_route_extra_info_3.states =
 		options:
 			time: 2
 
-##01
+##🔴01
 route_directions_info_1 = new Layer
 	width: 514
 	height: 80
@@ -277,7 +278,7 @@ route_directions_info_1.states =
 		options:
 			time: 2
 
-##02
+##🔴02
 route_directions_info_2 = new Layer
 	width: 514
 	height: 103
@@ -301,7 +302,7 @@ route_directions_info_2.states =
 		options:
 			time: 2
 
-##03
+##🔴03
 route_directions_info_3 = new Layer
 	width: 514
 	height: 103
@@ -325,7 +326,7 @@ route_directions_info_3.states =
 		options:
 			time: 2
 
-##04
+##🔴04
 route_directions_info_4 = new Layer
 	width: 514
 	height: 103
@@ -349,7 +350,7 @@ route_directions_info_4.states =
 		options:
 			time: 2
 
-##05
+##🔴05
 route_directions_info_5 = new Layer
 	width: 514
 	height: 103
@@ -373,7 +374,7 @@ route_directions_info_5.states =
 		options:
 			time: 2
 
-##06
+##🔴06
 route_directions_info_6 = new Layer
 	width: 514
 	height: 103
@@ -397,7 +398,7 @@ route_directions_info_6.states =
 		options:
 			time: 2
 
-# 🔵Trigger
+# 🔵Trigger get info
 plan_button.onTap ->
 	# change default bg image with route content
 	bg_img_default.animate
