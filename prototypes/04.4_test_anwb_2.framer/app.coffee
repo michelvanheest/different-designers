@@ -152,14 +152,14 @@ shake = (view, times=4) ->
 	right = new Animation
 		layer: view
 		properties: 
-			x: view.x + 2
+			x: view.x + 5
 		curve: "bezier-curve"
 		time: 0.08
 		
 	left = new Animation
 		layer: view
 		properties: 
-			x: view.x - 2
+			x: view.x - 5
 		curve: "bezier-curve"
 		time: 0.08
 
@@ -181,6 +181,7 @@ shake = (view, times=4) ->
 			view.animate
 				properties:
 					x: view.x+1
+# 					x: view.x+0
 				time: 0.1
    
 	right.start()
