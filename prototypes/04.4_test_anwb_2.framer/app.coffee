@@ -616,26 +616,26 @@ button_open_kaart.onClick ->
 	bg_map_top.z = 1000
 	
 ## 🔴Open map via map
-map_without_road.onClick ->
-	scroll.mouseWheelEnabled = false
-	map_without_road.opacity = 0
-	map_big.opacity = 1
-	map_big.z = 999
-	map_big.parent = safariContent
-	
-	map_big.animate
-		width: 1440
-		height: 775
-		x: 0
-		y: 60
-		borderRadius: 0
-		options:
-			time: 0.32
-			curve: defaultBezier
-	
-	bg_map_top.parent = safariContent
-	bg_map_top.opacity = 1
-	bg_map_top.z = 1000
+# map_without_road.onClick ->
+# 	scroll.mouseWheelEnabled = false
+# 	map_without_road.opacity = 0
+# 	map_big.opacity = 1
+# 	map_big.z = 999
+# 	map_big.parent = safariContent
+# 	
+# 	map_big.animate
+# 		width: 1440
+# 		height: 775
+# 		x: 0
+# 		y: 60
+# 		borderRadius: 0
+# 		options:
+# 			time: 0.32
+# 			curve: defaultBezier
+# 	
+# 	bg_map_top.parent = safariContent
+# 	bg_map_top.opacity = 1
+# 	bg_map_top.z = 1000
 
 
 ## 🔴Close map
