@@ -155,16 +155,16 @@ shake = (view, times=4) ->
 	right = new Animation
 		layer: view
 		properties: 
-			x: view.x + 5
+			x: view.x + 10
 		curve: "bezier-curve"
-		time: 0.08
+		time: 0.05
 		
 	left = new Animation
 		layer: view
 		properties: 
-			x: view.x - 5
+			x: view.x - 10
 		curve: "bezier-curve"
-		time: 0.08
+		time: 0.05
 
 	right.on "end", ->
 		if i < times
