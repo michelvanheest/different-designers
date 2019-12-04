@@ -10,6 +10,9 @@ route_showed = false
 
 defaultScroll = "Bezier(0.05, 0.58, 0.52, 0.95)"
 defaultBezier = "Bezier(0.46, 0.92, 0.46, 0.92)"
+defaultEaseIn = "Bezier(0.73, 0.15, 1, 1)"
+defaultEaseOut = "Bezier(0, 0, 0.58, 1)"
+defaultEaseInAndOut = "Bezier(0.42, 0, 0.58, 1)"
 defaultDraw = "Bezier(0.68, 0.95, 0.60, 0.95)"
 defaultSpring = "spring(250, 20, 5)"
 
@@ -25,9 +28,7 @@ gradient_pressed = new Gradient
 
 loading_gradient_left = new Gradient
 	start: "#FFFFFF"
-# 	end: "#EDEDED"
-	end: "#F6FAFC"
-# 	end: "#F9F9F9"
+	end: "#F0F6FA"
 	angle: 270
 	
 loading_gradient_right = new Gradient
@@ -129,7 +130,7 @@ road_main.states.add
 
 road_main.states.animationOptions =
 # 		curve: defaultBezier
-		curve: defaultDraw
+		curve: defaultEaseInAndOut
 		time: 1.2
 		
 # 🔴States road_alternative
@@ -137,13 +138,13 @@ road_alternative_1.states =
 	visible:
 		opacity: 0.4
 		animationOptions:
-			curve: defaultBezier
+			curve: defaultEaseIn
 
 road_alternative_2.states =
 	visible:
 		opacity: 0.4
 		animationOptions:
-			curve: defaultBezier
+			curve: defaultEaseIn
 
 # 🔵Shake animation
 shake = (view, times=4) ->
@@ -410,12 +411,12 @@ plan_button.onTap ->
 		opacity: 0
 		options: 
 			time: 0.2
-			curve: defaultBezier
+			curve: defaultEaseInAndOut
 	routeplanner_planning.animate
 		opacity: 1
 		options: 
 			time: 0.4
-			curve: defaultBezier
+			curve: defaultEaseInAndOut
 	# scroll to route content
 	scroll.scrollToPoint(
 		y: 780
@@ -481,22 +482,22 @@ plan_button.onTap ->
 							opacity: 1
 							options: 
 								time: 0.8
-								curve: defaultBezier
+								curve: defaultEaseIn
 						route_extra_info_2_content.animate
 							opacity: 1
 							options: 
 								time: 0.8
-								curve: defaultBezier
+								curve: defaultEaseIn
 						route_extra_info_3_content.animate
 							opacity: 1
 							options: 
 								time: 0.8
-								curve: defaultBezier
+								curve: defaultEaseIn
 						route_directions.animate
 							opacity: 1
 							options: 
 								time: 0.8
-								curve: defaultBezier
+								curve: defaultEaseIn
 						Utils.delay 0.16, ->
 							shake vertraging_1
 						
@@ -564,7 +565,7 @@ button_open_kaart.onMouseOver ->
 		options: 
 			time: 0.2
 		animationOptions:
-			curve: defaultBezier
+			curve: defaultEaseIn
 	button_open_kaart_text.color = "#0097DC"
 button_open_kaart.onMouseOut ->
 	button_open_kaart_icon.animate
@@ -572,7 +573,7 @@ button_open_kaart.onMouseOut ->
 		options: 
 			time: 0.2
 		animationOptions:
-			curve: defaultBezier
+			curve: defaultEaseIn
 	button_open_kaart_text.color = "#003C85"
 	
 ## 🔴Animate button close map
@@ -582,7 +583,7 @@ button_sluit_kaart.onMouseOver ->
 		options: 
 			time: 0.2
 		animationOptions:
-			curve: defaultBezier
+			curve: defaultEaseOut
 	button_sluit_kaart_text.color = "#0097DC"
 button_sluit_kaart.onMouseOut ->
 	button_sluit_kaart_icon.animate
@@ -590,7 +591,7 @@ button_sluit_kaart.onMouseOut ->
 		options: 
 			time: 0.2
 		animationOptions:
-			curve: defaultBezier
+			curve: defaultEaseOut
 	button_sluit_kaart_text.color = "#003C85"
 
 ## 🔴Open map via button
@@ -609,7 +610,7 @@ button_open_kaart.onClick ->
 		borderRadius: 0
 		options:
 			time: 0.32
-			curve: defaultBezier
+			curve: defaultEaseIn
 	
 	bg_map_top.parent = safariContent
 	bg_map_top.opacity = 1
@@ -670,7 +671,7 @@ hub_tanken.onMouseOver ->
 		options: 
 			time: 0.2
 		animationOptions:
-			curve: defaultBezier
+			curve: defaultEaseIn
 	hub_tanken_text.color = "#0097DC"
 hub_tanken.onMouseOut ->
 	hub_tanken_arrow.animate
@@ -678,7 +679,7 @@ hub_tanken.onMouseOut ->
 		options: 
 			time: 0.2
 		animationOptions:
-			curve: defaultBezier
+			curve: defaultEaseIn
 	hub_tanken_text.color = "#003C85"
 
 ## 🔴Scroll down + open map
@@ -712,7 +713,7 @@ hub_tanken.onClick ->
 				borderRadius: 0
 				options:
 					time: 0.32
-					curve: defaultBezier
+					curve: defaultEaseOut
 			
 			map_big_overlay.z = 1000
 			bg_map_top.parent = safariContent
@@ -724,4 +725,4 @@ hub_tanken.onClick ->
 					opacity: 1
 					options:
 						time: 0.16
-						curve: defaultBezier
+						curve: defaultEaseOut
