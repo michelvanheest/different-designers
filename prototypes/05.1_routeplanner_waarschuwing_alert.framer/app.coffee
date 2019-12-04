@@ -37,7 +37,7 @@ loading_gradient_right = new Gradient
 	angle: 270
 
 alertWaarschuwing.opacity = 0
-alertWaarschuwing.y = 939
+alertWaarschuwing.y = Align.bottom(+24)
 bg_map_top.opacity = 0
 bg_img_default.opacity = 1
 bg_img_footer.opacity = 1
@@ -504,7 +504,7 @@ plan_button.onTap ->
 							shake vertraging_1
 						Utils.delay 0.16, ->
 							alertWaarschuwing.animate
-								y: 825
+								y: Align.bottom(-24)
 								opacity: 1
 								options: 
 									time: 0.16
@@ -739,7 +739,7 @@ hub_tanken.onClick ->
 # 🔵Dismiss alertWaarschuwing
 alertWaarschuwing.onClick ->
 	alertWaarschuwing.animate
-		y: 939
+		y: Align.bottom(+24)
 		opacity: 0
 		options: 
 			time: 0.16
