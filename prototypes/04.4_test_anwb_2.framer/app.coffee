@@ -26,7 +26,7 @@ gradient_pressed = new Gradient
 loading_gradient_left = new Gradient
 	start: "#FFFFFF"
 # 	end: "#EDEDED"
-	end: "#F2F2F2"
+	end: "#F6FAFC"
 # 	end: "#F9F9F9"
 	angle: 270
 	

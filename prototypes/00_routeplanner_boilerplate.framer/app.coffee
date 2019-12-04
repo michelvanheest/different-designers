@@ -2,10 +2,15 @@
 #Minor IUXD
 
 # 🔵Defaults
+Framer.Device.deviceType = "fullscreen"
+document.body.style.cursor = "auto"
 
 ## 🔴Variables
+route_showed = false
+
 defaultScroll = "Bezier(0.05, 0.58, 0.52, 0.95)"
 defaultBezier = "Bezier(0.46, 0.92, 0.46, 0.92)"
+defaultDraw = "Bezier(0.68, 0.95, 0.60, 0.95)"
 defaultSpring = "spring(250, 20, 5)"
 
 gradient_button = new Gradient
@@ -21,7 +26,7 @@ gradient_pressed = new Gradient
 loading_gradient_left = new Gradient
 	start: "#FFFFFF"
 # 	end: "#EDEDED"
-	end: "#F2F2F2"
+	end: "#F6FAFC"
 # 	end: "#F9F9F9"
 	angle: 270
 	
@@ -30,17 +35,21 @@ loading_gradient_right = new Gradient
 	end: "#FFFFFF"
 	angle: 270
 
+bg_map_top.opacity = 0
 bg_img_default.opacity = 1
 bg_img_footer.opacity = 1
 bg_img_footer.y = 1403
 routeplanner_planning.opacity = 0
+map_big.opacity = 0
+# map_big_clear.opacity = 0
 bg_img_planning.opacity = 0
-input_button_plan.y = 680
+plan_button.y = 680
 markerA.opacity = 1
 markerB.opacity = 0
 markerB.y = 50
 markerB.scale = 0.8
-road_alternative.opacity = 0
+road_alternative_1.opacity = 0
+road_alternative_2.opacity = 0
 route_extra_info_1_content.opacity = 0
 route_extra_info_2_content.opacity = 0
 route_extra_info_3_content.opacity = 0
@@ -62,31 +71,31 @@ scroll.mouseWheelEnabled = true
 # 🔵Planner form
 
 ## 🔴Button
-input_button_plan.states = 
-	input_button_plan_hover:
+plan_button.states = 
+	plan_button_hover:
 		y: 679
 		gradient: gradient_button
 		options:
 			time: 0.2
-	input_button_plan_default:
+	plan_button_default:
 		y: 680
 		gradient: gradient_button
 		options:
 			time: 0.2
-	input_button_plan_press:
+	plan_button_press:
 		y: 681
 		gradient: gradient_pressed
 		options:
 			time: 0.1
 
-input_button_plan.onMouseOver ->
-	input_button_plan.animate("input_button_plan_hover")
-input_button_plan.onMouseOut ->
-	input_button_plan.animate("input_button_plan_default")
-input_button_plan.onTapStart ->
-	input_button_plan.animate("input_button_plan_press")
-input_button_plan.onTapEnd ->
-	input_button_plan.animate("input_button_plan_default")
+plan_button.onMouseOver ->
+	plan_button.animate("plan_button_hover")
+plan_button.onMouseOut ->
+	plan_button.animate("plan_button_default")
+plan_button.onTapStart ->
+	plan_button.animate("plan_button_press")
+plan_button.onTapEnd ->
+	plan_button.animate("plan_button_default")
 
 # 🔵Map
 
@@ -119,18 +128,66 @@ road_main.states.add
 		dashOffset: -1
 
 road_main.states.animationOptions =
-		curve: defaultBezier
-		time: 1.6
+# 		curve: defaultBezier
+		curve: defaultDraw
+		time: 1.2
 		
 # 🔴States road_alternative
-road_alternative.states =
+road_alternative_1.states =
 	visible:
-		opacity: 1
+		opacity: 0.4
 		animationOptions:
 			curve: defaultBezier
 
+road_alternative_2.states =
+	visible:
+		opacity: 0.4
+		animationOptions:
+			curve: defaultBezier
+
+# 🔵Shake animation
+shake = (view, times=4) ->
+	i = 0
+	
+	right = new Animation
+		layer: view
+		properties: 
+			x: view.x + 5
+		curve: "bezier-curve"
+		time: 0.08
+		
+	left = new Animation
+		layer: view
+		properties: 
+			x: view.x - 5
+		curve: "bezier-curve"
+		time: 0.08
+
+	right.on "end", ->
+		if i < times
+			left.start()
+			i++
+		else
+			view.animate
+				properties:
+					x: view.x-1
+				time: 0.1
+				
+	left.on "end", ->
+		if i < times
+			right.start()
+			i++
+		else
+			view.animate
+				properties:
+					x: view.x+1
+# 					x: view.x+0
+				time: 0.1
+   
+	right.start()
+
 # 🔵Content preloaders
-##01
+##🔴01
 content_loader_route_extra_info_1 = new Layer
 	width: 317
 	height: 100
@@ -154,7 +211,7 @@ content_loader_route_extra_info_1.states =
 		options:
 			time: 2
 
-##02
+##🔴02
 content_loader_route_extra_info_2 = new Layer
 	width: 317
 	height: 100
@@ -178,7 +235,7 @@ content_loader_route_extra_info_2.states =
 		options:
 			time: 2
 
-##03
+##🔴03
 content_loader_route_extra_info_3 = new Layer
 	width: 317
 	height: 100
@@ -202,7 +259,7 @@ content_loader_route_extra_info_3.states =
 		options:
 			time: 2
 
-##01
+##🔴01
 route_directions_info_1 = new Layer
 	width: 514
 	height: 80
@@ -226,7 +283,7 @@ route_directions_info_1.states =
 		options:
 			time: 2
 
-##02
+##🔴02
 route_directions_info_2 = new Layer
 	width: 514
 	height: 103
@@ -250,7 +307,7 @@ route_directions_info_2.states =
 		options:
 			time: 2
 
-##03
+##🔴03
 route_directions_info_3 = new Layer
 	width: 514
 	height: 103
@@ -274,7 +331,7 @@ route_directions_info_3.states =
 		options:
 			time: 2
 
-##04
+##🔴04
 route_directions_info_4 = new Layer
 	width: 514
 	height: 103
@@ -298,7 +355,7 @@ route_directions_info_4.states =
 		options:
 			time: 2
 
-##05
+##🔴05
 route_directions_info_5 = new Layer
 	width: 514
 	height: 103
@@ -322,7 +379,7 @@ route_directions_info_5.states =
 		options:
 			time: 2
 
-##06
+##🔴06
 route_directions_info_6 = new Layer
 	width: 514
 	height: 103
@@ -346,17 +403,289 @@ route_directions_info_6.states =
 		options:
 			time: 2
 
-# 🔵Trigger
-input_button_plan.onTap ->
+# 🔵Trigger get info
+plan_button.onTap ->
+	# change default bg image with route content
+	bg_img_default.animate
+		opacity: 0
+		options: 
+			time: 0.2
+			curve: defaultBezier
+	routeplanner_planning.animate
+		opacity: 1
+		options: 
+			time: 0.4
+			curve: defaultBezier
 	# scroll to route content
-	Utils.delay 0.2, ->
-# 		scroll.scrollToPoint(
-# 			y: 780
-# 			true
-# 			options:
-# 				time: 0.4
-# 				curve: defaultBezier
-# 		)
+	scroll.scrollToPoint(
+		y: 780
+		true
+		options:
+			time: 0.6
+			curve: defaultScroll
+	)
+	# move footer down
+	bg_img_footer.y = 2057
+	
+	Utils.delay 1.24, ->
+		# animate road_main on map
+		road_main.stateCycle("second")
+		# start animating content_loaders
+		content_loader_route_extra_info_1.animate "1"
+		content_loader_route_extra_info_1.onAnimationEnd ->
+			content_loader_route_extra_info_1.stateCycle("1", "2")
+		content_loader_route_extra_info_2.animate "1"
+		content_loader_route_extra_info_2.onAnimationEnd ->
+			content_loader_route_extra_info_2.stateCycle("1", "2")
+		content_loader_route_extra_info_3.animate "1"
+		content_loader_route_extra_info_3.onAnimationEnd ->
+			content_loader_route_extra_info_3.stateCycle("1", "2")
+		route_directions_info_1.animate "1"
+		route_directions_info_1.onAnimationEnd ->
+			route_directions_info_1.stateCycle("1", "2")
+		route_directions_info_2.animate "1"
+		route_directions_info_2.onAnimationEnd ->
+			route_directions_info_2.stateCycle("1", "2")
+		route_directions_info_3.animate "1"
+		route_directions_info_3.onAnimationEnd ->
+			route_directions_info_3.stateCycle("1", "2")
+		route_directions_info_4.animate "1"
+		route_directions_info_4.onAnimationEnd ->
+			route_directions_info_4.stateCycle("1", "2")
+		route_directions_info_5.animate "1"
+		route_directions_info_5.onAnimationEnd ->
+			route_directions_info_5.stateCycle("1", "2")
+		route_directions_info_6.animate "1"
+		route_directions_info_6.onAnimationEnd ->
+			route_directions_info_6.stateCycle("1", "2")
+		Utils.delay 1.2, ->
+			# animate markers on map
+			markerB.stateCycle("visible")
+			Utils.delay 0.4, ->
+				# animate road_alternative on map
+				road_alternative_1.stateCycle("visible")
+				road_alternative_2.stateCycle("visible")
+				Utils.delay 0.8, ->
+					# show content
+					content_loader_route_extra_info_1.opacity = 0
+					content_loader_route_extra_info_2.opacity = 0
+					content_loader_route_extra_info_3.opacity = 0
+					route_directions_info_1.opacity = 0
+					route_directions_info_2.opacity = 0
+					route_directions_info_3.opacity = 0
+					route_directions_info_4.opacity = 0
+					route_directions_info_5.opacity = 0
+					route_directions_info_6.opacity = 0
+					Utils.delay 0.16, ->
+						route_extra_info_1_content.animate
+							opacity: 1
+							options: 
+								time: 0.8
+								curve: defaultBezier
+						route_extra_info_2_content.animate
+							opacity: 1
+							options: 
+								time: 0.8
+								curve: defaultBezier
+						route_extra_info_3_content.animate
+							opacity: 1
+							options: 
+								time: 0.8
+								curve: defaultBezier
+						route_directions.animate
+							opacity: 1
+							options: 
+								time: 0.8
+								curve: defaultBezier
+						Utils.delay 0.16, ->
+							shake vertraging_1
+						
+						route_showed = true
+
+# 🔵Switch road + view traffic
+road_alternative_1.onClick ->
+	road_main.opacity = 0.4
+	road_alternative_1.opacity = 1
+	road_alternative_2.opacity = 0.4
+	route_extra_info_1_content.animate
+		opacity: 0
+		options:
+			time: 0.2
+	route_extra_info_1_content_alternative_1.animate
+		opacity: 1
+		options:
+			time: 0.2
+	route_extra_info_1_content_alternative_2.animate
+		opacity: 0
+		options:
+			time: 0.2
+
+road_alternative_2.onClick ->
+	road_main.opacity = 0.4
+	road_alternative_1.opacity = 0.4
+	road_alternative_2.opacity = 1
+	route_extra_info_1_content.animate
+		opacity: 0
+		options:
+			time: 0.2
+	route_extra_info_1_content_alternative_1.animate
+		opacity: 0
+		options:
+			time: 0.2
+	route_extra_info_1_content_alternative_2.animate
+		opacity: 1
+		options:
+			time: 0.2
+		shake vertraging_2
+	
+road_main.onClick ->
+	road_main.opacity = 1
+	road_alternative_1.opacity = 0.4
+	road_alternative_2.opacity = 0.4
+	route_extra_info_1_content.animate
+		opacity: 1
+		options:
+			time: 0.2
+	route_extra_info_1_content_alternative_1.animate
+		opacity: 0
+		options:
+			time: 0.2
+	route_extra_info_1_content_alternative_2.animate
+		opacity: 0
+		options:
+			time: 0.2
+	shake vertraging_1
+
+# 🔵Open map
+## 🔴Animate button open map
+button_open_kaart.onMouseOver ->
+	button_open_kaart_icon.animate
+		x: 93.5
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultBezier
+	button_open_kaart_text.color = "#0097DC"
+button_open_kaart.onMouseOut ->
+	button_open_kaart_icon.animate
+		x: 90.5
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultBezier
+	button_open_kaart_text.color = "#003C85"
+	
+## 🔴Animate button close map
+button_sluit_kaart.onMouseOver ->
+	button_sluit_kaart_icon.animate
+		x: 93.5
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultBezier
+	button_sluit_kaart_text.color = "#0097DC"
+button_sluit_kaart.onMouseOut ->
+	button_sluit_kaart_icon.animate
+		x: 90.5
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultBezier
+	button_sluit_kaart_text.color = "#003C85"
+
+## 🔴Open map via button
+button_open_kaart.onClick ->
+	scroll.mouseWheelEnabled = false
+	map_without_road.opacity = 0
+	map_big.opacity = 1
+	map_big.z = 999
+	map_big.parent = safariContent
+	
+	map_big.animate
+		width: 1440
+		height: 775
+		x: 0
+		y: 60
+		borderRadius: 0
+		options:
+			time: 0.32
+			curve: defaultBezier
+	
+	bg_map_top.parent = safariContent
+	bg_map_top.opacity = 1
+	bg_map_top.z = 1000
+	
+## 🔴Open map via map
+# map_without_road.onClick ->
+# 	scroll.mouseWheelEnabled = false
+# 	map_without_road.opacity = 0
+# 	map_big.opacity = 1
+# 	map_big.z = 999
+# 	map_big.parent = safariContent
+# 	
+# 	map_big.animate
+# 		width: 1440
+# 		height: 775
+# 		x: 0
+# 		y: 60
+# 		borderRadius: 0
+# 		options:
+# 			time: 0.32
+# 			curve: defaultBezier
+# 	
+# 	bg_map_top.parent = safariContent
+# 	bg_map_top.opacity = 1
+# 	bg_map_top.z = 1000
+
+
+## 🔴Close map
+button_sluit_kaart.onClick ->
+	flow.showNext(danku)
+# 	scroll.mouseWheelEnabled = true
+# 	map_big.parent = route_map_small
+# 	map_big.animate
+# 		width: 550
+# 		height: 297
+# 		x: -2
+# 		y: 0
+# 		borderRadius: 12
+# 		options:
+# 			time: 0.32
+# 			curve: defaultBezier
+# 	
+# 	Utils.delay 0.56, ->
+# 		map_big.opacity = 0
+# 		map_without_road.opacity = 1
+# 	
+# 	bg_map_top.opacity = 0
+
+safariArrows.onClick ->
+	flow.showNext(danku)
+
+# 🔵Navigation hub
+## 🔴Animate button open map
+hub_tanken.onMouseOver ->
+	hub_tanken_arrow.animate
+		x: 164
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultBezier
+	hub_tanken_text.color = "#0097DC"
+hub_tanken.onMouseOut ->
+	hub_tanken_arrow.animate
+		x: 161
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultBezier
+	hub_tanken_text.color = "#003C85"
+
+## 🔴Scroll down + open map
+hub_tanken.onClick ->
+
+	if route_showed is true
+	
 		scroll.scrollToPoint(
 			y: 780
 			true
@@ -364,87 +693,35 @@ input_button_plan.onTap ->
 				time: 0.6
 				curve: defaultScroll
 		)
-		# move footer down
-		bg_img_footer.y = 2057
-		# change default bg image with route content
-		Utils.delay 0.4, ->
-			bg_img_default.animate
-				opacity: 0
-				options: 
-					time: 0.2
+		
+		Utils.delay 1.6, ->
+			scroll.mouseWheelEnabled = false
+			map_without_road.opacity = 0
+			map_big.opacity = 1
+			map_big.z = 999
+			map_big.parent = safariContent
+			map_big_overlay.parent = safariContent
+			
+			map_big.animate
+				width: 1440
+				height: 775
+		# 		x: -731
+				x: 0
+				y: 60
+		# 		y: -250
+				borderRadius: 0
+				options:
+					time: 0.32
 					curve: defaultBezier
-			routeplanner_planning.animate
-				opacity: 1
-				options: 
-					time: 0.4
-					curve: defaultBezier
-			Utils.delay 1.24, ->
-				# animate road_main on map
-# 				road_main.states.next()
-				road_main.stateCycle("second")
-				# start animating content_loaders
-				content_loader_route_extra_info_1.animate "1"
-				content_loader_route_extra_info_1.onAnimationEnd ->
-					content_loader_route_extra_info_1.stateCycle("1", "2")
-				content_loader_route_extra_info_2.animate "1"
-				content_loader_route_extra_info_2.onAnimationEnd ->
-					content_loader_route_extra_info_2.stateCycle("1", "2")
-				content_loader_route_extra_info_3.animate "1"
-				content_loader_route_extra_info_3.onAnimationEnd ->
-					content_loader_route_extra_info_3.stateCycle("1", "2")
-				route_directions_info_1.animate "1"
-				route_directions_info_1.onAnimationEnd ->
-					route_directions_info_1.stateCycle("1", "2")
-				route_directions_info_2.animate "1"
-				route_directions_info_2.onAnimationEnd ->
-					route_directions_info_2.stateCycle("1", "2")
-				route_directions_info_3.animate "1"
-				route_directions_info_3.onAnimationEnd ->
-					route_directions_info_3.stateCycle("1", "2")
-				route_directions_info_4.animate "1"
-				route_directions_info_4.onAnimationEnd ->
-					route_directions_info_4.stateCycle("1", "2")
-				route_directions_info_5.animate "1"
-				route_directions_info_5.onAnimationEnd ->
-					route_directions_info_5.stateCycle("1", "2")
-				route_directions_info_6.animate "1"
-				route_directions_info_6.onAnimationEnd ->
-					route_directions_info_6.stateCycle("1", "2")
-				Utils.delay 1.6, ->
-					# animate markers on map
-					markerB.stateCycle("visible")
-					Utils.delay 0.4, ->
-						# animate road_alternative on map
-						road_alternative.stateCycle("visible")
-						Utils.delay 1.8, ->
-							# show content
-							content_loader_route_extra_info_1.opacity = 0
-							content_loader_route_extra_info_2.opacity = 0
-							content_loader_route_extra_info_3.opacity = 0
-							route_directions_info_1.opacity = 0
-							route_directions_info_2.opacity = 0
-							route_directions_info_3.opacity = 0
-							route_directions_info_4.opacity = 0
-							route_directions_info_5.opacity = 0
-							route_directions_info_6.opacity = 0
-							Utils.delay 0.16, ->
-								route_extra_info_1_content.animate
-									opacity: 1
-									options: 
-										time: 0.8
-										curve: defaultBezier
-								route_extra_info_2_content.animate
-									opacity: 1
-									options: 
-										time: 0.8
-										curve: defaultBezier
-								route_extra_info_3_content.animate
-									opacity: 1
-									options: 
-										time: 0.8
-										curve: defaultBezier
-								route_directions.animate
-									opacity: 1
-									options: 
-										time: 0.8
-										curve: defaultBezier
+			
+			map_big_overlay.z = 1000
+			bg_map_top.parent = safariContent
+			bg_map_top.opacity = 1
+			bg_map_top.z = 1000
+			
+			Utils.delay 0.56, ->
+				map_big_overlay.animate
+					opacity: 1
+					options:
+						time: 0.16
+						curve: defaultBezier
