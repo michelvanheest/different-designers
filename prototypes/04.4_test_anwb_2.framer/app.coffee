@@ -28,9 +28,7 @@ gradient_pressed = new Gradient
 
 loading_gradient_left = new Gradient
 	start: "#FFFFFF"
-# 	end: "#EDEDED"
-	end: "#F2F2F2"
-# 	end: "#F9F9F9"
+	end: "#F6FAFC"
 	angle: 270
 	
 loading_gradient_right = new Gradient
@@ -132,7 +130,7 @@ road_main.states.add
 
 road_main.states.animationOptions =
 # 		curve: defaultBezier
-		curve: defaultDraw
+		curve: defaultEaseInAndOut
 		time: 1.2
 		
 # 🔴States road_alternative
@@ -155,16 +153,16 @@ shake = (view, times=4) ->
 	right = new Animation
 		layer: view
 		properties: 
-			x: view.x + 10
+			x: view.x + 5
 		curve: "bezier-curve"
-		time: 0.05
+		time: 0.08
 		
 	left = new Animation
 		layer: view
 		properties: 
-			x: view.x - 10
+			x: view.x - 5
 		curve: "bezier-curve"
-		time: 0.05
+		time: 0.08
 
 	right.on "end", ->
 		if i < times
@@ -484,22 +482,22 @@ plan_button.onTap ->
 							opacity: 1
 							options: 
 								time: 0.8
-								curve: defaultBezier
+								curve: defaultEaseIn
 						route_extra_info_2_content.animate
 							opacity: 1
 							options: 
 								time: 0.8
-								curve: defaultBezier
+								curve: defaultEaseIn
 						route_extra_info_3_content.animate
 							opacity: 1
 							options: 
 								time: 0.8
-								curve: defaultBezier
+								curve: defaultEaseIn
 						route_directions.animate
 							opacity: 1
 							options: 
 								time: 0.8
-								curve: defaultBezier
+								curve: defaultEaseIn
 						Utils.delay 0.16, ->
 							shake vertraging_1
 						
