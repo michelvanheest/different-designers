@@ -2,25 +2,25 @@
   "orientation" : 0,
   "updateDelay" : 0.29999999999999999,
   "designModeSelected" : 0,
-  "cachedDeviceHeight" : 900,
+  "cachedDeviceHeight" : 0,
   "contentScale" : 1,
-  "fullScreen" : false,
-  "cachedDeviceWidth" : 1440,
-  "deviceType" : "apple-macbook-pro",
+  "cachedDeviceWidth" : 0,
+  "deviceType" : "fullscreen",
   "sharedPrototype" : 0,
-  "propertyPanelToggleStates" : {
-
-  },
-  "projectId" : "0E20F5F0-AE19-4A1D-964C-6C5F01C433E9",
+  "projectId" : "462CD652-425C-4C55-8627-1F28B0F4133D",
   "deviceOrientation" : 0,
   "selectedHand" : "",
-  "showBezel" : false,
+  "showBezel" : true,
   "foldedCodeRanges" : [
-    "{31, 1260}",
-    "{1292, 670}",
-    "{1963, 793}",
-    "{2757, 3306}",
-    "{6064, 3295}"
+    "{31, 1503}",
+    "{1535, 574}",
+    "{2110, 918}",
+    "{3029, 570}",
+    "{3600, 3324}",
+    "{6925, 3081}",
+    "{10007, 1170}",
+    "{11178, 2106}",
+    "{13285, 1189}"
   ],
-  "deviceScale" : "fit"
+  "deviceScale" : 1
 }

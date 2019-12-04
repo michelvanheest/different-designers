@@ -10,7 +10,7 @@ You can find the website on → [http://differentdesigners.nl](http://www.differ
 > SOME BASIC GIT GUIDELINES TO MAKE OUR LIVES EASIER
 > 
 > - Always develop on a new branch, don't develop on Master. The content of the Master-branch will go live on `differentdesigners.nl` directly.
-> - Always Pull Request (PR), never merge directly.
+> - Always Pull Request (PR), never merge directly. Michel will merge so shit doesn't hit the fan 😁
 > - Never merge your own PR unless you're 100% sure of what you're doing and you verified the change with the team — unless it's your own branch/prototype of course. 
 > - Dare to make mistakes on your branches, that's were Git is for: solving fuck-ups by doing a rollback — it's gonna be okay (I wrecked my whole Shortcuts codebase once by accidentally merging in Master at 1AM, _nothing on the hand_ because of Git)
 > - Ask questions when you don't have any clue wtf you're doing; I still don't know what I'm doing either and we're all here to learn.
@@ -22,12 +22,40 @@ You can find the website on → [http://differentdesigners.nl](http://www.differ
 
 ---
 
-# To do
+# How to locally run Framer proto’s without Framer installed
 
-- [x] Replace `https://michelvanheest.github.io/different-designers/` with `https://differentdesigners.nl`
-- [x] Fix SSL/HTTP and redirecting to the right domain
-- [ ] Write instructions in this README for running this project (NPM, Node server and other stuff like Jekyll?)
-- [ ] Combine [Prototype repo](https://github.com/michelvanheest/iuxd-anwb) with this repo as a submodule or monorepo
+## Install Node HTTP-server
+- Install NodeJS → https://nodejs.org/en/download/
+- Open terminal, type this command to install the _HTTP-server_
+
+
+```
+npm install http-server -g
+```
+
+- When you don’t have the right permissions:
+
+
+```
+sudo npm install http-server -g
+```
+
+## Run prototype using the HTTP-server
+- Open terminal
+- Type (note the space at the end!!):
+
+
+```
+cd 
+```
+
+- Drag the folder with the Framer prototype into your terminal + press “enter”. Your server _with_ the Framer prototype is now running
+- Open `localhost:8080` in your Chrome browser (this is the IP your server is running on)
+
+## Change the Framer prototype
+- Drag the folder with the Framer prototype to your VSCode icon
+- Edit `app.coffee` and save your changes
+- Use CMD+Shift+R to reload the prototype after you changed something in the code.
 
 ---
 
