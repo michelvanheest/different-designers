@@ -502,7 +502,7 @@ plan_button.onTap ->
 								curve: defaultEaseIn
 						Utils.delay 0.16, ->
 							shake vertraging_1
-						Utils.delay 0.16, ->
+						Utils.delay 0.32, ->
 							alertWaarschuwing.animate
 								y: Screen.height - 75
 								opacity: 1
