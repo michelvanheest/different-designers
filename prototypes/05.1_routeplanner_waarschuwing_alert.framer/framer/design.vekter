@@ -6142,7 +6142,7 @@
                     "bottom" : 23,
                     "brightness" : 100,
                     "brightnessEnabled" : 0,
-                    "centerAnchorX" : 0.5436893203883495,
+                    "centerAnchorX" : 0.51067961165048548,
                     "centerAnchorY" : 0.64444444444444449,
                     "constraintsLocked" : false,
                     "contrast" : 100,
@@ -6193,42 +6193,42 @@
                           ],
                           "inlineStyleRanges" : [
                             {
-                              "length" : 51,
+                              "length" : 47,
                               "offset" : 0,
                               "style" : "LETTERSPACING:0"
                             },
                             {
-                              "length" : 51,
+                              "length" : 47,
                               "offset" : 0,
                               "style" : "LINEHEIGHT:1.2"
                             },
                             {
-                              "length" : 51,
+                              "length" : 47,
                               "offset" : 0,
                               "style" : "COLOR:rgba(41, 87, 134, 1.00)"
                             },
                             {
-                              "length" : 51,
+                              "length" : 47,
                               "offset" : 0,
                               "style" : "FONT:Verdana"
                             },
                             {
-                              "length" : 51,
+                              "length" : 47,
                               "offset" : 0,
                               "style" : "SIZE:15"
                             }
                           ],
                           "key" : "4qlgg",
-                          "text" : "In Noord-Brabant komt plaatselijk dichte mist voor.",
+                          "text" : "Rond Utrecht komt plaatselijk dichte mist voor.",
                           "type" : "unstyled"
                         }
                       ],
                       "cached" : {
-                        "html" : "<span data-offset-key=\"4qlgg-0-0\" style=\"tab-size:4;font-weight:400;font-family:&quot;Verdana&quot;, sans-serif;-webkit-text-fill-color:rgba(41, 87, 134, 1.00);font-size:15px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">In Noord-Brabant komt plaatselijk dichte mist voor.<\/span><\/span>",
+                        "html" : "<span data-offset-key=\"4qlgg-0-0\" style=\"tab-size:4;font-weight:400;font-family:&quot;Verdana&quot;, sans-serif;-webkit-text-fill-color:rgba(41, 87, 134, 1.00);font-size:15px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">Rond Utrecht komt plaatselijk dichte mist voor.<\/span><\/span>",
                         "os" : "10_14",
                         "size" : {
                           "height" : 18,
-                          "width" : 390
+                          "width" : 356
                         },
                         "width" : 0
                       },
@@ -6239,7 +6239,7 @@
                     "targetName" : null,
                     "top" : null,
                     "visible" : true,
-                    "width" : 390,
+                    "width" : 356,
                     "widthFactor" : null
                   },
                   {
