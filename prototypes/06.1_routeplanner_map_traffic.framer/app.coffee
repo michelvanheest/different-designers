@@ -438,7 +438,7 @@ plan_button.onTap ->
 			opacity: 1
 			options: 
 				delay: 0.5
-				time: 0.16
+				time: 0.24
 		# start animating content_loaders
 		content_loader_route_extra_info_1.animate "1"
 		content_loader_route_extra_info_1.onAnimationEnd ->
