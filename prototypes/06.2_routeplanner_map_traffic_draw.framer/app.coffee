@@ -153,8 +153,8 @@ road_traffic.states.add
 		dashOffset: -1
 
 road_traffic.states.animationOptions =
-		curve: defaultEaseInAndOut
-		time: 0.12
+		curve: defaultEaseOut
+		time: 0.09
 		delay: 0.49
 		
 # 🔴States road_alternative
