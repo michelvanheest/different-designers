@@ -504,7 +504,7 @@ plan_button.onTap ->
 							shake vertraging_1
 						Utils.delay 0.16, ->
 							alertWaarschuwing.animate
-								y: Align.bottom(-24)
+								y: Screen.height - 75
 								opacity: 1
 								options: 
 									time: 0.16
