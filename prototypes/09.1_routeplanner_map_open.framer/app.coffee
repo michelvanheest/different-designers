@@ -603,22 +603,23 @@ button_open_kaart.onMouseOut ->
 	button_open_kaart_text.color = "#003C85"
 	
 ## 🔴Animate button close map
-button_sluit_kaart.onMouseOver ->
-	button_sluit_kaart_icon.animate
+button_sluit_kaart_2.onMouseOver ->
+	button_sluit_kaart_icon_2.animate
 		x: 93.5
 		options: 
 			time: 0.2
 		animationOptions:
 			curve: defaultEaseOut
-	button_sluit_kaart_text.color = "#0097DC"
-button_sluit_kaart.onMouseOut ->
-	button_sluit_kaart_icon.animate
+	button_sluit_kaart_text_2.color = "#0097DC"
+button_sluit_kaart_2.onMouseOut ->
+	button_sluit_kaart_icon_2.animate
 		x: 90.5
 		options: 
 			time: 0.2
 		animationOptions:
 			curve: defaultEaseOut
-	button_sluit_kaart_text.color = "#003C85"
+	button_sluit_kaart_text_2.color = "#003C85"
+	
 
 ## 🔴openMap() function
 openMap = ->
@@ -665,7 +666,6 @@ openMap = ->
 				time: 0.24
 				curve: defaultEaseIn
 	
-	## 🔴Real trigger
 	mapBig.parent = safariContent
 	mapBig.screenFrame = origPos
 	
@@ -687,6 +687,9 @@ openMap = ->
 			options:
 				time: 0.08
 				curve: defaultSpring
+		
+		Utils.delay 0.8, ->
+			flow.showNext(main_frame_2, animate: false)
 
 
 ## 🔴Open map via button
@@ -694,7 +697,7 @@ button_open_kaart.onClick ->
 	openMap()
 	
 ## 🔴Close map
-button_sluit_kaart.onClick ->
+closeMap = ->
 	scroll.mouseWheelEnabled = true
 	mapBig.animate("close")
 	bg_map_top.parent = routeplanner_content
@@ -703,7 +706,12 @@ button_sluit_kaart.onClick ->
 	button_sluit_kaart.opacity = 0
 	button_sluit_kaart.y = -12
 
-# 🔵Navigation hub 🚨DEZE WERKT NOG NIET, MOET NOG GEFIXED WORDEN
+button_sluit_kaart_2.onClick ->
+	flow.showPrevious(animate: false)
+	Utils.delay 0.4, ->
+		closeMap()
+
+# 🔵Navigation hub
 ## 🔴Animate button open map
 hub_tanken.onMouseOver ->
 	hub_tanken_arrow.animate
