@@ -65,6 +65,11 @@ route_extra_info_2_content.opacity = 0
 route_extra_info_3_content.opacity = 0
 route_directions.opacity = 0
 
+sidebarLeft.x = -415
+sidebarLeft.opacity = 0
+sidebarRight.x = 1440
+sidebarRight.opacity = 0
+
 ## 🔴Create main_frame
 flow = new FlowComponent
 flow.showNext(main_frame)
@@ -413,6 +418,26 @@ route_directions_info_6.states =
 		options:
 			time: 2
 
+# 🔵alertWaarschuwing
+alertWaarschuwing_show = ->
+	alertWaarschuwing.animate
+		y: Screen.height - 75
+		opacity: 1
+		options: 
+			time: 0.16
+			curve: defaultSpring
+
+alertWaarschuwing_dismiss = ->
+	alertWaarschuwing.animate
+		y: Align.bottom(+24)
+		opacity: 0
+		options: 
+			time: 0.16
+			curve: defaultSpring
+
+alertWaarschuwing.onClick ->
+	alertWaarschuwing_dismiss()
+
 # 🔵Trigger get info
 plan_button.onTap ->
 	# change default bg image with route content
@@ -520,12 +545,7 @@ plan_button.onTap ->
 									curve: defaultEaseIn
 							shake vertraging_1
 						Utils.delay 1, ->
-							alertWaarschuwing.animate
-								y: Screen.height - 75
-								opacity: 1
-								options: 
-									time: 0.16
-									curve: defaultSpring
+							alertWaarschuwing_show()
 							
 							route_showed = true
 
@@ -583,7 +603,90 @@ road_main.onClick ->
 			time: 0.2
 	shake vertraging_1
 
-# 🔵Open map
+# 🔵Navigation hub
+## 🔴Animate button open map
+hub_tanken.onMouseOver ->
+	hub_tanken_arrow.animate
+		x: 164
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultEaseIn
+	hub_tanken_text.color = "#0097DC"
+hub_tanken.onMouseOut ->
+	hub_tanken_arrow.animate
+		x: 161
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultEaseIn
+	hub_tanken_text.color = "#003C85"
+
+## 🔴Scroll down + open map
+hub_tanken.onClick ->
+
+	if route_showed is true
+	
+		scroll.scrollToPoint(
+			y: 780
+			true
+			options:
+				time: 0.6
+				curve: defaultScroll
+		)
+		
+		Utils.delay 1.2, ->
+			openMap()
+
+## 🔵Map Sidebar states
+## 🔴States
+sidebarLeft.states =
+	open:
+		x: 0
+		opacity: 1
+		options: 
+			time: 0.24
+			curve: defaultEaseInAndOut
+	close:
+		x: -415
+		opacity: 0
+		options:
+			time: 0.24
+			curve: defaultEaseInAndOut
+	dismissed:
+		x: -365
+		opacity: 1
+		options: 
+			time: 0.24
+			curve: defaultEaseInAndOut
+
+sidebarRight.states =
+	open:
+		x: 1026
+		opacity: 1
+		options: 
+			time: 0.24
+			curve: defaultEaseInAndOut
+	close:
+		x: 1440
+		opacity: 0
+		options:
+			time: 0.24
+			curve: defaultEaseInAndOut
+	dismissed:
+		x: 1391
+		opacity: 1
+		options: 
+			time: 0.24
+			curve: defaultEaseInAndOut
+
+## 🔴Trigger
+sidebarLeftHandle.onClick ->
+	sidebarLeft.stateCycle("dismissed", "open")
+sidebarRightHandle.onClick ->
+	sidebarRight.stateCycle("dismissed", "open")
+
+# 🔵mapBig open/close
 ## 🔴Animate button open map
 button_open_kaart.onMouseOver ->
 	button_open_kaart_icon.animate
@@ -679,6 +782,7 @@ openMap = ->
 		options: 
 			time: 0.24
 			curve: defaultEaseIn
+	alertWaarschuwing_dismiss()
 	
 	Utils.delay 0.8, ->
 		button_sluit_kaart.animate
@@ -691,10 +795,12 @@ openMap = ->
 		Utils.delay 0.8, ->
 			flow.showNext(main_frame_2, animate: false)
 
-
 ## 🔴Open map via button
 button_open_kaart.onClick ->
 	openMap()
+	Utils.delay 1.6, ->
+		sidebarLeft.animate("dismissed")
+		sidebarRight.animate("dismissed")
 	
 ## 🔴Close map
 closeMap = ->
@@ -705,52 +811,12 @@ closeMap = ->
 	bg_map_top.opacity = 0
 	button_sluit_kaart.opacity = 0
 	button_sluit_kaart.y = -12
+	alertWaarschuwing_show()
 
 button_sluit_kaart_2.onClick ->
-	flow.showPrevious(animate: false)
-	Utils.delay 0.4, ->
-		closeMap()
-
-# 🔵Navigation hub
-## 🔴Animate button open map
-hub_tanken.onMouseOver ->
-	hub_tanken_arrow.animate
-		x: 164
-		options: 
-			time: 0.2
-		animationOptions:
-			curve: defaultEaseIn
-	hub_tanken_text.color = "#0097DC"
-hub_tanken.onMouseOut ->
-	hub_tanken_arrow.animate
-		x: 161
-		options: 
-			time: 0.2
-		animationOptions:
-			curve: defaultEaseIn
-	hub_tanken_text.color = "#003C85"
-
-## 🔴Scroll down + open map
-hub_tanken.onClick ->
-
-	if route_showed is true
-	
-		scroll.scrollToPoint(
-			y: 780
-			true
-			options:
-				time: 0.6
-				curve: defaultScroll
-		)
-		
-		Utils.delay 1.2, ->
-			openMap()
-
-# 🔵Dismiss alertWaarschuwing
-alertWaarschuwing.onClick ->
-	alertWaarschuwing.animate
-		y: Align.bottom(+24)
-		opacity: 0
-		options: 
-			time: 0.16
-			curve: defaultSpring
+	sidebarLeft.animate("close")
+	sidebarRight.animate("close")
+	Utils.delay 0.8, ->
+		flow.showPrevious(animate: false)
+		Utils.delay 0.4, ->
+			closeMap()
