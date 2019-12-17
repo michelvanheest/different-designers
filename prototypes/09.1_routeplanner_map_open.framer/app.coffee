@@ -1025,8 +1025,8 @@ sideBarHotel.states =
 			time: 0.24
 			curve: defaultEaseOut
 
-## 🔴Tanken trigger
-sideBarTanken.onClick ->
+## 🔴Tanken trigger openen & sluiten
+sideBarTankenTrigger.onClick ->
 	tankenRow1.stateCycle("invisible", "visible")
 	tankenRow2.stateCycle("invisible", "visible")
 	tankenRow3.stateCycle("invisible", "visible")
@@ -1036,3 +1036,36 @@ sideBarTanken.onClick ->
 	sideBarTreinstations.stateCycle("close", "open")
 	sideBarHotel.stateCycle("close", "open")
 
+## 🔴Tanken checkboxes aan & uit
+checkBoxUnchecked = ->
+	x: 2
+	width: 14
+	options: 
+		time: 0.24
+		curve: defaultEaseInAndOut
+checkBoxChecked = ->
+	x: 15
+	width: 0
+	options: 
+		time: 0.24
+		curve: defaultEaseInAndOut
+
+tankenRow1.onClick ->
+	checkBoxOverlay1.animate checkBoxChecked()
+tankenRow1.onClick ->
+	checkBoxOverlay1.animate checkBoxUnchecked()
+
+tankenRow2.onClick ->
+	checkBoxOverlay2.animate checkBoxChecked()
+tankenRow2.onClick ->
+	checkBoxOverlay2.animate checkBoxUnchecked()
+	
+tankenRow3.onClick ->
+	checkBoxOverlay3.animate checkBoxChecked()
+tankenRow3.onClick ->
+	checkBoxOverlay3.animate checkBoxUnchecked()
+	
+tankenRow4.onClick ->
+	checkBoxOverlay4.animate checkBoxChecked()
+tankenRow4.onClick ->
+	checkBoxOverlay4.animate checkBoxUnchecked()
