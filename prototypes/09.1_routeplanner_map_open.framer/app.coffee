@@ -683,11 +683,88 @@ sidebarRight.states =
 			time: 0.24
 			curve: defaultEaseInAndOut
 
+## 🔴Handle hoverstates
+sidebarLeftHandle.onMouseOver ->
+	sidebarLeftHandle.animate
+		borderColor: "#0097DC"
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultEaseIn
+	sidebarLeftHandleIcon.animate
+		stroke: "#0097DC"
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultEaseIn
+sidebarLeftHandle.onMouseOut ->
+	sidebarLeftHandle.animate
+		borderColor: "#003C85"
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultEaseIn
+	sidebarLeftHandleIcon.animate
+		stroke: "#003C85"
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultEaseIn
+			
+sidebarRightHandle.onMouseOver ->
+	sidebarRightHandle.animate
+		borderColor: "#0097DC"
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultEaseIn
+	sidebarRightHandleIcon.animate
+		stroke: "#0097DC"
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultEaseIn
+sidebarRightHandle.onMouseOut ->
+	sidebarRightHandle.animate
+		borderColor: "#003C85"
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultEaseIn
+	sidebarRightHandleIcon.animate
+		stroke: "#003C85"
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultEaseIn
+
+## 🔴Arrow states
+sidebarLeftHandleIcon.states = 
+	menuOpen:
+		rotation: -90
+		options: 
+			time: 0
+	menuClosed:
+		rotation: 90
+		options: 
+			time: 0
+sidebarRightHandleIcon.states = 
+	menuOpen:
+		rotation: -90
+		options: 
+			time: 0
+	menuClosed:
+		rotation: 90
+		options: 
+			time: 0
+
 ## 🔴Trigger
 sidebarLeftHandle.onClick ->
 	sidebarLeft.stateCycle("dismissed", "open")
+	sidebarLeftHandleIcon.stateCycle("menuClosed", "menuOpen")
 sidebarRightHandle.onClick ->
 	sidebarRight.stateCycle("dismissed", "open")
+	sidebarRightHandleIcon.stateCycle("menuClosed", "menuOpen")
 
 # 🔵mapBig open/close
 ## 🔴Animate button open map
@@ -825,61 +902,6 @@ button_sluit_kaart_2.onClick ->
 			closeMap()
 
 # 🔵 Sidebar interactions
-## 🔴Handle hoverstates
-sidebarLeftHandle.onMouseOver ->
-	sidebarLeftHandle.animate
-		borderColor: "#0097DC"
-		options: 
-			time: 0.2
-		animationOptions:
-			curve: defaultEaseIn
-	sidebarLeftHandleIcon.animate
-		stroke: "#0097DC"
-		options: 
-			time: 0.2
-		animationOptions:
-			curve: defaultEaseIn
-sidebarLeftHandle.onMouseOut ->
-	sidebarLeftHandle.animate
-		borderColor: "#003C85"
-		options: 
-			time: 0.2
-		animationOptions:
-			curve: defaultEaseIn
-	sidebarLeftHandleIcon.animate
-		stroke: "#003C85"
-		options: 
-			time: 0.2
-		animationOptions:
-			curve: defaultEaseIn
-			
-sidebarRightHandle.onMouseOver ->
-	sidebarRightHandle.animate
-		borderColor: "#0097DC"
-		options: 
-			time: 0.2
-		animationOptions:
-			curve: defaultEaseIn
-	sidebarRightHandleIcon.animate
-		stroke: "#0097DC"
-		options: 
-			time: 0.2
-		animationOptions:
-			curve: defaultEaseIn
-sidebarRightHandle.onMouseOut ->
-	sidebarRightHandle.animate
-		borderColor: "#003C85"
-		options: 
-			time: 0.2
-		animationOptions:
-			curve: defaultEaseIn
-	sidebarRightHandleIcon.animate
-		stroke: "#003C85"
-		options: 
-			time: 0.2
-		animationOptions:
-			curve: defaultEaseIn
-
 ## 🔴Make sidebarLeft scrollable
 scrollSidebarLeft = new ScrollComponent
 	width: sidebarContentLeft.width
@@ -1013,3 +1035,4 @@ sideBarTanken.onClick ->
 	sideBarTankenDivider.stateCycle("close", "open")
 	sideBarTreinstations.stateCycle("close", "open")
 	sideBarHotel.stateCycle("close", "open")
+
