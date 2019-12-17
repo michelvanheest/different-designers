@@ -637,6 +637,9 @@ hub_tanken.onClick ->
 		
 		Utils.delay 1.2, ->
 			openMap()
+			Utils.delay 1.6, ->
+				sidebarLeft.animate("dismissed")
+				sidebarRight.animate("open")
 
 ## 🔵Map Sidebar states
 ## 🔴States
@@ -820,3 +823,193 @@ button_sluit_kaart_2.onClick ->
 		flow.showPrevious(animate: false)
 		Utils.delay 0.1, ->
 			closeMap()
+
+# 🔵 Sidebar interactions
+## 🔴Handle hoverstates
+sidebarLeftHandle.onMouseOver ->
+	sidebarLeftHandle.animate
+		borderColor: "#0097DC"
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultEaseIn
+	sidebarLeftHandleIcon.animate
+		stroke: "#0097DC"
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultEaseIn
+sidebarLeftHandle.onMouseOut ->
+	sidebarLeftHandle.animate
+		borderColor: "#003C85"
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultEaseIn
+	sidebarLeftHandleIcon.animate
+		stroke: "#003C85"
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultEaseIn
+			
+sidebarRightHandle.onMouseOver ->
+	sidebarRightHandle.animate
+		borderColor: "#0097DC"
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultEaseIn
+	sidebarRightHandleIcon.animate
+		stroke: "#0097DC"
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultEaseIn
+sidebarRightHandle.onMouseOut ->
+	sidebarRightHandle.animate
+		borderColor: "#003C85"
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultEaseIn
+	sidebarRightHandleIcon.animate
+		stroke: "#003C85"
+		options: 
+			time: 0.2
+		animationOptions:
+			curve: defaultEaseIn
+
+## 🔴Make sidebarLeft scrollable
+scrollSidebarLeft = new ScrollComponent
+	width: sidebarContentLeft.width
+	height: sidebarContentLeft.height
+	scrollHorizontal: false
+	parent: sidebarContentLeft
+sideBarLeftContentImg.parent=scrollSidebarLeft.content
+scrollSidebarLeft.mouseWheelEnabled = true
+
+
+## 🔴Tanken open en dichtklappen
+sideBarTankenTrigger.onMouseOver ->
+	sideBarTankenText.animate
+		color: "#0097DC"
+		options: 
+			time: 0
+sideBarTankenTrigger.onMouseOut ->
+	sideBarTankenText.animate
+		color: "#003C85"
+		options: 
+			time: 0
+
+tankenRow1.states =
+	visible: 
+		opacity: 1
+		y: 38
+		options:
+			time: 0.24
+			curve: defaultEaseOut
+	invisible:
+		opacity: 0
+		y: 30
+		options: 
+			time: 0.24
+			curve: defaultEaseOut
+tankenRow2.states =
+	visible: 
+		opacity: 1
+		y: 68
+		options:
+			time: 0.24
+			curve: defaultEaseOut
+	invisible:
+		opacity: 0
+		y: 60
+		options: 
+			time: 0.24
+			curve: defaultEaseOut
+tankenRow3.states =
+	visible: 
+		opacity: 1
+		y: 98
+		options:
+			time: 0.24
+			curve: defaultEaseOut
+	invisible:
+		opacity: 0
+		y: 90
+		options: 
+			time: 0.24
+			curve: defaultEaseOut
+tankenRow4.states =
+	visible: 
+		opacity: 1
+		y: 128
+		options:
+			time: 0.24
+			curve: defaultEaseOut
+	invisible:
+		opacity: 0
+		y: 120
+		options: 
+			time: 0.24
+			curve: defaultEaseOut
+
+tankenRowIcon.states =
+	open: 
+		rotation: 180
+		options: 
+			time: 0.24
+			curve: defaultEaseOut
+	close:
+		rotation: 360
+		options: 
+			time: 0.24
+			curve: defaultEaseOut
+
+sideBarTankenDivider.states = 
+	open: 
+		y: 163
+		options: 
+			time: 0.24
+			curve: defaultEaseOut
+	close: 
+		y: 35
+		options: 
+			time: 0.24
+			curve: defaultEaseOut
+
+sideBarTreinstations.states = 
+	open: 
+		y: 305
+		options: 
+			time: 0.24
+			curve: defaultEaseOut
+	close: 
+		y: 177
+		options: 
+			time: 0.24
+			curve: defaultEaseOut
+
+sideBarHotel.states = 
+	open: 
+		y: 349
+		options: 
+			time: 0.24
+			curve: defaultEaseOut
+	close: 
+		y: 221
+		options: 
+			time: 0.24
+			curve: defaultEaseOut
+
+## 🔴Tanken trigger
+sideBarTanken.onClick ->
+	tankenRow1.stateCycle("invisible", "visible")
+	tankenRow2.stateCycle("invisible", "visible")
+	tankenRow3.stateCycle("invisible", "visible")
+	tankenRow4.stateCycle("invisible", "visible")
+	tankenRowIcon.stateCycle("close", "open")
+	sideBarTankenDivider.stateCycle("close", "open")
+	sideBarTreinstations.stateCycle("close", "open")
+	sideBarHotel.stateCycle("close", "open")
