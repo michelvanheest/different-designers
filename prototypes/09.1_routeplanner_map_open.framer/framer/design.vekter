@@ -33090,7 +33090,6 @@
                             "locked" : false,
                             "name" : "img",
                             "opacity" : 0,
-                            "originalFilename" : "",
                             "parentid" : "eV7EkSlEn",
                             "radius" : 0,
                             "radiusBottomLeft" : 0,
@@ -33272,9 +33271,7 @@
                                     "top" : 0,
                                     "visible" : true,
                                     "width" : 151,
-                                    "widthFactor" : null,
-                                    "x" : 55,
-                                    "y" : 14
+                                    "widthFactor" : null
                                   },
                                   {
                                     "__class" : "PathNode",
@@ -33602,9 +33599,7 @@
                                     "top" : 0,
                                     "visible" : true,
                                     "width" : 71,
-                                    "widthFactor" : null,
-                                    "x" : 55,
-                                    "y" : 14
+                                    "widthFactor" : null
                                   },
                                   {
                                     "__class" : "PathNode",
@@ -33932,9 +33927,7 @@
                                     "top" : 0,
                                     "visible" : true,
                                     "width" : 116,
-                                    "widthFactor" : null,
-                                    "x" : 55,
-                                    "y" : 14
+                                    "widthFactor" : null
                                   },
                                   {
                                     "__class" : "PathNode",
@@ -34262,9 +34255,7 @@
                                     "top" : 0,
                                     "visible" : true,
                                     "width" : 103,
-                                    "widthFactor" : null,
-                                    "x" : 55,
-                                    "y" : 14
+                                    "widthFactor" : null
                                   },
                                   {
                                     "__class" : "PathNode",
@@ -34592,9 +34583,7 @@
                                     "top" : 0,
                                     "visible" : true,
                                     "width" : 153,
-                                    "widthFactor" : null,
-                                    "x" : 55,
-                                    "y" : 14
+                                    "widthFactor" : null
                                   },
                                   {
                                     "__class" : "PathNode",
@@ -34948,9 +34937,7 @@
                                         "top" : null,
                                         "visible" : true,
                                         "width" : 58,
-                                        "widthFactor" : null,
-                                        "x" : 55,
-                                        "y" : 14
+                                        "widthFactor" : null
                                       },
                                       {
                                         "__class" : "PathNode",
@@ -35278,9 +35265,7 @@
                                         "top" : null,
                                         "visible" : true,
                                         "width" : 227,
-                                        "widthFactor" : null,
-                                        "x" : 55,
-                                        "y" : 14
+                                        "widthFactor" : null
                                       },
                                       {
                                         "__class" : "FrameNode",
@@ -35642,9 +35627,7 @@
                                         "top" : null,
                                         "visible" : true,
                                         "width" : 57,
-                                        "widthFactor" : null,
-                                        "x" : 55,
-                                        "y" : 14
+                                        "widthFactor" : null
                                       },
                                       {
                                         "__class" : "FrameNode",
@@ -36006,9 +35989,7 @@
                                         "top" : null,
                                         "visible" : true,
                                         "width" : 44,
-                                        "widthFactor" : null,
-                                        "x" : 55,
-                                        "y" : 14
+                                        "widthFactor" : null
                                       },
                                       {
                                         "__class" : "FrameNode",
@@ -36370,9 +36351,7 @@
                                         "top" : null,
                                         "visible" : true,
                                         "width" : 28,
-                                        "widthFactor" : null,
-                                        "x" : 55,
-                                        "y" : 14
+                                        "widthFactor" : null
                                       },
                                       {
                                         "__class" : "FrameNode",
@@ -36610,7 +36589,7 @@
 
                                 ],
                                 "fillColor" : "rgba(255,255,255,1)",
-                                "fillEnabled" : true,
+                                "fillEnabled" : false,
                                 "fillGradient" : {
                                   "__class" : "LinearGradient",
                                   "alpha" : 1,
@@ -45202,7 +45181,6 @@
             "locked" : false,
             "name" : "sideBarLeftContentImg",
             "opacity" : 1,
-            "originalFilename" : "mapBigSideBarLeftContent.png",
             "parentid" : "Ze5TwS5b7",
             "radius" : 0,
             "radiusBottomLeft" : 0,
