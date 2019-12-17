@@ -816,7 +816,7 @@ closeMap = ->
 button_sluit_kaart_2.onClick ->
 	sidebarLeft.animate("close")
 	sidebarRight.animate("close")
-	Utils.delay 0.8, ->
+	Utils.delay 0.4, ->
 		flow.showPrevious(animate: false)
-		Utils.delay 0.4, ->
+		Utils.delay 0.1, ->
 			closeMap()
