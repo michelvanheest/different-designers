@@ -962,7 +962,7 @@ tankenRowIcon.states =
 			time: 0.24
 			curve: defaultEaseOut
 	close:
-		rotation: 360
+		rotation: 0
 		options: 
 			time: 0.24
 			curve: defaultEaseOut
