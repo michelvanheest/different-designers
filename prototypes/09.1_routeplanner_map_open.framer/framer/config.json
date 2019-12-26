@@ -1,7 +1,7 @@
 {
   "orientation" : 0,
   "updateDelay" : 0.29999999999999999,
-  "designModeSelected" : 1,
+  "designModeSelected" : 0,
   "cachedDeviceHeight" : 0,
   "contentScale" : 1,
   "cachedDeviceWidth" : 0,
@@ -25,8 +25,8 @@
     "{11136, 1170}",
     "{12307, 684}",
     "{12992, 2303}",
-    "{15296, 2624}",
-    "{17921, 3182}"
+    "{15296, 2717}",
+    "{18014, 3182}"
   ],
   "deviceScale" : 1
 }
