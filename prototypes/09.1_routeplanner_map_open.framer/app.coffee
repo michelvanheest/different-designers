@@ -4,6 +4,8 @@
 # 🔵Defaults
 Framer.Device.deviceType = "fullscreen"
 document.body.style.cursor = "auto"
+widthScreenMax = 1440
+heigthScreenMax = 847
 
 ## 🔴Variables
 route_showed = false
@@ -37,6 +39,7 @@ loading_gradient_right = new Gradient
 	end: "#FFFFFF"
 	angle: 270
 
+safariContent.width = widthScreenMax
 alertWaarschuwing.opacity = 0
 alertWaarschuwing.y = Align.bottom(+24)
 bg_map_top.opacity = 0
@@ -73,6 +76,8 @@ sidebarRight.opacity = 0
 ## 🔴Create main_frame
 flow = new FlowComponent
 flow.showNext(main_frame)
+main_frame.width = widthScreenMax
+main_frame.height = heigthScreenMax
 
 ## 🔴Make main_frame scrollable
 scroll = new ScrollComponent
@@ -168,14 +173,14 @@ shake = (view, times=4) ->
 		layer: view
 		properties: 
 			x: view.x + 5
-		curve: "bezier-curve"
+# 		curve: "bezier-curve"
 		time: 0.08
 		
 	left = new Animation
 		layer: view
 		properties: 
 			x: view.x - 5
-		curve: "bezier-curve"
+# 		curve: "bezier-curve"
 		time: 0.08
 
 	right.on "end", ->
@@ -814,7 +819,8 @@ openMap = ->
 
 	mapBig.states =
 		open:
-			size: Screen.size
+# 			size: Screen.size
+			width: widthScreenMax
 			borderRadius: 0
 			opacity: 1
 			x: 0
@@ -874,6 +880,7 @@ openMap = ->
 		
 		Utils.delay 0.8, ->
 			flow.showNext(main_frame_2, animate: false)
+			safari_2.width = widthScreenMax
 
 ## 🔴Open map via button
 button_open_kaart.onClick ->
