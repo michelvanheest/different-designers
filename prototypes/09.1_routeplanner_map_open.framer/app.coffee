@@ -9,6 +9,7 @@ heigthScreenMax = 847
 
 ## 🔴Variables
 route_showed = false
+alertWaarschuwing_showed = false
 
 defaultScroll = "Bezier(0.05, 0.58, 0.52, 0.95)"
 defaultBezier = "Bezier(0.46, 0.92, 0.46, 0.92)"
@@ -431,6 +432,7 @@ alertWaarschuwing_show = ->
 		options: 
 			time: 0.16
 			curve: defaultSpring
+# 	alertWaarschuwing_showed = true
 
 alertWaarschuwing_dismiss = ->
 	alertWaarschuwing.animate
@@ -439,9 +441,11 @@ alertWaarschuwing_dismiss = ->
 		options: 
 			time: 0.16
 			curve: defaultSpring
+# 	alertWaarschuwing_showed = false
 
 alertWaarschuwing.onClick ->
 	alertWaarschuwing_dismiss()
+	alertWaarschuwing_showed = false
 
 # 🔵Trigger get info
 plan_button.onTap ->
@@ -553,6 +557,7 @@ plan_button.onTap ->
 							alertWaarschuwing_show()
 							
 							route_showed = true
+							alertWaarschuwing_showed = true
 
 # 🔵Switch road + view traffic
 road_alternative_1.onClick ->
@@ -898,7 +903,11 @@ closeMap = ->
 	bg_map_top.opacity = 0
 	button_sluit_kaart.opacity = 0
 	button_sluit_kaart.y = -12
-	alertWaarschuwing_show()
+	
+	if alertWaarschuwing_showed is true
+		alertWaarschuwing_show()
+# 	else
+# 		alertWaarschuwing_dismiss
 
 button_sluit_kaart_2.onClick ->
 	sidebarLeft.animate("close")
