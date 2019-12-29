@@ -886,6 +886,11 @@ openMap = ->
 		Utils.delay 0.8, ->
 			flow.showNext(main_frame_2, animate: false)
 			safari_2.width = widthScreenMax
+			gasstations.animate
+				opacity: 1
+				options: 
+					time: 0.24
+					curve: defaultEaseOut
 
 ## 🔴Open map via button
 button_open_kaart.onClick ->
@@ -903,6 +908,11 @@ closeMap = ->
 	bg_map_top.opacity = 0
 	button_sluit_kaart.opacity = 0
 	button_sluit_kaart.y = -12
+	gasstations.animate
+		opacity: 0
+		options: 
+			time: 0.24
+			curve: defaultEaseOut
 	
 	if alertWaarschuwing_showed is true
 		alertWaarschuwing_show()
