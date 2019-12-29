@@ -1072,6 +1072,17 @@ checkBoxChecked = ->
 		time: 0.24
 		curve: defaultEaseInAndOut
 
+gasStationVisible = ->
+	opacity: 1
+	options:
+		time: 0.24
+		curve: defaultEaseOut
+gasStationInvisible = ->
+	opacity: 0
+	options:
+		time: 0.24
+		curve: defaultEaseOut
+
 benzine_1.opacity = 0
 benzine_2.opacity = 0
 benzine_3.opacity = 0
@@ -1088,15 +1099,15 @@ tankenRow1.onClick ->
 		
 		
 		if tankenRow2Checked is true
-			benzine_1.opacity = 0
-			benzine_2.opacity = 0
-			benzine_3.opacity = 0
-			benzine_4.opacity = 1
-			benzine_5.opacity = 1
+			benzine_1.animate gasStationInvisible()
+			benzine_2.animate gasStationInvisible()
+			benzine_3.animate gasStationInvisible()
+			benzine_4.animate gasStationVisible()
+			benzine_5.animate gasStationVisible()
 		
 		if tankenRow4Checked is true
-			gas_1.opacity = 0
-			gas_2.opacity = 1
+			gas_1.animate gasStationInvisible()
+			gas_2.animate gasStationVisible()
 		
 		tankenRow1Checked = true
 		
@@ -1104,15 +1115,15 @@ tankenRow1.onClick ->
 		checkBoxOverlay1.animate checkBoxUnchecked()
 		
 		if tankenRow2Checked is true
-			benzine_1.opacity = 1
-			benzine_2.opacity = 1
-			benzine_3.opacity = 1
-			benzine_4.opacity = 1
-			benzine_5.opacity = 1
+			benzine_1.animate gasStationVisible()
+			benzine_2.animate gasStationVisible()
+			benzine_3.animate gasStationVisible()
+			benzine_4.animate gasStationVisible()
+			benzine_5.animate gasStationVisible()
 		
 		if tankenRow4Checked is true
-			gas_1.opacity = 1
-			gas_2.opacity = 1
+			gas_1.animate gasStationVisible()
+			gas_2.animate gasStationVisible()
 		
 		tankenRow1Checked = false
 
@@ -1120,29 +1131,29 @@ tankenRow1.onClick ->
 tankenRow2.onClick ->
 	if tankenRow2Checked is false
 		checkBoxOverlay2.animate checkBoxChecked()
-		benzine_1.opacity = 1
-		benzine_2.opacity = 1
-		benzine_3.opacity = 1
-		benzine_4.opacity = 1
-		benzine_5.opacity = 1
+		benzine_1.animate gasStationVisible()
+		benzine_2.animate gasStationVisible()
+		benzine_3.animate gasStationVisible()
+		benzine_4.animate gasStationVisible()
+		benzine_5.animate gasStationVisible()
 		
 		if tankenRow1Checked is true
-			benzine_1.opacity = 0
-			benzine_2.opacity = 0
-			benzine_3.opacity = 0
-			benzine_4.opacity = 1
-			benzine_5.opacity = 1
+			benzine_1.animate gasStationInvisible()
+			benzine_2.animate gasStationInvisible()
+			benzine_3.animate gasStationInvisible()
+			benzine_4.animate gasStationVisible()
+			benzine_5.animate gasStationVisible()
 		
 		tankenRow2Checked = true
 # 		print tankenRow2Checked
 	
 	else
 		checkBoxOverlay2.animate checkBoxUnchecked()
-		benzine_1.opacity = 0
-		benzine_2.opacity = 0
-		benzine_3.opacity = 0
-		benzine_4.opacity = 0
-		benzine_5.opacity = 0
+		benzine_1.animate gasStationInvisible()
+		benzine_2.animate gasStationInvisible()
+		benzine_3.animate gasStationInvisible()
+		benzine_4.animate gasStationInvisible()
+		benzine_5.animate gasStationInvisible()
 		tankenRow2Checked = false
 # 		print tankenRow2Checked
 
@@ -1160,20 +1171,20 @@ tankenRow3.onClick ->
 tankenRow4.onClick ->
 	if tankenRow4Checked is false
 		checkBoxOverlay4.animate checkBoxChecked()
-		gas_1.opacity = 1
-		gas_2.opacity = 1
+		gas_1.animate gasStationVisible()
+		gas_2.animate gasStationVisible()
 		
 		if tankenRow1Checked is true
-			gas_1.opacity = 0
-			gas_2.opacity = 1
+			gas_1.animate gasStationInvisible()
+			gas_2.animate gasStationVisible()
 		
 		tankenRow4Checked = true
 # 		print tankenRow4Checked
 	
 	else
 		checkBoxOverlay4.animate checkBoxUnchecked()
-		gas_1.opacity = 0
-		gas_2.opacity = 0
+		gas_1.animate gasStationInvisible()
+		gas_2.animate gasStationInvisible()
 		tankenRow4Checked = false
 # 		print tankenRow4Checked
 
