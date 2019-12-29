@@ -929,7 +929,6 @@ scrollSidebarLeft = new ScrollComponent
 sideBarLeftContentImg.parent=scrollSidebarLeft.content
 scrollSidebarLeft.mouseWheelEnabled = true
 
-
 ## 🔴Tanken open en dichtklappen
 sideBarTankenTrigger.onMouseOver ->
 	sideBarTankenText.animate
@@ -1054,7 +1053,7 @@ sideBarTankenTrigger.onClick ->
 	sideBarTreinstations.stateCycle("close", "open")
 	sideBarHotel.stateCycle("close", "open")
 
-## 🔴Tanken checkboxes aan & uit
+## 🔴Tanken checkboxes en content aan & uit
 tankenRow1Checked = false
 tankenRow2Checked = false
 tankenRow3Checked = false
@@ -1077,13 +1076,11 @@ benzine_1.opacity = 0
 benzine_2.opacity = 0
 benzine_3.opacity = 0
 benzine_4.opacity = 0
+benzine_5.opacity = 0
 
-# checkBoxOverlay2.stateCycle =
-# 	checked:
-# 		checkBoxOverlay2.animate checkBoxChecked()
-# 		tankenRow2Checked = true
-# 	unchecked:
-# 		tankenRow2Checked = false
+gas_1.opacity = 0
+gas_2.opacity = 0
+
 
 tankenRow1.onClick ->
 	if tankenRow1Checked is false
@@ -1095,6 +1092,11 @@ tankenRow1.onClick ->
 			benzine_2.opacity = 0
 			benzine_3.opacity = 0
 			benzine_4.opacity = 1
+			benzine_5.opacity = 1
+		
+		if tankenRow4Checked is true
+			gas_1.opacity = 0
+			gas_2.opacity = 1
 		
 		tankenRow1Checked = true
 		
@@ -1106,10 +1108,76 @@ tankenRow1.onClick ->
 			benzine_2.opacity = 1
 			benzine_3.opacity = 1
 			benzine_4.opacity = 1
+			benzine_5.opacity = 1
+		
+		if tankenRow4Checked is true
+			gas_1.opacity = 1
+			gas_2.opacity = 1
 		
 		tankenRow1Checked = false
+
+
+tankenRow2.onClick ->
+	if tankenRow2Checked is false
+		checkBoxOverlay2.animate checkBoxChecked()
+		benzine_1.opacity = 1
+		benzine_2.opacity = 1
+		benzine_3.opacity = 1
+		benzine_4.opacity = 1
+		benzine_5.opacity = 1
 		
+		if tankenRow1Checked is true
+			benzine_1.opacity = 0
+			benzine_2.opacity = 0
+			benzine_3.opacity = 0
+			benzine_4.opacity = 1
+			benzine_5.opacity = 1
+		
+		tankenRow2Checked = true
+# 		print tankenRow2Checked
 	
+	else
+		checkBoxOverlay2.animate checkBoxUnchecked()
+		benzine_1.opacity = 0
+		benzine_2.opacity = 0
+		benzine_3.opacity = 0
+		benzine_4.opacity = 0
+		benzine_5.opacity = 0
+		tankenRow2Checked = false
+# 		print tankenRow2Checked
+
+
+tankenRow3.onClick ->
+	if tankenRow3Checked is false
+		checkBoxOverlay3.animate checkBoxChecked()
+		tankenRow3Checked = true
+	
+	else
+		checkBoxOverlay3.animate checkBoxUnchecked()
+		tankenRow3Checked = false
+
+
+tankenRow4.onClick ->
+	if tankenRow4Checked is false
+		checkBoxOverlay4.animate checkBoxChecked()
+		gas_1.opacity = 1
+		gas_2.opacity = 1
+		
+		if tankenRow1Checked is true
+			gas_1.opacity = 0
+			gas_2.opacity = 1
+		
+		tankenRow4Checked = true
+# 		print tankenRow4Checked
+	
+	else
+		checkBoxOverlay4.animate checkBoxUnchecked()
+		gas_1.opacity = 0
+		gas_2.opacity = 0
+		tankenRow4Checked = false
+# 		print tankenRow4Checked
+
+## 🔴OLD Tanken checkboxes en content aan & uit
 # tankenRow1.onClick ->
 # 	checkBoxOverlay1.animate checkBoxUnchecked()
 
@@ -1120,30 +1188,12 @@ tankenRow1.onClick ->
 # 	checkBoxOverlay2.animate checkBoxUnchecked()
 # 	print tankenRow2Checked
 
-tankenRow2.onClick ->
-	if tankenRow2Checked is false
-		checkBoxOverlay2.animate checkBoxChecked()
-		benzine_1.opacity = 1
-		benzine_2.opacity = 1
-		benzine_3.opacity = 1
-		benzine_4.opacity = 1
-		tankenRow2Checked = true
-		print tankenRow2Checked
-	else
-		checkBoxOverlay2.animate checkBoxUnchecked()
-		benzine_1.opacity = 0
-		benzine_2.opacity = 0
-		benzine_3.opacity = 0
-		benzine_4.opacity = 0
-		tankenRow2Checked = false
-		print tankenRow2Checked		
+# tankenRow3.onClick ->
+# 	checkBoxOverlay3.animate checkBoxChecked()
+# tankenRow3.onClick ->
+# 	checkBoxOverlay3.animate checkBoxUnchecked()
 	
-tankenRow3.onClick ->
-	checkBoxOverlay3.animate checkBoxChecked()
-tankenRow3.onClick ->
-	checkBoxOverlay3.animate checkBoxUnchecked()
-	
-tankenRow4.onClick ->
-	checkBoxOverlay4.animate checkBoxChecked()
-tankenRow4.onClick ->
-	checkBoxOverlay4.animate checkBoxUnchecked()
+# tankenRow4.onClick ->
+# 	checkBoxOverlay4.animate checkBoxChecked()
+# tankenRow4.onClick ->
+# 	checkBoxOverlay4.animate checkBoxUnchecked()
