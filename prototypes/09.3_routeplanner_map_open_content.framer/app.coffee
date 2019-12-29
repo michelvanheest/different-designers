@@ -1068,15 +1068,24 @@ checkBoxChecked = ->
 		time: 0.24
 		curve: defaultEaseInAndOut
 
+rec1.opacity = 0
+rec2.opacity = 0
+rec3.opacity = 0
+rec4.opacity = 0
+
 tankenRow1.onClick ->
 	checkBoxOverlay1.animate checkBoxChecked()
+	rec1.animate opacity: 1
 tankenRow1.onClick ->
 	checkBoxOverlay1.animate checkBoxUnchecked()
+	rec1.animate opacity: 0
 
 tankenRow2.onClick ->
 	checkBoxOverlay2.animate checkBoxChecked()
+	rec2.animate opacity: 1
 tankenRow2.onClick ->
 	checkBoxOverlay2.animate checkBoxUnchecked()
+	rec2.animate opacity: 0
 	
 tankenRow3.onClick ->
 	checkBoxOverlay3.animate checkBoxChecked()
