@@ -67,7 +67,8 @@ road_traffic_2.z = 1000
 route_extra_info_1_content.opacity = 0
 route_extra_info_2_content.opacity = 0
 route_extra_info_3_content.opacity = 0
-route_directions.opacity = 0
+route_directions_1.opacity = 0
+route_directions_2.opacity = 0
 
 sidebarLeft.x = -415
 sidebarLeft.opacity = 0
@@ -283,9 +284,9 @@ content_loader_route_extra_info_3.states =
 ##🔴01
 route_directions_info_1 = new Layer
 	width: 514
-	height: 80
+	height: 122
 	x: 16
-	y: 119
+	y: 120
 	z: 999
 	borderRadius: 8
 	parent: route_info
@@ -307,9 +308,9 @@ route_directions_info_1.states =
 ##🔴02
 route_directions_info_2 = new Layer
 	width: 514
-	height: 103
+	height: 148
 	x: 16
-	y: 229
+	y: 276
 	z: 999
 	borderRadius: 8
 	parent: route_info
@@ -331,9 +332,9 @@ route_directions_info_2.states =
 ##🔴03
 route_directions_info_3 = new Layer
 	width: 514
-	height: 103
+	height: 173
 	x: 16
-	y: 363
+	y: 455
 	z: 999
 	borderRadius: 8
 	parent: route_info
@@ -355,9 +356,9 @@ route_directions_info_3.states =
 ##🔴04
 route_directions_info_4 = new Layer
 	width: 514
-	height: 103
+	height: 146
 	x: 16
-	y: 497
+	y: 663
 	z: 999
 	borderRadius: 8
 	parent: route_info
@@ -379,9 +380,9 @@ route_directions_info_4.states =
 ##🔴05
 route_directions_info_5 = new Layer
 	width: 514
-	height: 103
+	height: 145
 	x: 16
-	y: 631
+	y: 843
 	z: 999
 	borderRadius: 8
 	parent: route_info
@@ -403,9 +404,9 @@ route_directions_info_5.states =
 ##🔴06
 route_directions_info_6 = new Layer
 	width: 514
-	height: 103
+	height: 127
 	x: 16
-	y: 765
+	y: 1023
 	z: 999
 	borderRadius: 8
 	parent: route_info
@@ -469,7 +470,7 @@ plan_button.onTap ->
 			curve: defaultScroll
 	)
 	# move footer down
-	bg_img_footer.y = 2057
+	bg_img_footer.y = 5374
 	
 	Utils.delay 1.24, ->
 		# animate road_main on map
@@ -536,7 +537,12 @@ plan_button.onTap ->
 							options: 
 								time: 0.8
 								curve: defaultEaseIn
-						route_directions.animate
+						route_directions_1.animate
+							opacity: 1
+							options: 
+								time: 0.8
+								curve: defaultEaseIn
+						route_directions_2.animate
 							opacity: 1
 							options: 
 								time: 0.8
@@ -612,6 +618,34 @@ road_main.onClick ->
 		options:
 			time: 0.2
 	shake vertraging_1
+	
+	
+road_traffic_1.onClick ->
+	route_directions_2.y = 2493
+	alertFile.y = 2819
+	alertFile.opacity = 0
+	scroll.scrollToPoint(
+		y: 3500
+		true
+		options:
+			time: 1.4
+			curve: defaultScroll
+	)
+	
+	Utils.delay 1.1, ->
+		route_directions_2.animate
+			y: 2550
+			options: 
+				time: 0.16
+				curve: defaultEaseOut
+		alertFile.animate
+			y: 2769
+			opacity: 1
+			options: 
+				time: 0.16
+				curve: defaultSpring
+		
+		
 
 # 🔵Navigation hub
 ## 🔴Animate button open map

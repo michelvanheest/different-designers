@@ -7022,14 +7022,14 @@
                 "borderStyle" : "solid",
                 "borderTop" : 1,
                 "borderWidth" : 1,
-                "bottom" : -3629,
+                "bottom" : -307,
                 "boxShadows" : [
 
                 ],
                 "brightness" : 100,
                 "brightnessEnabled" : 0,
                 "centerAnchorX" : 0.5,
-                "centerAnchorY" : 1.2294657097288677,
+                "centerAnchorY" : 0.52890222984562607,
                 "children" : [
 
                 ],
@@ -7115,7 +7115,7 @@
                 "brightness" : 100,
                 "brightnessEnabled" : 0,
                 "centerAnchorX" : 0.5,
-                "centerAnchorY" : 0.43480861244019137,
+                "centerAnchorY" : 0.18704974271012006,
                 "children" : [
                   {
                     "__class" : "RectangleShapeNode",
@@ -7251,7 +7251,7 @@
                 "brightness" : 100,
                 "brightnessEnabled" : 0,
                 "centerAnchorX" : 0.5,
-                "centerAnchorY" : 0.15490430622009568,
+                "centerAnchorY" : 0.06663807890222985,
                 "children" : [
                   {
                     "__class" : "RectangleShapeNode",
@@ -15015,7 +15015,7 @@
                 "brightness" : 100,
                 "brightnessEnabled" : 0,
                 "centerAnchorX" : 0.5,
-                "centerAnchorY" : 0.017743221690590113,
+                "centerAnchorY" : 0.0076329331046312175,
                 "children" : [
                   {
                     "__class" : "RectangleShapeNode",
@@ -16379,14 +16379,14 @@
                 "borderStyle" : "solid",
                 "borderTop" : 1,
                 "borderWidth" : 1,
-                "bottom" : 649,
+                "bottom" : null,
                 "boxShadows" : [
 
                 ],
                 "brightness" : 100,
                 "brightnessEnabled" : 0,
                 "centerAnchorX" : 0.5,
-                "centerAnchorY" : 0.65031897926634774,
+                "centerAnchorY" : 0.27975986277873072,
                 "children" : [
 
                 ],
@@ -16443,7 +16443,7 @@
                 "sepia" : 0,
                 "sepiaEnabled" : 0,
                 "targetName" : "bg_img_footer",
-                "top" : null,
+                "top" : 1403,
                 "visible" : true,
                 "width" : 1440,
                 "widthFactor" : null
@@ -16523,7 +16523,7 @@
                 "brightness" : 100,
                 "brightnessEnabled" : 0,
                 "centerAnchorX" : 0.5708333333333333,
-                "centerAnchorY" : 0.27990430622009571,
+                "centerAnchorY" : 0.12041166380789023,
                 "children" : [
                   {
                     "__class" : "TextNode",
@@ -16712,14 +16712,14 @@
                 "borderStyle" : "solid",
                 "borderTop" : 1,
                 "borderWidth" : 1,
-                "bottom" : 493,
+                "bottom" : 664,
                 "boxShadows" : [
 
                 ],
                 "brightness" : 100,
                 "brightnessEnabled" : 0,
                 "centerAnchorX" : 0.5,
-                "centerAnchorY" : 0.56519138755980858,
+                "centerAnchorY" : 0.51337907375643221,
                 "children" : [
                   {
                     "__class" : "TextNode",
@@ -16733,7 +16733,7 @@
                     "brightness" : 100,
                     "brightnessEnabled" : 0,
                     "centerAnchorX" : 0.18214285714285713,
-                    "centerAnchorY" : 0.011715481171548118,
+                    "centerAnchorY" : 0.0032213529682466636,
                     "constraintsLocked" : false,
                     "contrast" : 100,
                     "contrastEnabled" : 0,
@@ -16844,7 +16844,7 @@
                     "brightness" : 100,
                     "brightnessEnabled" : 0,
                     "centerAnchorX" : 0.074999999999999997,
-                    "centerAnchorY" : 0.037238493723849374,
+                    "centerAnchorY" : 0.01023930050621261,
                     "constraintsLocked" : false,
                     "contrast" : 100,
                     "contrastEnabled" : 0,
@@ -16967,7 +16967,7 @@
                     "brightness" : 100,
                     "brightnessEnabled" : 0,
                     "centerAnchorX" : 0.012053571428571429,
-                    "centerAnchorY" : 0.038075313807531382,
+                    "centerAnchorY" : 0.010469397146801656,
                     "children" : [
 
                     ],
@@ -17053,7 +17053,7 @@
                     "brightness" : 100,
                     "brightnessEnabled" : 0,
                     "centerAnchorX" : 0.94687500000000002,
-                    "centerAnchorY" : 0.024686192468619247,
+                    "centerAnchorY" : 0.006787850897376898,
                     "children" : [
                       {
                         "__class" : "TextNode",
@@ -17249,7 +17249,7 @@
                     "brightness" : 100,
                     "brightnessEnabled" : 0,
                     "centerAnchorX" : 0.16071428571428573,
-                    "centerAnchorY" : 0.13933054393305438,
+                    "centerAnchorY" : 0.038311090658076391,
                     "children" : [
                       {
                         "__class" : "FrameNode",
@@ -19623,7 +19623,7 @@
                     "brightness" : 100,
                     "brightnessEnabled" : 0,
                     "centerAnchorX" : 0.5,
-                    "centerAnchorY" : 0.13933054393305438,
+                    "centerAnchorY" : 0.038311090658076391,
                     "children" : [
                       {
                         "__class" : "TextNode",
@@ -20243,7 +20243,7 @@
                     "brightness" : 100,
                     "brightnessEnabled" : 0,
                     "centerAnchorX" : 0.8392857142857143,
-                    "centerAnchorY" : 0.13933054393305438,
+                    "centerAnchorY" : 0.038311090658076391,
                     "children" : [
                       {
                         "__class" : "TextNode",
@@ -20635,7 +20635,7 @@
                     "brightness" : 100,
                     "brightnessEnabled" : 0,
                     "centerAnchorX" : 0.7544642857142857,
-                    "centerAnchorY" : 0.46025104602510458,
+                    "centerAnchorY" : 0.12655315232397607,
                     "children" : [
                       {
                         "__class" : "FrameNode",
@@ -21530,8 +21530,8 @@
                             ],
                             "brightness" : 100,
                             "brightnessEnabled" : 0,
-                            "centerAnchorX" : 0.39010989010989011,
-                            "centerAnchorY" : 0.38538205980066448,
+                            "centerAnchorX" : 0.38736263736263737,
+                            "centerAnchorY" : 0.39534883720930231,
                             "children" : [
                               {
                                 "__class" : "PathNode",
@@ -21611,8 +21611,8 @@
                                 "targetName" : null,
                                 "visible" : true,
                                 "width" : 5.2430769230769272,
-                                "x" : 11,
-                                "y" : 21.619444444444539
+                                "x" : 39,
+                                "y" : 34.619444444444539
                               },
                               {
                                 "__class" : "PathNode",
@@ -21692,8 +21692,8 @@
                                 "targetName" : null,
                                 "visible" : true,
                                 "width" : 9.0000000000001137,
-                                "x" : 3.1997474683053326,
-                                "y" : 29
+                                "x" : 31.199747468305333,
+                                "y" : 42
                               },
                               {
                                 "__class" : "SVGNode",
@@ -21706,8 +21706,8 @@
                                 "bottom" : null,
                                 "brightness" : 100,
                                 "brightnessEnabled" : 0,
-                                "centerAnchorX" : 0.59615384615384615,
-                                "centerAnchorY" : 0.25,
+                                "centerAnchorX" : 0.55063291139240511,
+                                "centerAnchorY" : 0.31756756756756754,
                                 "colorable" : false,
                                 "constraintsLocked" : false,
                                 "contrast" : 100,
@@ -21739,13 +21739,13 @@
                                 "intrinsicWidth" : 30,
                                 "invert" : 0,
                                 "invertEnabled" : 0,
-                                "left" : 5,
+                                "left" : null,
                                 "locked" : false,
                                 "name" : null,
                                 "opacity" : 1,
                                 "originalFilename" : "road_traffic_cars.svg",
                                 "parentid" : "TH389sRnh",
-                                "right" : 0,
+                                "right" : 25,
                                 "rotation" : 0,
                                 "saturate" : 100,
                                 "saturateEnabled" : 0,
@@ -21756,7 +21756,7 @@
                                 ],
                                 "svg" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?><svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" width=\"30px\" height=\"30px\" viewBox=\"0 0 30 30\" version=\"1.1\"><!-- Generator: sketchtool 39.1 (31720) - http:\/\/www.bohemiancoding.com\/sketch --><title>BD3F2BE1-8761-4B45-9135-998440B4190A<\/title><desc>Created with sketchtool.<\/desc><defs><path d=\"M15,30 C23.2842712,30 30,23.2842712 30,15 C30,6.71572875 23.2842712,0 15,0 C6.71572875,0 0,6.71572875 0,15 C0,23.2842712 6.71572875,30 15,30 Z\" id=\"path-1\"><\/path><mask id=\"mask-2\" maskContentUnits=\"userSpaceOnUse\" maskUnits=\"objectBoundingBox\" x=\"0\" y=\"0\" width=\"30\" height=\"30\" fill=\"white\"><use xlink:href=\"#path-1\"><\/use><\/mask><\/defs><g id=\"ICONS\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\"><g id=\"ICONEN\" transform=\"translate(-177.000000, -204.000000)\"><g id=\"ic_file_stilstaand_normal\" transform=\"translate(177.000000, 204.000000)\"><g><use id=\"ic_background_file_stilstaand_normal\" stroke=\"#6E1F07\" mask=\"url(#mask-2)\" stroke-width=\"3\" fill=\"#AD320C\" xlink:href=\"#path-1\"><\/use><path d=\"M10.2715792,15.775 L8.8549125,15.775 C8.57157917,15.775 8.28824583,15.56875 8.28824583,15.225 C8.28824583,14.88125 8.57157917,14.74375 8.8549125,14.74375 L10.2715792,14.74375 C10.5549125,14.74375 10.8382458,14.95 10.8382458,15.29375 C10.8382458,15.6375 10.5549125,15.775 10.2715792,15.775 M12.1132458,14.5375 L12.5382458,14.33125 L12.8215792,13.4375 C13.1757458,12.3375 14.6632458,11.7875 16.0090792,11.7875 L17.0715792,11.7875 C17.0007458,11.58125 16.9299125,11.375 16.8590792,11.16875 C16.6465792,10.55 15.5840792,10 14.3799125,10 L11.6882458,10 C10.4840792,10 9.42157917,10.55 9.20907917,11.16875 C8.99657917,11.7875 8.8549125,12.3375 8.8549125,12.3375 C8.8549125,12.3375 8.50074583,12.475 8.14657917,12.68125 C7.72157917,12.8875 7.3674125,13.64375 7.22574583,14.4 L7.01324583,15.84375 C6.9424125,16.39375 7.1549125,16.875 7.65074583,17.08125 L7.65074583,17.76875 C7.65074583,18.1125 8.0049125,18.45625 8.35907917,18.45625 L9.13824583,18.45625 C9.4924125,18.45625 9.84657917,18.1125 9.84657917,17.76875 L9.84657917,17.21875 L10.7674125,17.21875 L10.8382458,16.80625 C10.9799125,15.9125 11.4757458,14.88125 12.1132458,14.5375\" id=\"Fill-1\" fill=\"#FFFFFF\"><\/path><path d=\"M21.6758167,18.25 L20.25915,18.25 C19.9758167,18.25 19.6924833,18.04375 19.6924833,17.7 C19.6924833,17.35625 19.9049833,17.15 20.25915,17.15 L21.6758167,17.15 C21.95915,17.15 22.2424833,17.35625 22.2424833,17.7 C22.2424833,18.04375 21.95915,18.25 21.6758167,18.25 M14.5924833,18.25 L13.1758167,18.25 C12.8924833,18.25 12.60915,18.04375 12.60915,17.7 C12.60915,17.35625 12.82165,17.15 13.1758167,17.15 L14.5924833,17.15 C14.8758167,17.15 15.15915,17.35625 15.15915,17.7 C15.15915,18.04375 14.8758167,18.25 14.5924833,18.25 M23.5174833,18.31875 L23.3049833,16.875 C23.1633167,16.11875 22.7383167,15.3625 22.2424833,15.15625 C21.8174833,14.95 21.4633167,14.8125 21.4633167,14.8125 C21.4633167,14.8125 21.32165,14.2625 21.10915,13.64375 C20.89665,13.025 19.83415,12.475 18.6299833,12.475 L16.00915,12.475 C14.8049833,12.475 13.7424833,13.025 13.5299833,13.64375 C13.3174833,14.2625 13.1758167,14.8125 13.1758167,14.8125 C13.1758167,14.8125 12.82165,14.95 12.4674833,15.15625 C12.0424833,15.3625 11.6883167,16.11875 11.54665,16.875 L11.33415,18.31875 C11.2633167,18.86875 11.4758167,19.35 11.97165,19.55625 L11.97165,20.24375 C11.97165,20.5875 12.3258167,20.93125 12.6799833,20.93125 L13.45915,20.93125 C13.8133167,20.93125 14.1674833,20.5875 14.1674833,20.24375 L14.1674833,19.69375 L20.9674833,19.69375 L20.9674833,20.24375 C20.9674833,20.5875 21.32165,20.93125 21.6758167,20.93125 L22.3133167,20.93125 C22.6674833,20.93125 23.02165,20.5875 23.02165,20.24375 L23.02165,19.4875 C23.44665,19.28125 23.65915,18.86875 23.5174833,18.31875\" id=\"Fill-4\" fill=\"#FFFFFF\"><\/path><\/g><\/g><\/g><\/g><\/svg>",
                                 "targetName" : null,
-                                "top" : 0,
+                                "top" : 13,
                                 "visible" : true,
                                 "width" : 21,
                                 "widthFactor" : null
@@ -21787,7 +21787,7 @@
                             "fillType" : "color",
                             "grayscale" : 0,
                             "grayScaleEnabled" : 0,
-                            "height" : 42,
+                            "height" : 74,
                             "heightFactor" : null,
                             "hueRotate" : 0,
                             "hueRotateEnabled" : 0,
@@ -21796,7 +21796,7 @@
                             "intrinsicWidth" : null,
                             "invert" : 0,
                             "invertEnabled" : 0,
-                            "left" : 200,
+                            "left" : 172,
                             "locked" : false,
                             "name" : "road_traffic_1",
                             "opacity" : 1,
@@ -21815,9 +21815,9 @@
                             "sepia" : 0,
                             "sepiaEnabled" : 0,
                             "targetName" : "road_traffic_1",
-                            "top" : 95,
+                            "top" : 82,
                             "visible" : true,
-                            "width" : 26,
+                            "width" : 79,
                             "widthFactor" : null
                           },
                           {
@@ -24963,14 +24963,14 @@
                     "borderStyle" : "solid",
                     "borderTop" : 2,
                     "borderWidth" : 2,
-                    "bottom" : 34,
+                    "bottom" : 0,
                     "boxShadows" : [
 
                     ],
                     "brightness" : 100,
                     "brightnessEnabled" : 0,
                     "centerAnchorX" : 0.24553571428571427,
-                    "centerAnchorY" : 0.60125523012552307,
+                    "centerAnchorY" : 0.53175333640128852,
                     "children" : [
                       {
                         "__class" : "FrameNode",
@@ -24989,14 +24989,14 @@
                         "borderStyle" : "solid",
                         "borderTop" : 1,
                         "borderWidth" : 1,
-                        "bottom" : 0,
+                        "bottom" : null,
                         "boxShadows" : [
 
                         ],
                         "brightness" : 100,
                         "brightnessEnabled" : 0,
                         "centerAnchorX" : 0.5,
-                        "centerAnchorY" : 0.55932203389830504,
+                        "centerAnchorY" : 0.12162162162162163,
                         "children" : [
 
                         ],
@@ -25037,7 +25037,7 @@
                         "left" : 0,
                         "locked" : false,
                         "name" : "route_directions",
-                        "opacity" : 1,
+                        "opacity" : 0,
                         "parentid" : "CWemgwRGa",
                         "radius" : 0,
                         "radiusBottomLeft" : 0,
@@ -25052,8 +25052,182 @@
                         "saturateEnabled" : 0,
                         "sepia" : 0,
                         "sepiaEnabled" : 0,
-                        "targetName" : "route_directions",
+                        "targetName" : null,
                         "top" : 105,
+                        "visible" : true,
+                        "width" : 546,
+                        "widthFactor" : null
+                      },
+                      {
+                        "__class" : "FrameNode",
+                        "aspectRatioLocked" : true,
+                        "blendingEnabled" : 0,
+                        "blendingMode" : "normal",
+                        "blur" : 12,
+                        "blurEnabled" : 0,
+                        "blurType" : "layer",
+                        "borderBottom" : 1,
+                        "borderColor" : "#222",
+                        "borderEnabled" : 0,
+                        "borderLeft" : 1,
+                        "borderPerSide" : false,
+                        "borderRight" : 1,
+                        "borderStyle" : "solid",
+                        "borderTop" : 1,
+                        "borderWidth" : 1,
+                        "bottom" : null,
+                        "boxShadows" : [
+
+                        ],
+                        "brightness" : 100,
+                        "brightnessEnabled" : 0,
+                        "centerAnchorX" : 0.5,
+                        "centerAnchorY" : 0.31916461916461919,
+                        "children" : [
+
+                        ],
+                        "clip" : false,
+                        "constraintsLocked" : false,
+                        "contrast" : 100,
+                        "contrastEnabled" : 0,
+                        "deviceType" : null,
+                        "exportIncludesBackground" : true,
+                        "exportOptions" : [
+
+                        ],
+                        "fillColor" : "rgba(255,255,255,1)",
+                        "fillEnabled" : true,
+                        "fillGradient" : {
+                          "__class" : "LinearGradient",
+                          "alpha" : 1,
+                          "angle" : 0,
+                          "end" : "rgba(0,0,0,0)",
+                          "start" : "black"
+                        },
+                        "fillImage" : "lpu84h3O4K0Qi9v3so49iCyoBghMcuNyDruQjPSSesa8iMFaq40QOfU7DQtG3J81fFYUtGPz3O3GaLBxZQ.png",
+                        "fillImagePixelHeight" : 4776,
+                        "fillImagePixelWidth" : 1092,
+                        "fillImageResize" : "fill",
+                        "fillType" : "image",
+                        "grayscale" : 0,
+                        "grayScaleEnabled" : 0,
+                        "height" : 2388,
+                        "heightFactor" : null,
+                        "hueRotate" : 0,
+                        "hueRotateEnabled" : 0,
+                        "id" : "wtEDk7H7D",
+                        "intrinsicHeight" : 2388,
+                        "intrinsicWidth" : 546,
+                        "invert" : 0,
+                        "invertEnabled" : 0,
+                        "left" : 0,
+                        "locked" : false,
+                        "name" : "route_directions_1",
+                        "opacity" : 1,
+                        "originalFilename" : "route_directions_1.png",
+                        "parentid" : "CWemgwRGa",
+                        "radius" : 0,
+                        "radiusBottomLeft" : 0,
+                        "radiusBottomRight" : 0,
+                        "radiusIsRelative" : false,
+                        "radiusPerCorner" : false,
+                        "radiusTopLeft" : 0,
+                        "radiusTopRight" : 0,
+                        "right" : 0,
+                        "rotation" : 0,
+                        "saturate" : 100,
+                        "saturateEnabled" : 0,
+                        "sepia" : 0,
+                        "sepiaEnabled" : 0,
+                        "targetName" : "route_directions_1",
+                        "top" : 105,
+                        "visible" : true,
+                        "width" : 546,
+                        "widthFactor" : null
+                      },
+                      {
+                        "__class" : "FrameNode",
+                        "aspectRatioLocked" : true,
+                        "blendingEnabled" : 0,
+                        "blendingMode" : "normal",
+                        "blur" : 12,
+                        "blurEnabled" : 0,
+                        "blurType" : "layer",
+                        "borderBottom" : 1,
+                        "borderColor" : "#222",
+                        "borderEnabled" : 0,
+                        "borderLeft" : 1,
+                        "borderPerSide" : false,
+                        "borderRight" : 1,
+                        "borderStyle" : "solid",
+                        "borderTop" : 1,
+                        "borderWidth" : 1,
+                        "bottom" : 0,
+                        "boxShadows" : [
+
+                        ],
+                        "brightness" : 100,
+                        "brightnessEnabled" : 0,
+                        "centerAnchorX" : 0.5,
+                        "centerAnchorY" : 0.81326781326781328,
+                        "children" : [
+
+                        ],
+                        "clip" : false,
+                        "constraintsLocked" : false,
+                        "contrast" : 100,
+                        "contrastEnabled" : 0,
+                        "deviceType" : null,
+                        "exportIncludesBackground" : true,
+                        "exportOptions" : [
+
+                        ],
+                        "fillColor" : "rgba(255,255,255,1)",
+                        "fillEnabled" : true,
+                        "fillGradient" : {
+                          "__class" : "LinearGradient",
+                          "alpha" : 1,
+                          "angle" : 0,
+                          "end" : "rgba(0,0,0,0)",
+                          "start" : "black"
+                        },
+                        "fillImage" : "CTVt6sjKi3CZD5WI1w0E20HBpiidVaa7paBGaKnPOwt1p1Q9Q7FpCveQIV6aG3gapNAp1Rsp6ApLx25kHTXxww.png",
+                        "fillImagePixelHeight" : 3039,
+                        "fillImagePixelWidth" : 1092,
+                        "fillImageResize" : "fill",
+                        "fillType" : "image",
+                        "grayscale" : 0,
+                        "grayScaleEnabled" : 0,
+                        "height" : 1520,
+                        "heightFactor" : null,
+                        "hueRotate" : 0,
+                        "hueRotateEnabled" : 0,
+                        "id" : "BLG1GvaRu",
+                        "intrinsicHeight" : 1519.5,
+                        "intrinsicWidth" : 546,
+                        "invert" : 0,
+                        "invertEnabled" : 0,
+                        "left" : 0,
+                        "locked" : false,
+                        "name" : "route_directions_2",
+                        "opacity" : 1,
+                        "originalFilename" : "route_directions_2.png",
+                        "parentid" : "CWemgwRGa",
+                        "radius" : 0,
+                        "radiusBottomLeft" : 0,
+                        "radiusBottomRight" : 0,
+                        "radiusIsRelative" : false,
+                        "radiusPerCorner" : false,
+                        "radiusTopLeft" : 0,
+                        "radiusTopRight" : 0,
+                        "right" : 0,
+                        "rotation" : 0,
+                        "saturate" : 100,
+                        "saturateEnabled" : 0,
+                        "sepia" : 0,
+                        "sepiaEnabled" : 0,
+                        "targetName" : "route_directions_2",
+                        "top" : null,
                         "visible" : true,
                         "width" : 546,
                         "widthFactor" : null
@@ -25107,7 +25281,7 @@
                         "visible" : true,
                         "width" : 542,
                         "x" : 2,
-                        "y" : 213
+                        "y" : 259
                       },
                       {
                         "__class" : "RectangleShapeNode",
@@ -25158,7 +25332,7 @@
                         "visible" : true,
                         "width" : 542,
                         "x" : 2,
-                        "y" : 347
+                        "y" : 439
                       },
                       {
                         "__class" : "RectangleShapeNode",
@@ -25209,7 +25383,7 @@
                         "visible" : true,
                         "width" : 542,
                         "x" : 2,
-                        "y" : 481
+                        "y" : 643
                       },
                       {
                         "__class" : "RectangleShapeNode",
@@ -25260,7 +25434,7 @@
                         "visible" : true,
                         "width" : 542,
                         "x" : 2,
-                        "y" : 615
+                        "y" : 823
                       },
                       {
                         "__class" : "RectangleShapeNode",
@@ -25311,7 +25485,7 @@
                         "visible" : true,
                         "width" : 542,
                         "x" : 2,
-                        "y" : 749
+                        "y" : 1003
                       },
                       {
                         "__class" : "RectangleShapeNode",
@@ -25336,7 +25510,7 @@
                         "fillImagePixelWidth" : null,
                         "fillImageResize" : "fill",
                         "fillType" : "color",
-                        "height" : 103,
+                        "height" : 146,
                         "id" : "R_GeejZ5v",
                         "lineCap" : "butt",
                         "lineJoin" : "miter",
@@ -25362,7 +25536,7 @@
                         "visible" : true,
                         "width" : 514,
                         "x" : 16,
-                        "y" : 497
+                        "y" : 663
                       },
                       {
                         "__class" : "RectangleShapeNode",
@@ -25387,7 +25561,7 @@
                         "fillImagePixelWidth" : null,
                         "fillImageResize" : "fill",
                         "fillType" : "color",
-                        "height" : 103,
+                        "height" : 145,
                         "id" : "a8sBOciYJ",
                         "lineCap" : "butt",
                         "lineJoin" : "miter",
@@ -25413,7 +25587,7 @@
                         "visible" : true,
                         "width" : 514,
                         "x" : 16,
-                        "y" : 631
+                        "y" : 843
                       },
                       {
                         "__class" : "RectangleShapeNode",
@@ -25438,7 +25612,7 @@
                         "fillImagePixelWidth" : null,
                         "fillImageResize" : "fill",
                         "fillType" : "color",
-                        "height" : 103,
+                        "height" : 127,
                         "id" : "Pq9wa147M",
                         "lineCap" : "butt",
                         "lineJoin" : "miter",
@@ -25464,7 +25638,7 @@
                         "visible" : true,
                         "width" : 514,
                         "x" : 16,
-                        "y" : 765
+                        "y" : 1023
                       },
                       {
                         "__class" : "RectangleShapeNode",
@@ -25489,7 +25663,7 @@
                         "fillImagePixelWidth" : null,
                         "fillImageResize" : "fill",
                         "fillType" : "color",
-                        "height" : 80,
+                        "height" : 122,
                         "id" : "yu8vMOTII",
                         "lineCap" : "butt",
                         "lineJoin" : "miter",
@@ -25515,7 +25689,7 @@
                         "visible" : true,
                         "width" : 514,
                         "x" : 16,
-                        "y" : 119
+                        "y" : 120
                       },
                       {
                         "__class" : "RectangleShapeNode",
@@ -25540,7 +25714,7 @@
                         "fillImagePixelWidth" : null,
                         "fillImageResize" : "fill",
                         "fillType" : "color",
-                        "height" : 103,
+                        "height" : 148,
                         "id" : "NUWywFrza",
                         "lineCap" : "butt",
                         "lineJoin" : "miter",
@@ -25566,7 +25740,7 @@
                         "visible" : true,
                         "width" : 514,
                         "x" : 16,
-                        "y" : 229
+                        "y" : 276
                       },
                       {
                         "__class" : "RectangleShapeNode",
@@ -25591,7 +25765,7 @@
                         "fillImagePixelWidth" : null,
                         "fillImageResize" : "fill",
                         "fillType" : "color",
-                        "height" : 103,
+                        "height" : 173,
                         "id" : "DN6XLWbp6",
                         "lineCap" : "butt",
                         "lineJoin" : "miter",
@@ -25617,7 +25791,7 @@
                         "visible" : true,
                         "width" : 514,
                         "x" : 16,
-                        "y" : 363
+                        "y" : 455
                       },
                       {
                         "__class" : "FrameNode",
@@ -25643,7 +25817,7 @@
                         "brightness" : 100,
                         "brightnessEnabled" : 0,
                         "centerAnchorX" : 0.5,
-                        "centerAnchorY" : 0.059322033898305086,
+                        "centerAnchorY" : 0.012899262899262898,
                         "children" : [
 
                         ],
@@ -25731,7 +25905,7 @@
                     "fillType" : "color",
                     "grayscale" : 0,
                     "grayScaleEnabled" : 0,
-                    "height" : 885,
+                    "height" : 4070,
                     "heightFactor" : null,
                     "hueRotate" : 0,
                     "hueRotateEnabled" : 0,
@@ -25759,6 +25933,479 @@
                     "sepia" : 0,
                     "sepiaEnabled" : 0,
                     "targetName" : "route_info",
+                    "top" : 276,
+                    "visible" : true,
+                    "width" : 546,
+                    "widthFactor" : null
+                  },
+                  {
+                    "__class" : "FrameNode",
+                    "aspectRatioLocked" : false,
+                    "blendingEnabled" : 0,
+                    "blendingMode" : "normal",
+                    "blur" : 12,
+                    "blurEnabled" : 0,
+                    "blurType" : "layer",
+                    "borderBottom" : 2,
+                    "borderColor" : "rgba(244, 130, 2, 1.00)",
+                    "borderEnabled" : 1,
+                    "borderLeft" : 2,
+                    "borderPerSide" : false,
+                    "borderRight" : 2,
+                    "borderStyle" : "solid",
+                    "borderTop" : 2,
+                    "borderWidth" : 2,
+                    "bottom" : 1518,
+                    "boxShadows" : [
+
+                    ],
+                    "brightness" : 100,
+                    "brightnessEnabled" : 0,
+                    "centerAnchorX" : 0.24553571428571427,
+                    "centerAnchorY" : 0.64392544868844914,
+                    "children" : [
+                      {
+                        "__class" : "TextNode",
+                        "autoSize" : true,
+                        "blendingEnabled" : 0,
+                        "blendingMode" : "normal",
+                        "blur" : 12,
+                        "blurEnabled" : 0,
+                        "blurType" : "layer",
+                        "bottom" : null,
+                        "brightness" : 100,
+                        "brightnessEnabled" : 0,
+                        "centerAnchorX" : 0.38553113553113555,
+                        "centerAnchorY" : 0.51694915254237284,
+                        "constraintsLocked" : false,
+                        "contrast" : 100,
+                        "contrastEnabled" : 0,
+                        "editable" : false,
+                        "exportOptions" : [
+
+                        ],
+                        "grayscale" : 0,
+                        "grayScaleEnabled" : 0,
+                        "height" : 21,
+                        "heightFactor" : null,
+                        "hueRotate" : 0,
+                        "hueRotateEnabled" : 0,
+                        "id" : "LkdfnfuDp",
+                        "invert" : 0,
+                        "invertEnabled" : 0,
+                        "left" : 57,
+                        "locked" : false,
+                        "name" : null,
+                        "opacity" : 1,
+                        "parentid" : "w0LSrLYFP",
+                        "right" : null,
+                        "rotation" : 0,
+                        "saturate" : 100,
+                        "saturateEnabled" : 0,
+                        "sepia" : 0,
+                        "sepiaEnabled" : 0,
+                        "shadows" : [
+
+                        ],
+                        "styledText" : {
+                          "__class" : "StyledTextDraft",
+                          "blocks" : [
+                            {
+                              "data" : {
+                                "emptyStyle" : [
+                                  "LETTERSPACING:0",
+                                  "LINEHEIGHT:1.2",
+                                  "COLOR:rgba(244, 130, 2, 1.00)",
+                                  "FONT:TheSansC4s-Regular",
+                                  "SIZE:18"
+                                ]
+                              },
+                              "depth" : 0,
+                              "entityRanges" : [
+
+                              ],
+                              "inlineStyleRanges" : [
+                                {
+                                  "length" : 38,
+                                  "offset" : 0,
+                                  "style" : "LETTERSPACING:0"
+                                },
+                                {
+                                  "length" : 38,
+                                  "offset" : 0,
+                                  "style" : "LINEHEIGHT:1.2"
+                                },
+                                {
+                                  "length" : 38,
+                                  "offset" : 0,
+                                  "style" : "COLOR:rgba(244, 130, 2, 1.00)"
+                                },
+                                {
+                                  "length" : 38,
+                                  "offset" : 0,
+                                  "style" : "FONT:TheSansC4s-Regular"
+                                },
+                                {
+                                  "length" : 38,
+                                  "offset" : 0,
+                                  "style" : "SIZE:18"
+                                }
+                              ],
+                              "key" : "4qlgg",
+                              "text" : "Ongeluk op de E25, 1 minuut vertraging",
+                              "type" : "unstyled"
+                            }
+                          ],
+                          "cached" : {
+                            "html" : "<span data-offset-key=\"4qlgg-0-0\" style=\"tab-size:4;font-weight:400;font-family:&quot;TheSansC4s-Regular&quot;, &quot;TheSans C4s&quot;, sans-serif;-webkit-text-fill-color:rgba(244, 130, 2, 1.00);font-size:18px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">Ongeluk op de E25, 1 minuut vertraging<\/span><\/span>",
+                            "os" : "10_14",
+                            "size" : {
+                              "height" : 21,
+                              "width" : 307
+                            },
+                            "width" : 0
+                          },
+                          "entityMap" : {
+
+                          }
+                        },
+                        "targetName" : null,
+                        "top" : null,
+                        "visible" : true,
+                        "width" : 307,
+                        "widthFactor" : null
+                      },
+                      {
+                        "__class" : "FrameNode",
+                        "aspectRatioLocked" : false,
+                        "blendingEnabled" : 0,
+                        "blendingMode" : "normal",
+                        "blur" : 12,
+                        "blurEnabled" : 0,
+                        "blurType" : "layer",
+                        "borderBottom" : 1,
+                        "borderColor" : "#222",
+                        "borderEnabled" : 0,
+                        "borderLeft" : 1,
+                        "borderPerSide" : false,
+                        "borderRight" : 1,
+                        "borderStyle" : "solid",
+                        "borderTop" : 1,
+                        "borderWidth" : 1,
+                        "bottom" : null,
+                        "boxShadows" : [
+
+                        ],
+                        "brightness" : 100,
+                        "brightnessEnabled" : 0,
+                        "centerAnchorX" : 0.054945054945054944,
+                        "centerAnchorY" : 0.5,
+                        "children" : [
+                          {
+                            "__class" : "PathNode",
+                            "aspectRatioLocked" : false,
+                            "boxShadows" : [
+
+                            ],
+                            "exportOptions" : [
+
+                            ],
+                            "fillColor" : "rgba(0,170,255,0.5)",
+                            "fillEnabled" : false,
+                            "fillGradient" : {
+                              "__class" : "LinearGradient",
+                              "alpha" : 1,
+                              "angle" : 0,
+                              "end" : "rgba(0,0,0,0)",
+                              "start" : "black"
+                            },
+                            "fillImage" : null,
+                            "fillImagePixelHeight" : null,
+                            "fillImagePixelWidth" : null,
+                            "fillImageResize" : "fill",
+                            "fillType" : "color",
+                            "height" : 24,
+                            "id" : "lWuSInJK9",
+                            "lineCap" : "round",
+                            "lineJoin" : "round",
+                            "locked" : false,
+                            "name" : null,
+                            "opacity" : 1,
+                            "parentid" : "ANkxpMq_Z",
+                            "pathClosed" : true,
+                            "pathSegments" : [
+                              {
+                                "__class" : "PathSegment",
+                                "handleInX" : 0,
+                                "handleInY" : 0,
+                                "handleMirroring" : "straight",
+                                "handleOutX" : 0,
+                                "handleOutY" : 0,
+                                "radius" : 0,
+                                "x" : 0,
+                                "y" : 24
+                              },
+                              {
+                                "__class" : "PathSegment",
+                                "handleInX" : 0,
+                                "handleInY" : 0,
+                                "handleMirroring" : "straight",
+                                "handleOutX" : 0,
+                                "handleOutY" : 0,
+                                "radius" : 0,
+                                "x" : 26,
+                                "y" : 24
+                              },
+                              {
+                                "__class" : "PathSegment",
+                                "handleInX" : 0,
+                                "handleInY" : 0,
+                                "handleMirroring" : "straight",
+                                "handleOutX" : 0,
+                                "handleOutY" : 0,
+                                "radius" : 0,
+                                "x" : 13,
+                                "y" : 0
+                              }
+                            ],
+                            "rotation" : 0,
+                            "strokeAlignment" : "center",
+                            "strokeColor" : "rgba(241, 69, 5, 1.00)",
+                            "strokeDashArray" : "0",
+                            "strokeDashOffset" : 0,
+                            "strokeEnabled" : 1,
+                            "strokeMiterLimit" : 4,
+                            "strokeWidth" : 2,
+                            "targetName" : null,
+                            "visible" : true,
+                            "width" : 26,
+                            "x" : 1,
+                            "y" : 1.75
+                          },
+                          {
+                            "__class" : "TextNode",
+                            "autoSize" : true,
+                            "blendingEnabled" : 0,
+                            "blendingMode" : "normal",
+                            "blur" : 12,
+                            "blurEnabled" : 0,
+                            "blurType" : "layer",
+                            "bottom" : 3,
+                            "brightness" : 100,
+                            "brightnessEnabled" : 0,
+                            "centerAnchorX" : 0.5357142857142857,
+                            "centerAnchorY" : 0.61111111111111116,
+                            "constraintsLocked" : false,
+                            "contrast" : 100,
+                            "contrastEnabled" : 0,
+                            "editable" : false,
+                            "exportOptions" : [
+
+                            ],
+                            "grayscale" : 0,
+                            "grayScaleEnabled" : 0,
+                            "height" : 15,
+                            "heightFactor" : null,
+                            "hueRotate" : 0,
+                            "hueRotateEnabled" : 0,
+                            "id" : "bLKyFHTvU",
+                            "invert" : 0,
+                            "invertEnabled" : 0,
+                            "left" : null,
+                            "locked" : false,
+                            "name" : null,
+                            "opacity" : 1,
+                            "parentid" : "ANkxpMq_Z",
+                            "right" : null,
+                            "rotation" : 0,
+                            "saturate" : 100,
+                            "saturateEnabled" : 0,
+                            "sepia" : 0,
+                            "sepiaEnabled" : 0,
+                            "shadows" : [
+
+                            ],
+                            "styledText" : {
+                              "__class" : "StyledTextDraft",
+                              "blocks" : [
+                                {
+                                  "data" : {
+                                    "emptyStyle" : [
+                                      "LETTERSPACING:0",
+                                      "LINEHEIGHT:1.2",
+                                      "COLOR:rgba(0, 60, 133, 1.00)",
+                                      "SIZE:13",
+                                      "FONT:TheSansC4s-Bold"
+                                    ]
+                                  },
+                                  "depth" : 0,
+                                  "entityRanges" : [
+
+                                  ],
+                                  "inlineStyleRanges" : [
+                                    {
+                                      "length" : 1,
+                                      "offset" : 0,
+                                      "style" : "LETTERSPACING:0"
+                                    },
+                                    {
+                                      "length" : 1,
+                                      "offset" : 0,
+                                      "style" : "LINEHEIGHT:1.2"
+                                    },
+                                    {
+                                      "length" : 1,
+                                      "offset" : 0,
+                                      "style" : "COLOR:rgba(0, 60, 133, 1.00)"
+                                    },
+                                    {
+                                      "length" : 1,
+                                      "offset" : 0,
+                                      "style" : "SIZE:13"
+                                    },
+                                    {
+                                      "length" : 1,
+                                      "offset" : 0,
+                                      "style" : "FONT:TheSansC4s-Bold"
+                                    }
+                                  ],
+                                  "key" : "3dunl",
+                                  "text" : "!",
+                                  "type" : "unstyled"
+                                }
+                              ],
+                              "cached" : {
+                                "html" : "<span data-offset-key=\"3dunl-0-0\" style=\"tab-size:4;font-weight:700;font-family:&quot;TheSansC4s-Bold&quot;, &quot;TheSans C4s&quot;, sans-serif;-webkit-text-fill-color:rgba(0, 60, 133, 1.00);font-size:13px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">!<\/span><\/span>",
+                                "os" : "10_14",
+                                "size" : {
+                                  "height" : 15,
+                                  "width" : 6
+                                },
+                                "width" : 0
+                              },
+                              "entityMap" : {
+
+                              }
+                            },
+                            "targetName" : null,
+                            "top" : null,
+                            "visible" : true,
+                            "width" : 6,
+                            "widthFactor" : null
+                          }
+                        ],
+                        "clip" : false,
+                        "constraintsLocked" : false,
+                        "contrast" : 100,
+                        "contrastEnabled" : 0,
+                        "deviceType" : null,
+                        "exportIncludesBackground" : true,
+                        "exportOptions" : [
+
+                        ],
+                        "fillColor" : "rgba(255,255,255,1)",
+                        "fillEnabled" : false,
+                        "fillGradient" : {
+                          "__class" : "LinearGradient",
+                          "alpha" : 1,
+                          "angle" : 0,
+                          "end" : "rgba(0,0,0,0)",
+                          "start" : "black"
+                        },
+                        "fillImage" : null,
+                        "fillImagePixelHeight" : null,
+                        "fillImagePixelWidth" : null,
+                        "fillImageResize" : "fill",
+                        "fillType" : "color",
+                        "grayscale" : 0,
+                        "grayScaleEnabled" : 0,
+                        "height" : 27,
+                        "heightFactor" : null,
+                        "hueRotate" : 0,
+                        "hueRotateEnabled" : 0,
+                        "id" : "ANkxpMq_Z",
+                        "intrinsicHeight" : null,
+                        "intrinsicWidth" : null,
+                        "invert" : 0,
+                        "invertEnabled" : 0,
+                        "left" : 16,
+                        "locked" : false,
+                        "name" : "iconAlert",
+                        "opacity" : 1,
+                        "parentid" : "w0LSrLYFP",
+                        "radius" : 0,
+                        "radiusBottomLeft" : 0,
+                        "radiusBottomRight" : 0,
+                        "radiusIsRelative" : false,
+                        "radiusPerCorner" : false,
+                        "radiusTopLeft" : 0,
+                        "radiusTopRight" : 0,
+                        "right" : null,
+                        "rotation" : 0,
+                        "saturate" : 100,
+                        "saturateEnabled" : 0,
+                        "sepia" : 0,
+                        "sepiaEnabled" : 0,
+                        "targetName" : null,
+                        "top" : null,
+                        "visible" : true,
+                        "width" : 28,
+                        "widthFactor" : null
+                      }
+                    ],
+                    "clip" : false,
+                    "constraintsLocked" : false,
+                    "contrast" : 100,
+                    "contrastEnabled" : 0,
+                    "deviceType" : null,
+                    "exportIncludesBackground" : true,
+                    "exportOptions" : [
+
+                    ],
+                    "fillColor" : "rgba(255, 250, 246, 1.00)",
+                    "fillEnabled" : true,
+                    "fillGradient" : {
+                      "__class" : "LinearGradient",
+                      "alpha" : 1,
+                      "angle" : 0,
+                      "end" : "rgba(0,0,0,0)",
+                      "start" : "black"
+                    },
+                    "fillImage" : null,
+                    "fillImagePixelHeight" : null,
+                    "fillImagePixelWidth" : null,
+                    "fillImageResize" : "fill",
+                    "fillType" : "color",
+                    "grayscale" : 0,
+                    "grayScaleEnabled" : 0,
+                    "height" : 59,
+                    "heightFactor" : null,
+                    "hueRotate" : 0,
+                    "hueRotateEnabled" : 0,
+                    "id" : "w0LSrLYFP",
+                    "intrinsicHeight" : null,
+                    "intrinsicWidth" : null,
+                    "invert" : 0,
+                    "invertEnabled" : 0,
+                    "left" : 2,
+                    "locked" : false,
+                    "name" : "alertFile",
+                    "opacity" : 1,
+                    "parentid" : "W6wNubNO5",
+                    "radius" : 0,
+                    "radiusBottomLeft" : 0,
+                    "radiusBottomRight" : 0,
+                    "radiusIsRelative" : false,
+                    "radiusPerCorner" : false,
+                    "radiusTopLeft" : 0,
+                    "radiusTopRight" : 0,
+                    "right" : null,
+                    "rotation" : 0,
+                    "saturate" : 100,
+                    "saturateEnabled" : 0,
+                    "sepia" : 0,
+                    "sepiaEnabled" : 0,
+                    "targetName" : "alertFile",
                     "top" : null,
                     "visible" : true,
                     "width" : 546,
@@ -25790,7 +26437,7 @@
                 "fillType" : "color",
                 "grayscale" : 0,
                 "grayScaleEnabled" : 0,
-                "height" : 1195,
+                "height" : 4346,
                 "heightFactor" : null,
                 "hueRotate" : 0,
                 "hueRotateEnabled" : 0,
@@ -25818,7 +26465,7 @@
                 "sepia" : 0,
                 "sepiaEnabled" : 0,
                 "targetName" : "routeplanner_planning",
-                "top" : null,
+                "top" : 820,
                 "visible" : true,
                 "width" : 1120,
                 "widthFactor" : null
@@ -25849,7 +26496,7 @@
             "fillType" : "color",
             "grayscale" : 0,
             "grayScaleEnabled" : 0,
-            "height" : 2508,
+            "height" : 5830,
             "heightFactor" : null,
             "hueRotate" : 0,
             "hueRotateEnabled" : 0,
@@ -25908,7 +26555,7 @@
         "fillType" : "color",
         "grayscale" : 0,
         "grayScaleEnabled" : 0,
-        "height" : 2508,
+        "height" : 5830,
         "heightFactor" : null,
         "hueRotate" : 0,
         "hueRotateEnabled" : 0,
