@@ -32523,7 +32523,6 @@
                                 "brightnessEnabled" : 0,
                                 "centerAnchorX" : 0.20588235294117646,
                                 "centerAnchorY" : 0.14262820512820512,
-                                "clip" : false,
                                 "colorable" : false,
                                 "constraintsLocked" : false,
                                 "contrast" : 100,
@@ -32531,6 +32530,7 @@
                                 "exportOptions" : [
 
                                 ],
+                                "fillColor" : "rgba(0,0,0,1)",
                                 "fillGradient" : {
                                   "__class" : "LinearGradient",
                                   "alpha" : 1,
@@ -32589,7 +32589,6 @@
                                 "brightnessEnabled" : 0,
                                 "centerAnchorX" : 0.58371040723981904,
                                 "centerAnchorY" : 0.44070512820512819,
-                                "clip" : false,
                                 "colorable" : false,
                                 "constraintsLocked" : false,
                                 "contrast" : 100,
@@ -32597,6 +32596,7 @@
                                 "exportOptions" : [
 
                                 ],
+                                "fillColor" : "rgba(0,0,0,1)",
                                 "fillGradient" : {
                                   "__class" : "LinearGradient",
                                   "alpha" : 1,
@@ -32655,7 +32655,6 @@
                                 "brightnessEnabled" : 0,
                                 "centerAnchorX" : 0.042986425339366516,
                                 "centerAnchorY" : 0.40224358974358976,
-                                "clip" : false,
                                 "colorable" : false,
                                 "constraintsLocked" : false,
                                 "contrast" : 100,
@@ -32663,6 +32662,7 @@
                                 "exportOptions" : [
 
                                 ],
+                                "fillColor" : "rgba(0,0,0,1)",
                                 "fillGradient" : {
                                   "__class" : "LinearGradient",
                                   "alpha" : 1,
@@ -32721,7 +32721,6 @@
                                 "brightnessEnabled" : 0,
                                 "centerAnchorX" : 0.43438914027149322,
                                 "centerAnchorY" : 0.072115384615384609,
-                                "clip" : false,
                                 "colorable" : false,
                                 "constraintsLocked" : false,
                                 "contrast" : 100,
@@ -32729,6 +32728,7 @@
                                 "exportOptions" : [
 
                                 ],
+                                "fillColor" : "rgba(0,0,0,1)",
                                 "fillGradient" : {
                                   "__class" : "LinearGradient",
                                   "alpha" : 1,
@@ -32787,7 +32787,6 @@
                                 "brightnessEnabled" : 0,
                                 "centerAnchorX" : 0.95701357466063353,
                                 "centerAnchorY" : 0.92788461538461542,
-                                "clip" : false,
                                 "colorable" : false,
                                 "constraintsLocked" : false,
                                 "contrast" : 100,
@@ -32795,6 +32794,7 @@
                                 "exportOptions" : [
 
                                 ],
+                                "fillColor" : "rgba(0,0,0,1)",
                                 "fillGradient" : {
                                   "__class" : "LinearGradient",
                                   "alpha" : 1,
@@ -32853,7 +32853,6 @@
                                 "brightnessEnabled" : 0,
                                 "centerAnchorX" : 0.35294117647058826,
                                 "centerAnchorY" : 0.90224358974358976,
-                                "clip" : false,
                                 "colorable" : false,
                                 "constraintsLocked" : false,
                                 "contrast" : 100,
@@ -32861,6 +32860,7 @@
                                 "exportOptions" : [
 
                                 ],
+                                "fillColor" : "rgba(0,0,0,1)",
                                 "fillGradient" : {
                                   "__class" : "LinearGradient",
                                   "alpha" : 1,
@@ -32919,7 +32919,6 @@
                                 "brightnessEnabled" : 0,
                                 "centerAnchorX" : 0.052036199095022627,
                                 "centerAnchorY" : 0.89583333333333337,
-                                "clip" : false,
                                 "colorable" : false,
                                 "constraintsLocked" : false,
                                 "contrast" : 100,
@@ -32927,6 +32926,7 @@
                                 "exportOptions" : [
 
                                 ],
+                                "fillColor" : "rgba(0,0,0,1)",
                                 "fillGradient" : {
                                   "__class" : "LinearGradient",
                                   "alpha" : 1,
