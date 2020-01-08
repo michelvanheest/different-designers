@@ -275,9 +275,7 @@
                     "top" : 0,
                     "visible" : true,
                     "width" : 90,
-                    "widthFactor" : null,
-                    "x" : 406,
-                    "y" : 427
+                    "widthFactor" : null
                   },
                   {
                     "__class" : "PathNode",
@@ -792,9 +790,7 @@
                     "top" : 0,
                     "visible" : true,
                     "width" : 73,
-                    "widthFactor" : null,
-                    "x" : 406,
-                    "y" : 427
+                    "widthFactor" : null
                   },
                   {
                     "__class" : "PathNode",
@@ -1151,7 +1147,7 @@
                     "exportOptions" : [
 
                     ],
-                    "fillColor" : "#F28200",
+                    "fillColor" : "rgba(191, 219, 237, 1.00)",
                     "fillEnabled" : true,
                     "fillGradient" : {
                       "__class" : "LinearGradient",
@@ -1253,7 +1249,7 @@
                               "LINEHEIGHT:1.2",
                               "FONT:TheSansC4s-Regular",
                               "SIZE:16",
-                              "COLOR:rgba(242, 130, 0, 1.00)"
+                              "COLOR:rgba(90, 151, 192, 1.00)"
                             ]
                           },
                           "depth" : 0,
@@ -1284,7 +1280,7 @@
                             {
                               "length" : 13,
                               "offset" : 0,
-                              "style" : "COLOR:rgba(242, 130, 0, 1.00)"
+                              "style" : "COLOR:rgba(90, 151, 192, 1.00)"
                             }
                           ],
                           "key" : "bj4k1",
@@ -1293,7 +1289,7 @@
                         }
                       ],
                       "cached" : {
-                        "html" : "<span data-offset-key=\"bj4k1-0-0\" style=\"tab-size:4;font-weight:400;font-family:&quot;TheSansC4s-Regular&quot;, &quot;TheSans C4s&quot;, sans-serif;-webkit-text-fill-color:rgba(242, 130, 0, 1.00);font-size:16px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">2. Uw account<\/span><\/span>",
+                        "html" : "<span data-offset-key=\"bj4k1-0-0\" style=\"tab-size:4;font-weight:400;font-family:&quot;TheSansC4s-Regular&quot;, &quot;TheSans C4s&quot;, sans-serif;-webkit-text-fill-color:rgba(90, 151, 192, 1.00);font-size:16px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">2. Uw account<\/span><\/span>",
                         "os" : "10_14",
                         "size" : {
                           "height" : 19,
@@ -1309,9 +1305,7 @@
                     "top" : 0,
                     "visible" : true,
                     "width" : 99,
-                    "widthFactor" : null,
-                    "x" : 406,
-                    "y" : 427
+                    "widthFactor" : null
                   },
                   {
                     "__class" : "PathNode",
@@ -1322,7 +1316,7 @@
                     "exportOptions" : [
 
                     ],
-                    "fillColor" : "rgba(242, 130, 0, 1.00)",
+                    "fillColor" : "rgba(191, 219, 237, 1.00)",
                     "fillEnabled" : true,
                     "fillGradient" : {
                       "__class" : "LinearGradient",
@@ -1668,7 +1662,7 @@
                     "exportOptions" : [
 
                     ],
-                    "fillColor" : "#003D86",
+                    "fillColor" : "rgba(191, 219, 237, 1.00)",
                     "fillEnabled" : true,
                     "fillGradient" : {
                       "__class" : "LinearGradient",
@@ -1768,9 +1762,9 @@
                             "emptyStyle" : [
                               "LETTERSPACING:0",
                               "LINEHEIGHT:1.2",
-                              "COLOR:rgba(0, 61, 134, 1.00)",
                               "FONT:TheSansC4s-Regular",
-                              "SIZE:16"
+                              "SIZE:16",
+                              "COLOR:rgba(242, 130, 22, 1.00)"
                             ]
                           },
                           "depth" : 0,
@@ -1791,17 +1785,17 @@
                             {
                               "length" : 14,
                               "offset" : 0,
-                              "style" : "COLOR:rgba(0, 61, 134, 1.00)"
-                            },
-                            {
-                              "length" : 14,
-                              "offset" : 0,
                               "style" : "FONT:TheSansC4s-Regular"
                             },
                             {
                               "length" : 14,
                               "offset" : 0,
                               "style" : "SIZE:16"
+                            },
+                            {
+                              "length" : 14,
+                              "offset" : 0,
+                              "style" : "COLOR:rgba(242, 130, 22, 1.00)"
                             }
                           ],
                           "key" : "bj4k1",
@@ -1810,7 +1804,7 @@
                         }
                       ],
                       "cached" : {
-                        "html" : "<span data-offset-key=\"bj4k1-0-0\" style=\"tab-size:4;font-weight:400;font-family:&quot;TheSansC4s-Regular&quot;, &quot;TheSans C4s&quot;, sans-serif;-webkit-text-fill-color:rgba(0, 61, 134, 1.00);font-size:16px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">1. Uw gegevens<\/span><\/span>",
+                        "html" : "<span data-offset-key=\"bj4k1-0-0\" style=\"tab-size:4;font-weight:400;font-family:&quot;TheSansC4s-Regular&quot;, &quot;TheSans C4s&quot;, sans-serif;-webkit-text-fill-color:rgba(242, 130, 22, 1.00);font-size:16px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">1. Uw gegevens<\/span><\/span>",
                         "os" : "10_14",
                         "size" : {
                           "height" : 19,
@@ -1826,9 +1820,7 @@
                     "top" : 0,
                     "visible" : true,
                     "width" : 107,
-                    "widthFactor" : null,
-                    "x" : 406,
-                    "y" : 427
+                    "widthFactor" : null
                   },
                   {
                     "__class" : "PathNode",
@@ -1839,7 +1831,7 @@
                     "exportOptions" : [
 
                     ],
-                    "fillColor" : "rgba(0, 61, 134, 1.00)",
+                    "fillColor" : "rgba(242, 130, 22, 1.00)",
                     "fillEnabled" : true,
                     "fillGradient" : {
                       "__class" : "LinearGradient",
@@ -2073,7 +2065,7 @@
                 "exportOptions" : [
 
                 ],
-                "fillColor" : "#003D86",
+                "fillColor" : "rgba(242, 130, 22, 1.00)",
                 "fillEnabled" : true,
                 "fillGradient" : {
                   "__class" : "LinearGradient",
@@ -2376,6 +2368,123 @@
             "visible" : true,
             "width" : 112,
             "widthFactor" : null
+          },
+          {
+            "__class" : "TextNode",
+            "autoSize" : false,
+            "blendingEnabled" : 0,
+            "blendingMode" : "normal",
+            "blur" : 12,
+            "blurEnabled" : 0,
+            "blurType" : "layer",
+            "bottom" : 34,
+            "brightness" : 100,
+            "brightnessEnabled" : 0,
+            "centerAnchorX" : 0.5,
+            "centerAnchorY" : 0.94111111111111112,
+            "constraintsLocked" : false,
+            "contrast" : 100,
+            "contrastEnabled" : 0,
+            "editable" : false,
+            "exportOptions" : [
+
+            ],
+            "grayscale" : 0,
+            "grayScaleEnabled" : 0,
+            "height" : 38,
+            "heightFactor" : null,
+            "hueRotate" : 0,
+            "hueRotateEnabled" : 0,
+            "id" : "UtYd5e3BZ",
+            "invert" : 0,
+            "invertEnabled" : 0,
+            "left" : null,
+            "locked" : false,
+            "name" : "reloadText",
+            "opacity" : 1,
+            "parentid" : "trElZKeWU",
+            "right" : null,
+            "rotation" : 0,
+            "saturate" : 100,
+            "saturateEnabled" : 0,
+            "sepia" : 0,
+            "sepiaEnabled" : 0,
+            "shadows" : [
+
+            ],
+            "styledText" : {
+              "__class" : "StyledTextDraft",
+              "blocks" : [
+                {
+                  "data" : {
+                    "emptyStyle" : [
+                      "LETTERSPACING:0",
+                      "LINEHEIGHT:1.2",
+                      "FONT:TheSansC4s-Regular",
+                      "SIZE:16",
+                      "COLOR:rgba(90, 151, 192, 1.00)",
+                      "ALIGN:center"
+                    ]
+                  },
+                  "depth" : 0,
+                  "entityRanges" : [
+
+                  ],
+                  "inlineStyleRanges" : [
+                    {
+                      "length" : 51,
+                      "offset" : 0,
+                      "style" : "LETTERSPACING:0"
+                    },
+                    {
+                      "length" : 51,
+                      "offset" : 0,
+                      "style" : "LINEHEIGHT:1.2"
+                    },
+                    {
+                      "length" : 51,
+                      "offset" : 0,
+                      "style" : "FONT:TheSansC4s-Regular"
+                    },
+                    {
+                      "length" : 51,
+                      "offset" : 0,
+                      "style" : "SIZE:16"
+                    },
+                    {
+                      "length" : 51,
+                      "offset" : 0,
+                      "style" : "COLOR:rgba(90, 151, 192, 1.00)"
+                    },
+                    {
+                      "length" : 51,
+                      "offset" : 0,
+                      "style" : "ALIGN:center"
+                    }
+                  ],
+                  "key" : "bj4k1",
+                  "text" : "Please reload your browser to refresh the prototype",
+                  "type" : "unstyled"
+                }
+              ],
+              "cached" : {
+                "html" : "<span data-offset-key=\"bj4k1-0-0\" style=\"tab-size:4;font-weight:400;font-family:&quot;TheSansC4s-Regular&quot;, &quot;TheSans C4s&quot;, sans-serif;-webkit-text-fill-color:rgba(90, 151, 192, 1.00);font-size:16px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">Please reload your browser to refresh the prototype<\/span><\/span>",
+                "os" : "10_14",
+                "size" : {
+                  "height" : 38,
+                  "width" : 251
+                },
+                "width" : 250
+              },
+              "entityMap" : {
+
+              }
+            },
+            "targetName" : "reloadText",
+            "top" : null,
+            "visible" : true,
+            "width" : 250,
+            "widthFactor" : null
           }
         ],
         "clip" : true,
@@ -2588,7 +2697,6 @@
         "locked" : false,
         "name" : null,
         "opacity" : 1,
-        "originalFilename" : "",
         "parentid" : "ptzUS_jCx",
         "radius" : 0,
         "radiusBottomLeft" : 0,

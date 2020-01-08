@@ -646,8 +646,6 @@ road_traffic_1.onClick ->
 			options: 
 				time: 0.16
 				curve: defaultSpring
-		
-		
 
 # 🔵Navigation hub
 ## 🔴Animate button open map
