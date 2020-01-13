@@ -1,0 +1,29 @@
+{
+  "orientation" : 0,
+  "updateDelay" : 0.29999999999999999,
+  "designModeSelected" : 0,
+  "cachedDeviceHeight" : 0,
+  "contentScale" : 1,
+  "cachedDeviceWidth" : 0,
+  "deviceType" : "fullscreen",
+  "sharedPrototype" : 0,
+  "propertyPanelToggleStates" : {
+
+  },
+  "projectId" : "02E8611D-A60A-40DF-821E-A1500CCD930E",
+  "deviceOrientation" : 0,
+  "selectedHand" : "",
+  "showBezel" : true,
+  "foldedCodeRanges" : [
+    "{31, 1503}",
+    "{1535, 574}",
+    "{2110, 918}",
+    "{3029, 551}",
+    "{3581, 3324}",
+    "{6906, 3081}",
+    "{9988, 1170}",
+    "{11159, 2316}",
+    "{13476, 1196}"
+  ],
+  "deviceScale" : 1
+}
