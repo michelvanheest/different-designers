@@ -1,0 +1,78 @@
+/* ============BODY CUSTOM RESET============ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, menu {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font-weight: normal !important;
+    font-family: FONTNAME, sans-serif; /*CHANGE FONTNAME HERE*/
+    text-transform: none;
+    text-decoration: none;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    line-height: 1.2;
+    kerning: none !important;
+
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeSpeed;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden !important;
+}
+
+:root {
+    --color-NAME: #000000;
+
+    --transition: all .24s ease-in 0s;
+    --moz-transition: all .24s ease-in 0s;
+    --webkit-transition: all .24s ease-in 0s;
+    --o-transition: all .24s ease-in 0s;
+}
+
+
+
+/* ============FONTS============ */
+@font-face {font-family: 'FONTNAME';
+    /* src: url('../assets/fonts/FONTNAME.otf') format('opentype'); */
+    src: url('../assets/fonts/FONTNAME.eot') format('embedded-opentype');
+    src: url('../assets/fonts/FONTNAME.ttf') format('truetype');
+    src: url('../assets/fonts/FONTNAME.woff') format('woff');
+    src: url('../assets/fonts/FONTNAME.woff2') format('woff2');
+}
+
+::selection {
+    
+}
+::-moz-selection {
+    
+}
+
+
+
+/* ============LINKS & BUTTONS============ */
+
+
+
+/* ============LAYOUTS GENERAL============ */
+
+
+
+/* ============LAYOUTS COMPONENTS============ */
+
+
+
+/* ============MEDIAQUERIES============ */
+
+
+
+/* ============ANIMATIONS============ */
+div.hidden {
+    display: none;
+}

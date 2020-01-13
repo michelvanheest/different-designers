@@ -1,4 +1,0 @@
-# robots.txt for https://
-
-User-agent: *
-Disallow: /
