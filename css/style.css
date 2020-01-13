@@ -19,16 +19,23 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     text-rendering: optimizeSpeed;
 }
 
-html {
+/* html {
     scroll-behavior: smooth;
-}
+} */
 
 body {
     overflow-x: hidden !important;
 }
 
 :root {
-    --color-NAME: #000000;
+    --color-black: #0C183D;
+    --color-gray600: #6E758A;
+    --color-gray400: #AEB2BD;
+    --color-gray100: rgba(110, 117, 138, 0.1);
+    --color-white: #FFFFFF;
+    --color-purple: #8641F2;
+    --color-purple300: #F5F0FE;
+    --color-purpleGradient: linear-gradient(180deg, #783AD9 0%, #8641F2 100%);;
 
     --transition: all .24s ease-in 0s;
     --moz-transition: all .24s ease-in 0s;
