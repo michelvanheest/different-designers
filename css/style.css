@@ -6,7 +6,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     outline: 0;
     font-size: 100%;
     font-weight: normal !important;
-    font-family: 'CircularMedium', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'CircularBook', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-transform: none;
     text-decoration: none;
     vertical-align: baseline;
@@ -25,6 +25,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 body {
     overflow-x: hidden !important;
+    background-color: #FCFCFC;
 }
 
 :root {
@@ -35,7 +36,6 @@ body {
     --color-white: #FFFFFF;
     --color-purple: #8641F2;
     --color-purple300: #F5F0FE;
-    --color-purpleGradient: linear-gradient(180deg, #783AD9 0%, #8641F2 100%);;
 
     --transition: all .24s ease-in 0s;
     --moz-transition: all .24s ease-in 0s;
@@ -70,41 +70,276 @@ body {
     src: url('../assets/fonts/CircularStd-Medium.woff2') format('woff2');
 }
 
-@font-face {font-family: 'CircularRegular';
+@font-face {font-family: 'CircularBook';
     /* src: url('../assets/fonts/FONTNAME.otf') format('opentype'); */
-    src: url('../assets/fonts/CircularStd-Regular.eot') format('embedded-opentype');
-    src: url('../assets/fonts/CircularStd-Regular.ttf') format('truetype');
-    src: url('../assets/fonts/CircularStd-Regular.woff') format('woff');
-    src: url('../assets/fonts/CircularStd-Regular.woff2') format('woff2');
+    src: url('../assets/fonts/CircularStd-Book.eot') format('embedded-opentype');
+    src: url('../assets/fonts/CircularStd-Book.ttf') format('truetype');
+    src: url('../assets/fonts/CircularStd-Book.woff') format('woff');
+    src: url('../assets/fonts/CircularStd-Book.woff2') format('woff2');
 }
 
 ::selection {
-    
+    color: var(--color-white);
+    background-color: var(--color-purple);
 }
 ::-moz-selection {
-    
+    color: var(--color-white);
+    background-color: var(--color-purple);
 }
 
 h1 {
-    font-size: 54px;
+    font-family: 'CircularBlack', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 64px;
+    line-height: 80px;
+    color: var(--color-white);
+    margin-bottom: 32px;
+}
+
+h2 {
+    font-family: 'CircularBlack', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 64px;
+    line-height: 80px;
+    color: var(--color-black);
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.purpleBG h2 {
+    color: var(--color-white);
+}
+
+h3 {
+    font-family: 'CircularBold', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    line-height: 52px;
+    color: var(--color-black);
+    margin-bottom: 8px;
+}
+
+#challenge h3 {
+    text-align: center;
+}
+
+#skip h3 {
+    margin-bottom: 40px;
+}
+
+h4 {
+    font-family: 'CircularMedium', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--color-purple)
+}
+
+header h4 {
+    margin-bottom: 56px;
+}
+
+header h4, .purpleBG h5 {
+    color: var(--color-white);
+    opacity: 0.8;   
+}
+
+h5 {
+    font-family: 'CircularBook', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--color-gray600);
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+p {
+    font-family: 'CircularBook', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-gray600);
 }
 
 
 
 /* ============LINKS & BUTTONS============ */
+.button {
+    font-family: 'CircularMedium', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 100px;
+    padding: 12px 24px;
+}
 
+.button-primary {
+    color: var(--color-white);
+    background-color: var(--color-purple);
+}
+
+.button-secondary {
+    color: var(--color-purple);
+    background-color: var(--color-white);
+}
 
 
 /* ============LAYOUTS GENERAL============ */
+header {
+    min-height: 100vh;
+    background-image: url(../assets/img/headerBackgroundIMG.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 120px 0px;
+}
 
+#challenge img {
+    max-width: 104px;
+    margin-top: 32px;
+}
+
+main #challenge::before {
+    content: "";
+    background-image: url(../assets/img/backgroudPatternCarRight.png);background-size: 346px 263px;
+    position: absolute;
+    width: 346px;
+    height: 263px;
+    right: 0;
+    transform: translateY(-152px);
+}
+
+#skip {
+    text-align: center;
+}
+
+#insightsIntro {
+    margin-bottom: 56px;
+}
+
+main #whoDidWeWorkWith::before {
+    content: "";
+    background-image: url(../assets/img/backgroudPatternCarLeft.png);
+    background-size: 346px 263px;
+    position: absolute;
+    left: 0;
+    transform: translateY(-613px);
+    width: 346px;
+    height: 263px;
+}
+
+#conceptCards {
+    margin-top: -115px;
+    /* padding-bottom: 176px; */
+}
+
+#conceptChosen .card {
+    border: 3px solid var(--color-purple);
+}
+
+#conceptChosen::after {
+    content: "";
+    background-image: url(../assets/img/conceptLine.svg);
+    background-size: 187px 441px;
+    position: absolute;
+    transform: translateY(-12px);
+    width: 187px;
+    height: 441px;
+}
 
 
 /* ============LAYOUTS COMPONENTS============ */
+.sectionSpaceTop {
+    padding-top: 146px;
+}
+
+.sectionSpaceBottom {
+    padding-bottom: 146px;
+}
+
+.centeredRow {
+    align-items: center;
+}
+
+.centeredRow img {
+    margin-bottom: 56px;
+}
+
+img { 
+    width: 100%;
+}
+
+.imgCentered {
+    text-align: center;
+}
+
+.imgMobile {
+    display: block;
+}
+
+.imgDesktop {
+    display: none;
+}
+
+.purpleBG {
+    background-image: linear-gradient(180deg, #783AD9 0%, #8641F2 100%);
+}
+
+.card {
+    /* width: 100%; */
+    height: 100%;
+    padding: 32px;
+    background-color: var(--color-white);
+    border: 3px solid var(--color-gray100);
+    border-radius: 24px;
+}
+
+.cardFirst, .cardSecond {
+    margin-bottom: 32px;
+}
+
+.purpleBG .cardThird .card {
+    border-radius: 24px 24px 0px 0px;
+    border-bottom: none;
+}
 
 
 
 /* ============MEDIAQUERIES============ */
+@media only screen and (min-width: 576px) {
+    /* ============LAYOUTS COMPONENTS============ */
+    .imgMobile {
+        display: none;
+    }
+    
+    .imgDesktop {
+        display: block;
+    }
+}
 
+@media only screen and (min-width: 768px) {
+    /* ============LAYOUTS COMPONENTS============ */
+    .centeredRow img {
+        margin-bottom: 0px;
+    }
+
+    #insightsIntro {
+        margin-bottom: 0px;
+    }
+
+    .sticky {
+        height: 100%;
+        display: block;
+        position: sticky;
+        top: 24px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* ============LAYOUTS COMPONENTS============ */
+    .cardFirst, .cardSecond, .cardThird {
+        margin-bottom: 0;
+    }
+
+    .purpleBG .card {
+        border-radius: 24px 24px 0px 0px;
+        border-bottom: none;
+    }
+}
 
 
 /* ============ANIMATIONS============ */
