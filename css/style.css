@@ -362,12 +362,14 @@ main #whoDidWeWorkWith::before {
 
 #conceptChosen::after {
     content: "";
-    background-image: url(../assets/img/conceptLine.svg);
-    background-size: 187px 441px;
+    background-image: url(../assets/img/conceptLineMobile.svg);
+    background-size: 187px 428px;
     position: absolute;
-    transform: translateY(-12px);
+    /* transform: translateY(-12px); */
     width: 187px;
-    height: 441px;
+    height: 428px;
+    /* top: 292px; */
+    left: 35%;
 }
 
 .prototypeFrame::before {
@@ -378,13 +380,15 @@ main #whoDidWeWorkWith::before {
     position: absolute;
     display: inline-block;
     width: 97.5%;
-    height: 100%;
-    /* left: 11px; */
+    height: 104%;
+    left: 8px;
+    top: -8px;
 }
 
 .prototypeFrame video {
-    transform: scale(0.76);
+    transform: scale(0.77);
     margin-top: -13px;
+    border-radius: 4px;
 }
 
 #resultUitleg {
@@ -413,6 +417,7 @@ main #motionMatrix::before {
     right: 0;
     transform: translateY(-152px);
 }
+
 
 
 /* ============LAYOUTS COMPONENTS============ */
@@ -523,6 +528,26 @@ ul.nav-tabs .nav-item img {
 }
 
 @media only screen and (min-width: 992px) {
+    /* ============LAYOUTS GENERAL============ */
+    #conceptChosen::after {
+        content: "";
+        background-image: url(../assets/img/conceptLine.svg);
+        background-size: 187px 441px;
+        position: absolute;
+        transform: translateY(-12px);
+        width: 187px;
+        height: 441px;
+        left: -24px;
+    }
+
+    .prototypeFrame::before {
+        top: 0px;
+    }
+    
+    .prototypeFrame video {
+        transform: scale(0.77);
+        margin-left: -4px;
+    }
     /* ============LAYOUTS COMPONENTS============ */
     .cardFirst, .cardSecond, .cardThird {
         margin-bottom: 0;
@@ -533,6 +558,12 @@ ul.nav-tabs .nav-item img {
         border-bottom: none;
     }
 }
+
+@media only screen and (min-width: 1280px) {
+    /* ============LAYOUTS GENERAL============ */
+    #conceptChosen::after {
+        left: 16px;
+    }
 
 
 /* ============ANIMATIONS============ */
