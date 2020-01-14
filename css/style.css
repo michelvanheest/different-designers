@@ -392,6 +392,11 @@ main #whoDidWeWorkWith::before {
     margin-left: 3px;
 }
 
+#openPrototype {
+    text-align: center;
+    margin: 16px 0px 32px 0px;
+}
+
 #resultUitleg {
     padding-top: 290px;
     margin-top: -320px;
