@@ -1,4 +1,497 @@
----
-title: Home
----
-<h1>Home</h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+        <!--BOOTSTRAP + JQUERY-->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+        
+        <!--CUSTOM CSS-->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap-mvh27112019.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script defer src="js/fontawesome-all.js"></script>
+        
+        <!--GOOGLE/META-->
+        <!-- <link rel="shortcut icon" type="image/png" href=""/> -->
+        <title></title>
+        <!-- <meta name="description" content="Insert meta description here"> -->
+        <!-- <meta name="keywords" content="Insert epic keywords here"/> -->
+        <meta name="author" content="Michel van Heest"/>
+        <meta name="reply-to" content="contact@michelvanheest.com"/>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+
+        <!-- Hotjar Tracking Code for https://michelvanheest.com/ -->
+
+    </head>
+    <body>
+        <!--VIDEO OVERLAY-->
+        <section id="videoOverlay">
+            <div class="videoWrapper">
+                <a class="cancelModal"><i class="far fa-times-circle"></i></a>
+                <video class="caseVideo" controls>
+                    <source src="assets/vid/vid_lang.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+        
+        <!--HEADER/HERO-->
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-xl-9">
+                        <h1>Adding motion to ANWB’s Design System Poncho</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-8 col-xl-9">
+                        <h6>een superhippe subtitle die kan wel over 2 regels heenvallen want dat is natuurlijk heel cool.</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <a class="button button-secondary activateModal">Play case-video</a>
+                        <!-- <a class="button button-secondary" href="assets/vid/different-anwb-casefilm.mp4" target="_blank" role="button">Play case-video</a> -->
+                        <!-- <div class="button button-secondary activateModal">Check prototype</div> -->
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!--CHALLENGE-->
+            <section class="sectionSpaceTop sectionSpaceBottom" id="challenge">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 offset-xl-3 col-xl-6">
+                            <h2>Our challenge</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 offset-md-1 col-md-10">
+                            <h3>“Research and develop what motion can add to the user experience and accessibility of the route planner page”</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="imgCentered col-12">
+                            <img src="assets/img/differentLogo.png" alt="different logo">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--WIDE TEAM IMAGE-->
+            <section id="teamImage">
+                <div class="container-fluid">
+                    <div class="row">
+                        <img src="assets/img/teamImageDesktop.jpg" class="imgDesktop" alt="Different team SKIITTTSKITTTTT 🤙">
+                        <img src="assets/img/teamImageMobile.jpg" class="imgMobile" alt="Different team SKIITTTSKITTTTT 🤙">
+                    </div>
+                </div>
+            </section>
+
+            <!--SKIP BUTTON-->
+            <section class="sectionSpaceTop sectionSpaceBottom" id="skip">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Can't wait?</h3>
+                            <a class="button button-primary" id="skipButton" href="#result" role="button">Skip to the result</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--KEY TO SUCCESS-->
+            <section class="sectionSpaceTop purpleBG" id="keyToSuccess">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>The key to success</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 offset-md-3 col-md-6">
+                            <h5>Hier komt wellicht een introtekst die wat vertelt over wat de succesfactor precies is en waarom.</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cardFirst col-12 col-lg-4">
+                            <div class="card">
+                                <h4>Succesfactor 1</h4>
+                                <h3>Pain points</h3>
+                                <p>The pain points have been resolved, therefore they have been practically tested and backed-up theoretically.</p>
+                            </div>
+                        </div>
+                        <div class="cardSecond col-12 col-lg-4">
+                            <div class="card">
+                                <h4>Succesfactor 2</h4>
+                                <h3>Motion language</h3>
+                                <p>The quality of the improvements that are made is backed-up based on the established principles, guidelines and rules. The ANWB is able to continue to develop and improve their motion design language.</p>
+                            </div>
+                        </div>
+                        <div class="cardThird col-12 col-lg-4">
+                            <div class="card">
+                                <h4>Succesfactor 3</h4>
+                                <h3>Resources</h3>
+                                <p>The design system expansion is easily transferable and easy to use for the ANWB, especially for stakeholders Coen de Haar, Chloe Rice and Sanne Kloot. That way they can decide whether they want to spend more resources on motion in their design system. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--CONTEXT-->
+            <section class="sectionSpaceTop sectionSpaceBottom" id="context">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Context</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 offset-md-2 col-md-8">
+                            <h5>During the minor <span class="purpleText">User Interface and Experience Design</span> we got the assignment to investigate en develop what motion can contribute to the user experience en accessibility of the ANWB online visitors digital experience. For this we had to make an extension to <span class="purpleText">ANWB's Design System Poncho</span> through principles and a rationale. </h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--STAKEHOLDERMAP-->
+            <section class="sectionSpaceBottom" id="whoDidWeWorkWith">
+                <div class="container">
+                    <div class="centeredRow row">
+                        <div class="col-12 col-md-6">
+                            <img src="assets/img/stakeholderMap.png" alt="Different stakeholdermap">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h4>stakeholders</h4>
+                            <h3>Who did we work with?</h3>
+                            <p>During the project we worked closely with various stakeholders. The product owners played the main role. We were able to inform these product owners about the progress through presentations, slack and various video calls.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--RESEARCH INTRO-->
+            <section class="sectionSpaceTop purpleBG" id="research">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Research</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 offset-md-2 col-md-8">
+                            <h5>During the research phase, we collected many insights through interviews with users, usability testing of the current website and a lot of desk research into (Atomic based) Design Systems (including Poncho) and motion design.</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cardFirst col-12 col-lg-4">
+                            <div class="card">
+                                <h4>Discovery Phase</h4>
+                                <h3>Field research</h3>
+                                <p>We did interviews with ANWB members and non-members to gain insights about de needs of the target group (35-year olds).</p>
+                            </div>
+                        </div>
+                        <div class="cardSecond col-12 col-lg-4">
+                            <div class="card">
+                                <h4>Discovery Phase</h4>
+                                <h3>Desk research</h3>
+                                <p>We did research into the ANWB as brand, their website,  their design system Poncho, other (atomic based) design systems and motion design.</p>
+                            </div>
+                        </div>
+                        <div class="cardThird col-12 col-lg-4">
+                            <div class="card">
+                                <h4>Discovery Phase</h4>
+                                <h3>UX-lab research</h3>
+                                <p>We did several usability tests with the target group to gain insights on the painpoints they experience while using ANWB’s website.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--RESEARCH INSIGHTS SCROLLTHINGHY-->
+            <section class="sectionSpaceTop" id="insights">
+                <div class="container">
+                    <div class="row">
+                        <div class="sticky col-12 col-md-4" id="insightsIntro">
+                            <h4>research</h4>
+                            <h3>Our most <br>important insights</h3>
+                            <p>Hier komt wellicht een introtekst die wat vertelt over waar we research naar hebben gedaan en waarom.</p>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <img src="assets/img/insightsANWB.png" alt="Insights about the ANWB Routeplanner">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--CONCEPTING INTRO-->
+            <section class="sectionSpaceTop sectionSpaceBottom" id="concepting">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Concepting</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 offset-md-2 col-md-8">
+                            <h5>Based on all the insights from the research phase, we made a first version of the motion principles. When the first version of these principles had been set up, we were able to take this as the base for drafting concepts (guidelines).</h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--GOLDEN FILTER DANIEL AHOYYYY-->
+            <section class="sectionSpaceBottom" id="goldenFilter">
+                <div class="container">
+                    <div class="centeredRow row">
+                        <div class="col-12 col-md-5">
+                            <img src="assets/img/golderFilter.png" alt="Golden Filter of UX">
+                        </div>
+                        <div class="col-12 offset-md-1 col-md-6">
+                            <h4>concepting</h4>
+                            <h3>The Golden Filter of UX</h3>
+                            <p>To learn how to design valuable guidelines as a team, we followed a workshop by Daniel de Wit. In this workshop we used his own developed methodology. The Golden Filter of UX ”(de Wit, 2019). A method where Human Centered Design combined with the Golden Filter serves as a "funnel" with guidelines. This includes both the business and user needs. </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--POAR NEEM'N INTRO-->
+            <section class="sectionSpaceTop sectionSpaceBottom purpleBG" id="probleemstelling">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Probleemstelling</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 offset-md-2 col-md-8">
+                            <h5>By combining Jakob Nielson's 10 heuristics with the MOSCOW method, we were able to separate the most important guidelines for the project. We created two concept directions based on the insights from the research phase and the guidelines from The Golden Filter or UX.</h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--POAR NEEM'N CARDS-->
+            <section id="conceptCards">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 offset-lg-2 col-lg-4">
+                            <div class="card">
+                                <h4>Concept 1</h4>
+                                <h3>Hierarchy</h3>
+                                <p>Pijnpunten en de kwaliteit van de hiervoor gemaakte verbeteringen zijn te onderbouwen aan de hand van opgestelde principles, guidelines en rules. Deze principles, guidelines en rules zijn ook weer verder inzetbaar voor de ANWB in een verdere uitbreiding en het zelf oppakken van het ontwikkelen van een verdere motion design language.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4" id="conceptChosen">
+                            <div class="card">
+                                <h4>Concept 2</h4>
+                                <h3>Motion design</h3>
+                                <p>Het geheel is duidelijk overdraagbaar en toepasbaar voor de ANWB, specifiek stakeholders Coen de Heer, Chloë Rice en Sanne Kloot zodat zij een onderbouwde beslissing kunnen maken over de ROI van het besteden van verdere ANWB-resources aan het verder werken aan motion design binnen hun design system.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--FANCY PROTO VID-->
+            <section class="sectionSpaceTop sectionSpaceBottom" id="result">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>The result</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 offset-md-2 col-md-8">
+                            <h5>Hier komt wellicht een introtekst die wat vertelt over waar we research naar hebben gedaan en waarom.</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- <img src="assets/img/prototypeMockup.png" alt="Different X ANWB final masterprototype mockup"> -->
+                            <div class="prototypeFrame">
+                                <video preload="auto" autoplay="" muted="" loop="" playsinline="" webkit-playsinline="">
+                                    <source src="assets/vid/prototypeFinal.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--TRELLO + SOME GUIDELINES-->
+            <section class="sectionSpaceTop sectionSpaceBottom purpleBG noCard" id="resultUitleg">
+                <div class="container">
+                    <div class="row" id="trelloBackground">
+                        <div class="col-12 col-md-4">
+                            <h4>design system</h4>
+                            <h3>Iets over <br>onze guidelines</h3>
+                            <p>Hier komt wellicht een introtekst die wat vertelt over waar we research naar hebben gedaan en waarom.</p>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <img src="assets/img/trello.png" alt="Our Trello planning board">
+                        </div>
+                    </div>
+                    <div class="sectionSpaceTop row">
+                        <div class="col-12 col-md-4">
+                            <h4>guidelines</h4>
+                            <h3>Blue sky</h3>
+                            <p>To learn how to design valuable guidelines as a team, we followed a workshop by Daniel de Wit. In this workshop we used his own developed methodology. The Golden Filter of UX ”(de Wit, 2019).</p>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <h4>guidelines</h4>
+                            <h3>Sunbeam</h3>
+                            <p>To learn how to design valuable guidelines as a team, we followed a workshop by Daniel de Wit. In this workshop we used his own developed methodology. The Golden Filter of UX ”(de Wit, 2019).</p>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <h4>guidelines</h4>
+                            <h3>Breezy</h3>
+                            <p>To learn how to design valuable guidelines as a team, we followed a workshop by Daniel de Wit. In this workshop we used his own developed methodology. The Golden Filter of UX ”(de Wit, 2019).</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--MOTION MATRIX INTRO-->
+            <section class="sectionSpaceTop sectionSpaceBottom" id="motionMatrix">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>The motion matrix</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 offset-md-2 col-md-8">
+                            <h5>Hier komt  een introtekst die wat vertelt over wat de matrix is en waar hij voor dient.</h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--MOTION MATRIX EXPLAINED-->
+            <section class="sectionSpaceBottom" id="motionMatrixExplained">
+                <div class="container">
+                    <div class="centeredRow row">
+                        <div class="col-12 col-md-6">
+                            <div class="tab-content" id="myTabContent01">
+                                <div class="tab-pane fade show active" id="blueSky" role="tabpanel" aria-labelledby="home-tab">
+                                    <img src="assets/img/motionMatrix.png" alt="Our Motion Matrix model">
+                                </div>
+                                <div class="tab-pane fade" id="sunbeam" role="tabpanel" aria-labelledby="profile-tab">
+                                    <img src="assets/img/motionMatrix.png" alt="Our Motion Matrix model">
+                                </div>
+                                <div class="tab-pane fade" id="breezy" role="tabpanel" aria-labelledby="contact-tab">
+                                    <img src="assets/img/motionMatrix.png" alt="Our Motion Matrix model">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h4>subtitle</h4>
+                            <h3>Fancypancy title</h3>
+                            <ul class="nav nav-tabs" id="myTab01" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link button button-secondary active" id="blueSky-tab" data-toggle="tab" href="#blueSky" role="tab" aria-controls="breezy" aria-selected="true">Blue sky</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link button button-secondary" id="sunbeam-tab" data-toggle="tab" href="#sunbeam" role="tab" aria-controls="breezy" aria-selected="false">Sunbeam</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link button button-secondary" id="breezy-tab" data-toggle="tab" href="#breezy" role="tab" aria-controls="breezy" aria-selected="false">Breezy</a>
+                                </li>
+                            </ul>
+                            <p>To learn how to design valuable guidelines as a team, we followed a workshop by Daniel de Wit. In this workshop we used his own developed methodology. The Golden Filter of UX ”(de Wit, 2019). A method where Human Centered Design combined with the Golden Filter serves as a "funnel" with guidelines. This includes both the business and user needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--PROTOTYPING INTRO-->
+            <section class="sectionSpaceBottom" id="prototyping">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Prototyping</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 offset-md-2 col-md-8">
+                            <h5>Hier komt  een introtekst die wat vertelt over wat de matrix is en waar hij voor dient.</h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--PROTOTYPING EXPLAINED-->
+            <section class="sectionSpaceBottom" id="prototypingExplained">
+                <div class="container">
+                    <div class="centeredRow row">
+                        <div class="col-12 col-md-6">
+                            <h4>prototyping</h4>
+                            <h3>Our way of work</h3>
+                            <ul class="nav nav-tabs" id="myTab02" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link button button-secondary active" id="framer-tab" data-toggle="tab" href="#framer" role="tab" aria-controls="framer" aria-selected="true"><img src="assets/img/logoFramer.png" alt="Framer logo"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link button button-secondary" id="github-tab" data-toggle="tab" href="#github" role="tab" aria-controls="github" aria-selected="false"><img src="assets/img/logoGitHub.png" alt="GitHub logo"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link button button-secondary" id="principle-tab" data-toggle="tab" href="#principle" role="tab" aria-controls="principle" aria-selected="false"><img src="assets/img/logoPrinciple.png" alt="Principle logo"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link button button-secondary" id="sketch-tab" data-toggle="tab" href="#sketch" role="tab" aria-controls="sketch" aria-selected="false"><img src="assets/img/logoSketch.png" alt="Sketch logo"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link button button-secondary" id="figma-tab" data-toggle="tab" href="#figma" role="tab" aria-controls="figma" aria-selected="false"><img src="assets/img/logoFigma.png" alt="Figma logo"></a>
+                                </li>
+                            </ul>
+                            <p>It was important for us to make as many prototypes and test rounds as possible in order to test the guidelines and draw up specific rules. We took the talk; prototype to understand and prototype to be understood by zach Johnston as the starting point for prototyping. </p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="tab-content" id="myTabContent02">
+                                <div class="tab-pane fade show active" id="framer" role="tabpanel" aria-labelledby="framer-tab">
+                                    <h3>Framer</h3>
+                                    <!-- <img src="assets/img/motionMatrix.png" alt="Our Motion Matrix model"> -->
+                                </div>
+                                <div class="tab-pane fade" id="github" role="tabpanel" aria-labelledby="github-tab">
+                                    <h3>GitHub</h3>
+                                    <!-- <img src="assets/img/motionMatrix.png" alt="Our Motion Matrix model"> -->
+                                </div>
+                                <div class="tab-pane fade" id="principle" role="tabpanel" aria-labelledby="principle-tab">
+                                    <h3>Principle</h3>
+                                    <!-- <img src="assets/img/motionMatrix.png" alt="Our Motion Matrix model"> -->
+                                </div>
+                                <div class="tab-pane fade" id="sketch" role="tabpanel" aria-labelledby="sketch-tab">
+                                    <h3>Sketch</h3>
+                                    <!-- <img src="assets/img/motionMatrix.png" alt="Our Motion Matrix model"> -->
+                                </div>
+                                <div class="tab-pane fade" id="figma" role="tabpanel" aria-labelledby="figma-tab">
+                                    <h3>Figma</h3>
+                                    <!-- <img src="assets/img/motionMatrix.png" alt="Our Motion Matrix model"> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!--CUSTOM JS-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/animate.js"></script>
+    </body>
+</html>
