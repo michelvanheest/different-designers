@@ -386,9 +386,10 @@ main #whoDidWeWorkWith::before {
 }
 
 .prototypeFrame video {
-    transform: scale(0.77);
-    margin-top: -13px;
-    border-radius: 4px;
+    transform: scale(0.8);
+    margin-top: -8px;
+    border-radius: 2px;
+    margin-left: 3px;
 }
 
 #resultUitleg {
@@ -497,6 +498,14 @@ ul.nav-tabs .nav-item img {
 
     p {
         font-size: 18px;
+    }
+
+    /* ============LAYOUTS GENERAL============ */
+    .prototypeFrame video {
+        transform: scale(0.77);
+        margin-top: -13px;
+        border-radius: 4px;
+        margin-left: 0px;
     }
 
     /* ============LAYOUTS COMPONENTS============ */
