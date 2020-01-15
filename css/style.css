@@ -420,18 +420,6 @@ header {
     margin-top: -320px;
 }
 
-/* #trelloBackground::before {
-    content: "";
-    background-image: url(../assets/img/trello.png);
-    background-size: 63%;
-    background-repeat: no-repeat;
-    position: absolute;
-    display: inline-block;
-    width: 97.5%;
-    height: 100%;
-    left: 39%;
-} */
-
 #caseVideoBottom .container .col-12 {
     display: flex;
     justify-content: center;
