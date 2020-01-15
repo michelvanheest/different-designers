@@ -432,6 +432,27 @@ header {
     left: 39%;
 } */
 
+#caseVideoBottom .container .col-12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#caseVideoBottom img {
+    border-radius: 24px;
+    box-shadow: 4px 24px 40px rgba(12, 24, 61, 0.12);
+}
+
+#caseVideoBottom a.button {
+    position: absolute;
+
+}
+
+#differentOut {
+    padding-top: 226px;
+    margin-top: -80px;
+}
+
 #differentOut svg {
     color: var(--color-purple);
 }
