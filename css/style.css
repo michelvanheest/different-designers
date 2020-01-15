@@ -37,6 +37,10 @@ body {
     --color-purple: #8641F2;
     --color-purple300: #F5F0FE;
 
+    /* --transition: all 0.25s cubic-bezier(0.382, 0, 0.618, 1);
+    --moz-transition: all 0.25s cubic-bezier(0.382, 0, 0.618, 1);
+    --webkit-transition: all 0.25s cubic-bezier(0.382, 0, 0.618, 1);
+    --o-transition: all 0.25s cubic-bezier(0.382, 0, 0.618, 1); */
     --transition: all .16s ease-in 0s;
     --moz-transition: all .16s ease-in 0s;
     --webkit-transition: all .16s ease-in 0s;
@@ -296,6 +300,7 @@ a.button:hover {
 
 #videoOverlay.active {
     transition: opacity 0.25s cubic-bezier(0.382, 0, 0.618, 1), z-index 0s;
+    /* transition: var(--transition); */
     z-index: 2000;
     opacity: 1;
 }
