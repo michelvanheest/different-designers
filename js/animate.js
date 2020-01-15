@@ -83,6 +83,6 @@ $("#caseVideoLink").click(function() {
 });
 
 
-// $(document).ready(function () {
-//     $('div.hidden').fadeIn(800).removeClass('hidden');
-// });
+$(document).ready(function () {
+    $('div.hidden').fadeIn(1200).removeClass('hidden');
+});
