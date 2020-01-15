@@ -6,7 +6,7 @@ The official GitHub Repo of team diffərənt. This repository contains the offic
 
 ---
 
-# How to locally run our Framer proto’s without having Framer installed
+# How to locally run our Framer proto’s without using Framer
 To be able to run our prototypes on your local machine (to make changes or whatever reason you have to not use our hosted version(s)) you need to have a Node server installed. 
 
 ### Install Node HTTP-server
