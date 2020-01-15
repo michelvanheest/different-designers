@@ -171,6 +171,14 @@ span.purpleText {
     color: var(--color-purple);
 }
 
+#differentOut h5 {
+    margin: 8px 0px;
+}
+
+#differentOut {
+    text-align: center;
+}
+
 
 
 /* ============LINKS & BUTTONS============ */
@@ -256,6 +264,17 @@ a.button:hover {
     padding: 12px 12px 8px 12px;
 }
 
+#differentOut .differentSocials a {
+    background-color: var(--color-white);
+    padding: 6px 8px;
+    margin: 16px 4px 0px 4px;
+    display: inline-block;
+    border-radius: 100px;
+}
+
+#differentOut .differentSocials a:last-child {
+    padding: 6px;
+}
 
 
 /* ============LAYOUTS GENERAL============ */
@@ -412,6 +431,10 @@ header {
     height: 100%;
     left: 39%;
 } */
+
+#differentOut svg {
+    color: var(--color-purple);
+}
 
 
 
@@ -621,9 +644,10 @@ ul.nav-tabs .nav-item img {
     #conceptChosen::after {
         left: 16px;
     }
+}
 
 
 /* ============ANIMATIONS============ */
-div.hidden {
+/* div.hidden {
     display: none;
-}
+} */
