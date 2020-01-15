@@ -445,7 +445,10 @@ header {
     color: var(--color-purple);
 }
 
-
+footer {
+    background-color: var(--color-purple300);
+    text-align: center;
+}
 
 /* ============LAYOUTS COMPONENTS============ */
 .sectionSpaceTop {
