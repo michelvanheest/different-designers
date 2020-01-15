@@ -43,7 +43,7 @@ Michels-MBP:~ michelvanheest$ cd /Users/michelvanheest/Dropbox\ \(Personal\)/Sch
 - After you pressed enter, your server _with_ the Framer prototype is now running
 - Open `localhost:8080` in your (Chrome) browser et voila ✌️
 
-### Change the Framer prototype
+### Edit the Framer prototypes
 - Drag the folder with the Framer prototype to your VSCode or editor of choice
 - Edit `app.coffee` and save your changes
 - Use CMD+Shift+R to reload the prototype in your browser after you changed something in the code.
