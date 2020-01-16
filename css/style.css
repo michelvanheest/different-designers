@@ -692,7 +692,18 @@ ul.nav-tabs .nav-item img {
     #openPrototype {
         display: block;
         text-align: center;
-        margin: 16px 0px 32px 0px;
+        margin: 32px 0px 32px 0px;
+    }
+
+    footer::before {
+        content: "";
+        background-image: url(../assets/img/backgroudPatternThumpLeft.png);
+        background-size: 346px 263px;
+        position: absolute;
+        left: 0;
+        transform: translateY(82px);
+        width: 346px;
+        height: 263px;
     }
     /* ============LAYOUTS COMPONENTS============ */
     .cardFirst, .cardSecond, .cardThird {
