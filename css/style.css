@@ -790,3 +790,7 @@ ul.nav-tabs .nav-item img {
 div.hidden {
     display: none;
 }
+
+.fadeIn {
+    opacity: 0;
+}
