@@ -353,6 +353,11 @@ video {
     width: 100%;
 }
 
+/* .caseVideo {
+    width: 80vw;
+    height: 80vh;
+} */
+
 header {
     min-height: 100vh;
     background-image: url(../assets/img/headerBackgroundIMG.jpg);
@@ -672,11 +677,11 @@ ul.nav-tabs .nav-item img {
     #conceptChosen::after {
         content: "";
         background-image: url(../assets/img/conceptLine.svg);
-        background-size: 187px 441px;
+        background-size: 187px 620px;
         position: absolute;
-        transform: translateY(-12px);
+        transform: translateY(-23px);
         width: 187px;
-        height: 441px;
+        height: 620px;
         left: -24px;
     }
 
