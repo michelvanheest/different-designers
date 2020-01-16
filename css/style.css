@@ -36,6 +36,7 @@ body {
     --color-white: #FFFFFF;
     --color-purple: #8641F2;
     --color-purple300: #F5F0FE;
+    --color-code: #282A36;
 
     /* --transition: all 0.25s cubic-bezier(0.382, 0, 0.618, 1);
     --moz-transition: all 0.25s cubic-bezier(0.382, 0, 0.618, 1);
@@ -426,6 +427,47 @@ header img {
     display: none;
 }
 
+#protoShow .tab-content > .active {
+    display: block;
+}
+
+#protoShowContent {
+    width: 100%;
+}
+
+/* .protoShowWrapper {
+    max-height: none;
+} */
+
+.protoShowLeft, .protoShowRight {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 56px 0px;
+}
+
+.protoShowLeft {
+    background-color: var(--color-purple300);
+}
+
+.protoShowLeft video {
+    width: 40%;
+}
+
+.protoShowRight {
+    background-color: var(--color-code);
+}
+
+.protoShowRight img {
+    width: 70%;
+}
+
+#proto02Left {
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(12, 24, 61, 0.03);
+}
+
 #resultUitleg {
     padding-top: 290px;
     margin-top: -320px;
@@ -444,7 +486,6 @@ header img {
 
 #caseVideoBottom a.button {
     position: absolute;
-
 }
 
 #differentOut {
@@ -572,6 +613,10 @@ ul.nav-tabs .nav-item img {
 }
 
 @media only screen and (min-width: 768px) {
+    /* ============LAYOUTS GENERAL============ */
+    #protoShow .tab-content > .active {
+        display: flex;
+    }
     /* ============LAYOUTS COMPONENTS============ */
     .centeredRow img {
         margin-bottom: 0px;
@@ -585,7 +630,7 @@ ul.nav-tabs .nav-item img {
         height: 100%;
         display: block;
         position: sticky;
-        top: 24px;
+        top: 72px;
     }
 }
 
