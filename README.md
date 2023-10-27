@@ -1,8 +1,8 @@
 The official GitHub Repo of team diffərənt. This repository contains the official onepager and prototypes (Framer, Principle etc.).
 
-💻 You can find the website on → [http://differentdesigners.nl](http://www.differentdesigners.nl/)
+💻 You can find the website on → [https://michelvanheest.github.io/different-designers/](https://michelvanheest.github.io/different-designers/) _~[http://differentdesigners.nl](http://www.differentdesigners.nl/)~_
 
-💻  Our masterprototype → [http://differentdesigners.nl/prototypes/masterprototype.framer](http://www.differentdesigners.nl/prototypes/masterprototype.framer)
+💻  Our masterprototype → [https://michelvanheest.github.io/different-designers/prototypes/masterprototype.framer/](https://michelvanheest.github.io/different-designers/prototypes/masterprototype.framer/) _~[http://differentdesigners.nl/prototypes/masterprototype.framer](http://www.differentdesigners.nl/prototypes/masterprototype.framer)~_
 
 ---
 
